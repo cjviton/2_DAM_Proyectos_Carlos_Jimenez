@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc,char *argv[]){
+int main(int argc,char *argv[]){ 
      
     FILE *archivo;                                        //creo un archivo de tipo file y lo llamo archivo
     archivo = fopen("agenda.txt","w");                    //archivo es igual a fopen en modo writhe(escritura)
