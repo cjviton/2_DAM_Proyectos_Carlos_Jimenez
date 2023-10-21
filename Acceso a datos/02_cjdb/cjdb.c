@@ -1,17 +1,23 @@
 #include <stdio.h>
 #include <string.h>
 
-/*Este programa ecribe un texto en enn archivo base de datos, el texto se lo introduzco yo por parametro en el momento de la ejecucuión del programa en la consola. ""importante entrecomillado"
+/*Dentro de cjdb creo una carpeta, db. y vamos a supuner que de momento trabajo con una sola base de datos.
+Le voy a decir que el primer valor que le pasaré será el nombre de la tabla y el segundo nombre que le pasaré es lo que quiero guardar
 */
 
-int main(int argc,char *argv[]){    
-    FILE *archivo;                          //creo un archivo de tipo file
-    archivo = fopen("basededatos.txt","a"); //archivo es igual a fopen con el nombre basededatos en modo                                                     //writhe(escritura). Si aquí pongo una a, va sumando lo que vaya                                                 //escribiendo
-    char *texto = argv[1];
-    fputs(strcat(texto,"\n"),archivo);       //ecriba el texto en el archivo. Para que cada frase o palabra de cada                                           //ejecución me la escriba en una linea uso strcat, "\n" y tengo que                                               //añadir arriba la librería de string
-          
-    fclose(archivo);                        //cierro el archivo que he abierto con fopen
+int main(int argc,char *argv[]){  
     
-    
-    return 0;    
+    FILE *archivo;
+    char *nombrearchivo = argv[1];                     //El nombre delarchivo es igual al arrg1 y el texto que me                                                        //guardará en ese archivo al arg2
+    archivo = fopen(strcat(nombrearchivo,".txt"),"a");
+    char *texto = argv[2];
+    fputs(strcat(texto,"\n"),archivo);
+    fclose(archivo);
+    return 0;
+        
 }       
+
+/*la orden en la consola de comandos seria la siguente:
+C:\Users\usuario\Documents\2ºDAM Proyectos Carlos Jimenez\Acceso a datos\02_cjdb>cjdb.exe "clientes" "Carlos J"
+De esta manera me está creando una carpeta en el directorio, con el nombre clientes y dentro el texto, CarlosJ
+*/
