@@ -19,12 +19,11 @@ int main(int argc,char *argv[]){
     char *nombrearchivo = argv[3];
     
     char ruta[100];
-    strcpy(ruta,basededatos);
-    strcat(ruta,"-");
-    strcat(ruta,nombrearchivo);
+    strcpy(ruta,basededatos);                //La función strcpy  copiar una cadena de caracteres
+    strcat(ruta,nombrearchivo);              //la función strycat concatena varibles
     strcat(ruta,".txt");
     
-    if(strcmp(operacion,"select") == 0){
+    if(strcmp(operacion,"select") == 0){    //strcmp compara cadenas de caracteres, si es igual devuelve 0, diferente 1
         printf("te doy datos");
         archivo = fopen(ruta,"r");         //como lo que quiero es leer, abro el archivo en modo read
         printf("te doy datos:\n");
@@ -36,7 +35,7 @@ int main(int argc,char *argv[]){
      }else if(strcmp(operacion,"insert") == 0){
         archivo = fopen(ruta,"a");        //como lo que quiero es añadir, abro el archivo en modo a
         char *texto = argv[4];
-        fputs(strcat(texto,"\n"),archivo);
+        fputs(strcat(texto,"\n"),archivo); //fputs escribe cadena de char en un archivo
         fclose(archivo);
     }else{
         printf("operación no válida");

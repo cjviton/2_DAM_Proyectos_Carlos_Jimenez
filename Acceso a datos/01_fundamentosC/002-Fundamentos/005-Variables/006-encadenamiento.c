@@ -6,7 +6,7 @@ int main(int argc,char *argv[]){
     char nombre[] = "Carlos";
     char apellidos[] = "Jimenez Viton";
     
-    strcat(nombre,apellidos);
+    strcat(nombre,apellidos);//con strcat concateno variables
 
     printf("Mi nombre completo es: %s",nombre); 
     
