@@ -8,7 +8,10 @@ public class P2_Sin_ayuda_del_diseñador extends javax.swing.JFrame {           
     }
     
     private void initComponents() {                                             //5º Creamos método initcomponents
+        
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);//8 termina el proceso de run del programa cuando cierro la ventana
+        
+        //inicializo componentes
         jLabel1 = new javax.swing.JLabel();                                     //6ºCreo una nueva instancia de javax.swing.JLabel 
         jLabel2 = new javax.swing.JLabel();                                     //15 creo una nuevo objeto de la clase java.swing.JLabel jLabel2
         jTexField1 = new javax.swing.JTextField();
@@ -19,15 +22,24 @@ public class P2_Sin_ayuda_del_diseñador extends javax.swing.JFrame {           
         jSlider1 = new javax.swing.JSlider();
         
         
-        
+        //TExtos por defecto en los componentes
         jLabel1.setText("HOLA MUNDO");                                      //7 introduzco texto en jLabel1
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 12));     //23 de esta manera puedo cambiar el estilo de la fuente
         jLabel2.setText("HOLA MUNDO DOS");                                  //16 introduzco texto en jLabel2
         jButton1.setText("PULSAME");
         jRadioButton1.setText("SELCCIÓN ÚNICA");
         jCheckBox1.setText("SELCCIÓN MÚLTIPLE");
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Deportes:", "Escalada", "Alpinismo", "Buceo" }));
+        
+        //Evento de acción de un JButton(Escuchadores)
+        jButton1.addActionListener(new java.awt.event.ActionListener() {        //22 este el el método con el cual decimos como ejecuta la función el button
+            public void actionPerformed(java.awt.event.ActionEvent evt) {       //puede ser puelsando, pasando por encima el ratón, pulsar tecla...etc
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         
+        //Maquetación gráfica
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());//11 Creo un jPanelLayout
         getContentPane().setLayout(layout);                                  //13 pego todo el contenido del layout generado en un proyecto nuevo limpio, con nada más que una etiqueta
         layout.setHorizontalGroup(
@@ -63,6 +75,16 @@ public class P2_Sin_ayuda_del_diseñador extends javax.swing.JFrame {           
               
         pack();                                                                 //9 Empqueta elementos de interface de usuario
     }
+    
+    
+    //Métodos de los escuchadores
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {      //21 Creo un método para ejecutar un evento en el jButton
+                                                                                //con esto solamente n funciona. Hay que hacer también el paso 22
+        System.out.printf("Has pulsado el botón");
+        jTexField1.setText("puedo introducir texto aquí");                    //De esta manera puedo introducir texto en JTextFiel al pulsar el boton
+        
+    }  
+    
     
     
     public static void main(String[] args) {
@@ -112,6 +134,9 @@ public class P2_Sin_ayuda_del_diseñador extends javax.swing.JFrame {           
 
 /*18 En cada paso que añada etiquetas  tengo que crear el constructor, la variable, y añadir el addCoponent
 y si es de texto el setText
+
+
+
 
 
 */
