@@ -23,7 +23,7 @@ int main(int argc,char *argv[]){
     strcat(ruta,nombrearchivo);              //la función strycat concatena varibles
     strcat(ruta,".txt");
     
-    if(strcmp(operacion,"select") == 0){    //strcmp compara cadenas de caracteres, si es igual devuelve 0, diferente 1
+    if(strcmp(operacion,"select") == 0){    //strcmp compara cadenas de caracteres, si es igual devuelve 0, diferente 1 (0=true  1=false)
         printf("te doy datos");
         archivo = fopen(ruta,"r");         //como lo que quiero es leer, abro el archivo en modo read
         printf("te doy datos:\n");

@@ -14,15 +14,15 @@ Implementamos en el codigo poder sacar datos por pantalla
 int main(int argc,char *argv[]){  
     
     FILE *archivo;
-    char *operacion = argv[1];
+    char *operacion = argv[1];                //El número del cochete, indica el indice del argumento en la linea de comandos 
     char *basededatos = argv[2];
     char *nombrearchivo = argv[3];
     
-    char ruta[100];
+    char ruta[100];  //Array de chat
     strcpy(ruta,basededatos);                //La función strcpy  copiar una cadena de caracteres
     strcat(ruta,nombrearchivo);              //la función strycat concatena varibles
     strcat(ruta,".txt");
-    
+        
     if(strcmp(operacion,"select") == 0){    //strcmp compara cadenas de caracteres, si es igual devuelve 0, diferente 1 (0=true  1=false)
         printf("te doy datos");
         archivo = fopen(ruta,"r");         //como lo que quiero es leer, abro el archivo en modo read
