@@ -20,6 +20,9 @@ public class FFmpeg_grafic_user_interface extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JButton jButton4;
 
 
     
@@ -40,6 +43,9 @@ public class FFmpeg_grafic_user_interface extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jTextField4 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        jButton4 = new javax.swing.JButton();
 
         
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -61,7 +67,11 @@ public class FFmpeg_grafic_user_interface extends javax.swing.JFrame {
                 jTextField3ActionPerformed(evt);
             }
         });
-
+        
+        
+        jButton1.setBackground(new java.awt.Color(51, 255, 0));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 255));
         jButton1.setText("Iniciar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,6 +97,19 @@ public class FFmpeg_grafic_user_interface extends javax.swing.JFrame {
         });
         jTextField4.setText(" ");
         
+        jLabel4.setText("Captura una imagen");
+
+        jTextField5.setText("00:00:00");
+        
+        jButton4.setText("Capturar");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
+        
+        
         
         //Diseño y colocadion de los elementos en el panel
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -94,22 +117,35 @@ public class FFmpeg_grafic_user_interface extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton3)
-                        .addGap(18, 18, 18)
-                        .addComponent(jTextField4))
-                    .addComponent(jButton1)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 331, Short.MAX_VALUE)
-                    .addComponent(jTextField1)
-                    .addComponent(jTextField2)
-                    .addComponent(jButton2))
-                .addContainerGap(39, Short.MAX_VALUE))
+                        .addGap(23, 23, 23)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton2)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTextField5))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                        .addComponent(jButton3)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jTextField4))
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 331, Short.MAX_VALUE)
+                                    .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton4)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(147, 147, 147)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -127,16 +163,21 @@ public class FFmpeg_grafic_user_interface extends javax.swing.JFrame {
                     .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton3))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel3)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton4))
+                .addGap(30, 30, 30)
                 .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
-                .addContainerGap())
+                .addGap(18, 18, 18)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         pack();
@@ -201,9 +242,15 @@ public class FFmpeg_grafic_user_interface extends javax.swing.JFrame {
         String formato=jComboBox1.getSelectedItem().toString();//Capturo la selección que haga en en el comboBox1
         String comando = programa + " -i " + entrada + " " + salida + "." +formato ;
         System.out.println(comando);
+        
+              
         try{
-            ProcessBuilder proceso = new ProcessBuilder( "cmd.exe", "/c",comando); //processBuilder-->Esta clase se utiliza para crear procesos del sistema operativo
+            /*processBuilder-->Esta clase se utiliza para crear procesos del sistema operativo
+            Ejecuta la orden de la variable comando
+            */
+            ProcessBuilder proceso = new ProcessBuilder( "cmd.exe", "/c",comando); 
             Process miproceso = proceso.start();
+                      
             System.out.println("ok");
         }
         catch(Exception e){
@@ -215,14 +262,16 @@ public class FFmpeg_grafic_user_interface extends javax.swing.JFrame {
     //Método de acción de butoon2. Extrae la pista de audio del video en mp3
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         
-        /*Linea de código en consola para extraer pita de audio
-        "C://ffmpeg//bin//ffmpeg.exe -i C://codificar//corto.avi C://codificar//cortopixar.mp4"
+        /*Linea de código en consola para extraer el audio a .mp3
+        ffmpeg -i video.mp4 -vn -acodec copy audio.mp3
         */       
         String programa = jTextField1.getText(); //La separo en variables para hacer el programa reutilizable
         String entrada=jTextField2.getText();    //hago un get.text para capturar el texto que introduzca en la casilla
         String salida=jTextField3.getText();
         String comando = programa + " -i " + entrada + " -vn -acodec copy " + salida + ".mp3";
         System.out.println(comando);
+        
+        
         try{
             ProcessBuilder proceso = new ProcessBuilder( "cmd.exe", "/c",comando); //processBuilder-->Esta clase se utiliza para crear procesos del sistema operativo
             Process miproceso = proceso.start();
@@ -234,7 +283,10 @@ public class FFmpeg_grafic_user_interface extends javax.swing.JFrame {
         
     } 
     
-    //Método de acción de butoon3. Escribe en textFiel4 la informacion del archivo de entrada
+    /*
+    Método de acción de butoon3. Escribe en textFiel4 la informacion del archivo de entrada.
+    Formato de video, de audio y duración
+    */
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
         
         String entrada = jTextField2.getText();
@@ -260,9 +312,33 @@ public class FFmpeg_grafic_user_interface extends javax.swing.JFrame {
         catch(Exception e){
             e.printStackTrace();
         }
+    }  
     
-
-
+    //Botón para la captura de un frame en .jpg
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {
+        
+        String programa = jTextField1.getText(); //La separo en variables para hacer el programa reutilizable
+        String entrada=jTextField2.getText();    //hago un get.text para capturar el texto que introduzca en la casilla
+        String salida=jTextField3.getText();
+        
+        String tiempo = jTextField5.getText();
+        String comando = programa + " -i " + entrada + " -ss " + tiempo + " -vframes 1 " + salida + ".jpg";
+        
+        System.out.println(comando);
+        
+        
+        
+        try{
+             /*processBuilder-->Esta clase se utiliza para crear procesos del sistema operativo
+            Ejecuta la orden de la variable comandoimg
+            */
+            ProcessBuilder proceso = new ProcessBuilder( "cmd.exe", "/c",comando); //processBuilder-->Esta clase se utiliza para crear procesos del sistema operativo
+            Process miproceso = proceso.start();
+            
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        
     }  
     
 }
