@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 
 public class FFmpeg_grafic_user_interface extends javax.swing.JFrame { 
     
-    //zono declarativa de variables
+    //zona declarativa de variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
