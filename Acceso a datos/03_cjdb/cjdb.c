@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <unistd.h>   //Biblioteca para poder usar la función access
 
 
 /*
@@ -17,8 +18,8 @@ int main(int argc,char *argv[]){
     
     
     if(strcmp(operacion,"select") == 0){  //la función strcmp compara cadenas de caracteres que junto con el if nos lleva a la operacion seleccionada 
-        char *documento = argv[4];        //Añadimos la variable docuemto pra terminar de completar la ruta
-        char ruta[100];                   //Creo la variable ruta sobre la que voy a concatenar la demás variables (bbdd, colección, documento) para obtener la ruta
+        char *documento = argv[4];        //Añadimos la variable docuemto pra terminar de completar la ruta con el 4 elemento de la linea de ocomandos
+        char ruta[100];                   //Creo la variable ruta sobre la que voy a concatenar la demás variables (bbdd, colección, documento) para obtener la ruta 
         strcpy(ruta,"DataBase/");            
         strcat(ruta,basededatos);         //La función strcpy  copia una cadena de caracteres 
         strcat(ruta,"/");                 //la función strycat concatena varibles
@@ -68,7 +69,7 @@ int main(int argc,char *argv[]){
             strcat(rutacoleccion,"/");
             strcat(rutacoleccion,coleccion);
             printf(rutacoleccion);
-            if(mkdir(rutacoleccion,0777) == 0){  //777 para darle permiso de lecutra, escritura y borrado
+            if(mkdir(rutacoleccion) == 0){  //777 para darle permiso de lecutra, escritura y borrado
                 printf("ok");
             }else{
                 printf(" No ha funcionado");
@@ -78,9 +79,35 @@ int main(int argc,char *argv[]){
            C:\Users\usuario\Documents\2ºDAM Proyectos Carlos Jimenez\Acceso a datos\03_cjdb>cjdb.exe create_collection miEmpresa facturas
          */
         
-         }else{                              //si no intriducimos nigún valor reconocido por el select nos devolverá esta linea de texto
+        
+         }else if (strcmp(operacion, "delete") == 0) {
+            char *documento = argv[4];          //Documento toma el valor del 4 elemnto en la linea de comandos, que es documento que queremos borrar
+            char ruta[100];                     //Variable para capturar la ruta 
+            strcpy(ruta, "DataBase/");
+            strcat(ruta, basededatos);
+            strcat(ruta, "/");
+            strcat(ruta, coleccion);
+            strcat(ruta, "/");
+            strcat(ruta, documento);
+            strcat(ruta, ".json");
+            
+            if (access(ruta, F_OK) != -1) {    //Uso la función access junto con la constante F_OK son para verificar si el archivo existe
+                                               //Si existe devuelve 0, si no existe devuelve -1
+                if (unlink(ruta) == 0) {       //Si devuelvo 0 la función unlink borra el archivo de la ruta especifica, si devuelve 0 ha sido borrado
+                printf("Documento eliminado: %s\n", documento);
+                } else {
+                printf("Error al eliminar el documento: %s\n", documento);  //sino dara error
+                }
+                
+            } else {
+                printf("El documento no existe: %s\n", documento); //Si la función access no lo encuentra devolverá este mensje
+            }
+            
+         
+         
+          }else{                              //si no intriducimos nigún valor reconocido por el select nos devolverá esta linea de texto
              printf("operacion no valida");
-         }
+          }
 
     
     
