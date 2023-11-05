@@ -69,7 +69,7 @@ int main(int argc,char *argv[]){
             strcat(rutacoleccion,"/");
             strcat(rutacoleccion,coleccion);
             printf(rutacoleccion);
-            if(mkdir(rutacoleccion) == 0){  //777 para darle permiso de lecutra, escritura y borrado
+            if(mkdir(rutacoleccion) == 0){  
                 printf("ok");
             }else{
                 printf(" No ha funcionado");
