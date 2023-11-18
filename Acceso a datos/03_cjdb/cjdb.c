@@ -12,7 +12,7 @@ El siguiente paso es crear una colección. Una colección se refiere a un conjun
 int main(int argc,char *argv[]){  
     
     FILE *archivo;
-    char *operacion = argv[1];            //variable sobre la que acturara el coomando if-else (selct, insert, create_coleccion,delete)
+    char *operacion = argv[1];            //variable sobre la que actuara el coomando if-else (selct, insert, create_coleccion,delete)
     char *basededatos = argv[2];          //variables de la ruta de mi repositorio para la base de datos documental
     char *coleccion = argv[3];            //con el índice del cada argumento 
     
