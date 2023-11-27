@@ -18,8 +18,11 @@ def saluda():
 tk.Button(raiz,text="Este botón tiene comando",command=saluda).pack(padx=2,pady=2)
 
 
-#Entrada de texto
+#Entrada de texto una linea
 tk.Entry(raiz,text="").pack(padx=50,pady=50)
+
+#Múltiplex lineas
+tk.Text(raiz).pack(padx=50,pady=50)
 
 raiz.mainloop()
 
