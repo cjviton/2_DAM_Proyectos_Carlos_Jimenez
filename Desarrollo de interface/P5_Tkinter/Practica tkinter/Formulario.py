@@ -1,14 +1,14 @@
 import tkinter as tk #Impotro librería tkinter
 
 
+ppal = tk.Tk()  #Creo un prefijo para identificar a la ventana, en este caso, ppal(Pricipal)
+
+
 def salir():   #Método de la función salir
     raiz.destroy()
 
 def enviar():   #Método del botón enviar
     print("El formularío se enviará a mi base de datos de reservas")
-
-
-ppal = tk.Tk()  #Creo un prefijo para identificar a la ventana, en este caso, ppal(Pricipal)
 
 
 for i in range(10):                   #Bucle for para dividir la ventana en 10 columnas para poder tener con el metodo .grid
@@ -48,7 +48,7 @@ ayuda.add_command(label="Soporte")
 
 #Atributos generales de construcción de la página
 
-ppal.title ("Restaurante Carlota. Reserva on line") #Titulo de la ventana
+ppal.title ("Restaurante Carlota. Reserva online") #Titulo de la ventana
 ppal.geometry("600x500+20+20")#Le doy tamaño, padding y margin
 ppal.resizable(False,False)#Anulo la posiblidad de hacer redimensionable la ventada 
 ppal.iconbitmap("logo.ico") #Favicon del restaurante. Formato .ico
