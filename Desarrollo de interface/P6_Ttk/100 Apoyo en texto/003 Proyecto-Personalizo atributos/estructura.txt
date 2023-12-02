@@ -1,0 +1,3 @@
+entrada
+etiqueta,mensaje personalizado
+boton,pulsa el boton

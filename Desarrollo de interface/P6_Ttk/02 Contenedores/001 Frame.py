@@ -3,7 +3,7 @@ from tkinter import ttk #Importo widget avanzados ttk
                      
 raiz = tk.Tk()
 
-#Frame es un ocntenedor que nos permite agrupar diferentes elementos
+#Frame es un contenedor que nos permite agrupar diferentes elementos
 
 marco = tk.Frame(raiz,padx=10,pady=10)
 
