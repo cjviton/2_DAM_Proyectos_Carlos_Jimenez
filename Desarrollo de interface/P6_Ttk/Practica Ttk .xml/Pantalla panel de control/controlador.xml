@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding=UTF-8"?>
+<interfaz>
+    <marco numero="uno">
+        <campo tipo="entrada"></campo>
+        <campo tipo="etiqueta" texto="Primera etiqueta marco 1"></campo>
+        <campo tipo="boton" texto="Primer boton marco 1"></campo>   
+    </marco>
+    
+    <marco numero="dos">
+        <campo tipo="entrada"></campo>
+        <campo tipo="etiqueta" texto="Primera etiqueta marco 2"></campo>
+        <campo tipo="boton" texto="Primer boton marco 2"></campo> 
+        <campo tipo="entrada"></campo>
+        <campo tipo="etiqueta" texto="Segunda etiqueta marco 2"></campo>
+        <campo tipo="boton" texto="Segundo boton marco 2"></campo>  
+    </marco>
+    
+</interfaz>
+
