@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding=UTF-8"?>
 <interfaz>
     <marco numero="uno">
-        <campo tipo="entrada"></campo>
-        <campo tipo="etiqueta" texto="Primera etiqueta marco 1"></campo>
-        <campo tipo="boton" texto="Primer boton marco 1"></campo>   
+        <campo tipo="etiqueta" texto="Escritorio"></campo> 
+        <campo tipo="etiqueta" texto="Descargas"></campo> 
+        <campo tipo="etiqueta" texto="Documentos"></campo> 
+        <campo tipo="etiqueta" texto="Imagenes"></campo> 
+        <campo tipo="etiqueta" texto="Disco local"></campo> 
+        <campo tipo="etiqueta" texto="Este equipo"></campo> 
+          
     </marco>
     
     <marco numero="dos">
-        <campo tipo="entrada" row="0" column="0"></campo>
-        <campo tipo="etiqueta" texto="Primera etiqueta marco 2" row="0" column="1"></campo>
-        <campo tipo="boton" texto="Primer boton marco 2" row="0" column="2"></campo> 
-        <campo tipo="entrada" row="1" column="0"></campo>
-        <campo tipo="etiqueta" texto="Segunda etiqueta marco 2" row="1" column="1"></campo>
-        <campo tipo="boton" texto="Segundo boton marco 2" row="1" column="2"></campo>  
+        <campo tipo="boton" texto="Descargas"  row="0" column="0"></campo>
+        <campo tipo="boton" texto="Doacumentos" row="0" column="1"></campo>
+        <campo tipo="boton" texto="Escritorio" row="0" column="2"></campo> 
+        <campo tipo="boton" texto="Imagenes" row="1" column="0"></campo>
+        <campo tipo="boton" texto="Musica" row="1" column="1"></campo>
+        <campo tipo="boton" texto="Objetos 3D" row="1" column="2"></campo>  
+        <campo tipo="boton" texto="Videos"  row="2" column="0"></campo>
+        <campo tipo="boton" texto="Panel de control" row="2" column="1"></campo>
+        <campo tipo="boton" texto="Configuracion" row="2" column="2"></campo> 
+        <campo tipo="boton" texto="Disco local (C:)" row="3" column="0"></campo>
+        <campo tipo="boton" texto="Disco local (D:)" row="3" column="1"></campo>
+        <campo tipo="boton" texto="Disco local (E:)" row="3" column="2"></campo>
     </marco>
     
 </interfaz>

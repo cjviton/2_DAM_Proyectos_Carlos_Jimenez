@@ -56,7 +56,7 @@ for i in range(3):
     marco2.columnconfigure(i, weight=1)
     
 # Bucle for para dividir el marco2 en 3 filas
-for i in range(3):
+for i in range(4):
     marco2.rowconfigure(i, weight=1)
 
     
@@ -91,11 +91,11 @@ for marco in xml.find_all("marco"):  #Con el bucle for le digo que busque en el 
             
             
             if tipo == "entrada":
-                tk.Entry(marco1).pack(padx=10,pady=10)                
+                tk.Entry(marco1).pack(padx=35,pady=35)                
             elif tipo == "etiqueta":
-                tk.Label(marco1,text=texto).pack(padx=10,pady=10)
+                tk.Label(marco1,text=texto).pack(padx=35,pady=35)
             elif tipo == "boton":
-                tk.Button(marco1,text=texto).pack(padx=10,pady=10)
+                tk.Button(marco1,text=texto).pack(padx=35,pady=35)
 
     elif num == "dos":
 
