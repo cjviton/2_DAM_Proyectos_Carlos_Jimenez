@@ -7,12 +7,12 @@
     </marco>
     
     <marco numero="dos">
-        <campo tipo="entrada"></campo>
-        <campo tipo="etiqueta" texto="Primera etiqueta marco 2"></campo>
-        <campo tipo="boton" texto="Primer boton marco 2"></campo> 
-        <campo tipo="entrada"></campo>
-        <campo tipo="etiqueta" texto="Segunda etiqueta marco 2"></campo>
-        <campo tipo="boton" texto="Segundo boton marco 2"></campo>  
+        <campo tipo="entrada" row="0" column="0"></campo>
+        <campo tipo="etiqueta" texto="Primera etiqueta marco 2" row="0" column="1"></campo>
+        <campo tipo="boton" texto="Primer boton marco 2" row="0" column="2"></campo> 
+        <campo tipo="entrada" row="1" column="0"></campo>
+        <campo tipo="etiqueta" texto="Segunda etiqueta marco 2" row="1" column="1"></campo>
+        <campo tipo="boton" texto="Segundo boton marco 2" row="1" column="2"></campo>  
     </marco>
     
 </interfaz>
