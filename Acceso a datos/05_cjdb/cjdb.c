@@ -1,6 +1,5 @@
 /*
 El programa funciona con la siguiente sintaxis en linea de argumentos
-
 [1 operacion][2 base de datos][3 coleccion][4 documento][5 contenido texto]
 */
 
