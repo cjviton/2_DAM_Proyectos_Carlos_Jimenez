@@ -42,7 +42,8 @@ int main(int argc,char *argv[]){
         }
         
         /* La nstrucción para leer datos sería esta: 
-           C:\Users\usuario\Documents\2ºDAM Proyectos Carlos Jimenez\Acceso a datos\03_cjdb>cjdb.exe insert (base de datos) miEmpresa (colección) clientes (documeto) cliente1 "(el texto){'nombre':'Pepe'}"
+          C:\Users\usuario\Documents\2ºDAM Proyectos Carlos Jimenez\Acceso a datos\05_cjdb>cjdb.exe select miEmpresa clientes cliente2
+          [opercion][base de datos][coleccion][documento]
         */
         
         }else if(strcmp(operacion,"insert") == 0){
@@ -96,7 +97,7 @@ int main(int argc,char *argv[]){
             strcat(ruta, "/");
             strcat(ruta, documento);
             strcat(ruta, ".json");
-            
+            printf(ruta); 
             if (access(ruta, F_OK) != -1) {    //Uso la función access junto con la constante F_OK son para verificar si el archivo existe
                                                //Si existe devuelve 0, si no existe devuelve -1
                 if (unlink(ruta) == 0) {       //Si devuelvo 0 la función unlink borra el archivo de la ruta especifica, si devuelve 0 ha sido borrado
@@ -109,7 +110,15 @@ int main(int argc,char *argv[]){
                 printf("El documento no existe: %s\n", documento); //Si la función access no lo encuentra devolverá este mensje
             }
             
-         
+            
+            /* La nstrucción para leer datos sería esta: 
+            C:\Users\usuario\Documents\2ºDAM Proyectos Carlos Jimenez\Acceso a datos\05_cjdb>cjdb.exe delete miEmpresa clientes cliente2
+            [opercion][base de datos][coleccion][documento]
+            */
+        
+        
+        
+        
          
           }else{                              //si no intriducimos nigún valor reconocido por el select nos devolverá esta linea de texto
              printf("operacion no valida");

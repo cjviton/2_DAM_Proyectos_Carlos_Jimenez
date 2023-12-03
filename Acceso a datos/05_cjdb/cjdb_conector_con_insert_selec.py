@@ -23,7 +23,9 @@ class Cjdb:
         else:
             return(print("ko"))
 
-#Método insert
+
+#Método select
+#Esta es la linea de comando funcionando en consola
 #C:\Users\usuario\Documents\2ºDAM Proyectos Carlos Jimenez\Acceso a datos\05_cjdb>cjdb.exe select miEmpresa clientes cliente2
     #[opercion][base de datos][coleccion][documento]
 
