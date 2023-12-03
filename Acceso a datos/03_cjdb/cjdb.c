@@ -1,3 +1,9 @@
+/*
+El programa funciona con la siguiente sintaxis en linea de argumentos
+[1 operacion] [2 base de datos] [3 coleccion] [4 operacion][5 documento][6 contenido texto]
+*/
+
+
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>   //Biblioteca para poder usar la función access
@@ -12,14 +18,14 @@ El siguiente paso es crear una colección. Una colección se refiere a un conjun
 int main(int argc,char *argv[]){  
     
     FILE *archivo;
-    char *operacion = argv[1];            //variable sobre la que actuara el coomando if-else (selct, insert, create_coleccion,delete)
+    char *operacion = argv[1];            //variable sobre la que actuara el coomando if-else (selct, insert,                                                         create_coleccion,delete)
     char *basededatos = argv[2];          //variables de la ruta de mi repositorio para la base de datos documental
     char *coleccion = argv[3];            //con el índice del cada argumento 
     
     
-    if(strcmp(operacion,"select") == 0){  //la función strcmp compara cadenas de caracteres que junto con el if nos lleva a la operacion seleccionada 
-        char *documento = argv[4];        //Añadimos la variable docuemto pra terminar de completar la ruta con el 4 elemento de la linea de ocomandos
-        char ruta[100];                   //Creo la variable ruta sobre la que voy a concatenar la demás variables (bbdd, colección, documento) para obtener la ruta 
+    if(strcmp(operacion,"select") == 0){  //la función strcmp compara cadenas de caracteres que junto con el if nos lleva a                                           la operacion seleccionada 
+        char *documento = argv[4];        //Añadimos la variable docuemto pra terminar de completar la ruta con el 4 elemento                                       de la linea de ocomandos
+        char ruta[100];                   //Creo la variable ruta sobre la que voy a concatenar la demás variables (bbdd,                                           colección, documento) para obtener la ruta 
         strcpy(ruta,"DataBase/");            
         strcat(ruta,basededatos);         //La función strcpy  copia una cadena de caracteres 
         strcat(ruta,"/");                 //la función strycat concatena varibles
