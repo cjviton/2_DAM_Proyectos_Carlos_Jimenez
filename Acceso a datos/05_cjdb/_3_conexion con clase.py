@@ -8,7 +8,7 @@ class Cjdb:
     def __init__(self,basededatos):
         self.basededatos = basededatos
 
-#Creo un método donde voy a meter el código 
+#Creo un método donde voy a meter el código para insertar
 
     def insert(self,coleccion,documento,contenido):                #Convierto en propiedades del método las variables
         self.operacion = "insert"
