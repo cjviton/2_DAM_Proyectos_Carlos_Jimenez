@@ -134,6 +134,8 @@ la función fputs escribe cadena de char en un archivo
 La nstrucción para inasertar datos sería esta: 
 C:\Users\usuario\Documents\2ºDAM Proyectos Carlos Jimenez\Acceso a datos\03_cjdb>cjdb.exe insert (base de datos) miEmpresa (colección) clientes (documeto) cliente1 "(el texto){'nombre':'Pepe'}"
 
+C:\Users\usuario\Documents\2ºDAM Proyectos Carlos Jimenez\Acceso a datos\03_cjdb>cjdb.exe insert miEmpresa clientes cliente1
+
 La instrucción para hacer un select de datos sería esta: 
 C:\Users\usuario\Documents\2ºDAM Proyectos Carlos Jimenez\Acceso a datos\02_cjdb>cjdb.exe "select" "Carlos" "clientes"
 
