@@ -12,16 +12,22 @@ class Persona:
         self.posx = random.randint(0,1024) #Cada vez que ejecute el programa el objeto 
         self.posy = random.randint(0,1024) #se posicinará en un lugar diferente
         self.radio = 30
+        self.direccion = 0
+        self.color = "blue"
+        self.entidad = "" #Propiedad para hacer que el objeto se mueva
         
 #Método para crear óvalos rojos en el centro del lienzo      
     def dibuja(self):
-        lienzo.create_oval(
+        self.entidad = lienzo.create_oval(
             self.posx-self.radio/2,
             self.posy-self.radio/2,
             self.posx+self.radio/2,
             self.posy+self.radio/2,
-            fill="red")
-        
+            fill=self.color)
+
+#Método mueve
+    def mueve(self):
+        pass
 
 raiz = tk.Tk()
 
