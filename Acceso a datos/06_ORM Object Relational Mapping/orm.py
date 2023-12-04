@@ -6,7 +6,7 @@ import json            #Importo la libreria json para hacer el guardado de datos
 
 #Creo un array de objetos del tipo persona
 personas = []
-numeropersonas = 20
+numeropersonas = 5
 
 
 #Creo una clase persona con un método constructor y dos parametros
@@ -65,11 +65,29 @@ lienzo.pack()
 boton = tk.Button(raiz,text = "Guardar",command=guardarPersonas)
 boton.pack()
 
+#Rescatar posiciones de las personas que tenemos guardadas en el archivo json
+carga = open ("jugadores.json",'r')
+cargado = carga.read()
+cargadolista = json.loads(cargado)
+for elemento in cargadolista:
+    persona = Persona()
+    persona.__dict__.update(elemento)
+    personas.append(persona)
 
-#Utilizo un bucle for para interar numeropersonas(20 veces) en cada iteracion crea una instancia
+    
+
+
+
+#Utilizo un bucle for para interar numeropersonas(x veces) en cada iteracion crea una instancia
 #de la clase persona y la agrega a la lista personas mediante el mátodo .append
-for i in range (0,numeropersonas):
-    personas.append(Persona())
+#Esto lo hará en el caso de que no existan
+
+if len(personas) == 0:
+    numeropersonas = len(perosnas)
+    for i in range (0,numeropersonas):
+        personas.append(Persona())
+
+
 
 
 #Ell bulce for itera a través de cada instancia de la clase Persona que hay en la lista personas
