@@ -66,14 +66,16 @@ boton = tk.Button(raiz,text = "Guardar",command=guardarPersonas)
 boton.pack()
 
 #Rescatar posiciones de las personas que tenemos guardadas en el archivo json
-carga = open ("jugadores.json",'r')
-cargado = carga.read()
-cargadolista = json.loads(cargado)
-for elemento in cargadolista:
-    persona = Persona()
-    persona.__dict__.update(elemento)
-    personas.append(persona)
-
+try:
+    carga = open ("jugadores.json",'r')
+    cargado = carga.read()
+    cargadolista = json.loads(cargado)
+    for elemento in cargadolista:
+        persona = Persona()
+        persona.__dict__.update(elemento)
+        personas.append(persona)
+except:
+    print("error")
     
 
 
@@ -83,7 +85,7 @@ for elemento in cargadolista:
 #Esto lo hará en el caso de que no existan
 
 if len(personas) == 0:
-    numeropersonas = len(perosnas)
+    numeropersonas =2
     for i in range (0,numeropersonas):
         personas.append(Persona())
 
