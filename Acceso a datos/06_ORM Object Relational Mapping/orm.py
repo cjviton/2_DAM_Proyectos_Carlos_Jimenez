@@ -1,6 +1,8 @@
 import tkinter as tk
 import random          #Para usar los métodos de la calse random
-import math  #Importo la librería matemática
+import math            #Importo la librería matemática
+import json            #Importo la libreria json para hacer el guardado de datos
+
 
 #Creo un array de objetos del tipo persona
 personas = []
@@ -39,16 +41,29 @@ class Persona:
 #Método colisiona para que os objetos permanezcan dentro del lienzo
     def colisiona(self):
         if self.posx < 0 or self.posx > 1024 or self.posy < 0 or self.posy > 700:
-            self.direccion += 180
+            self.direccion += math.pi #con .pi rebotará en la misma dirección
 
+#Metodo del botón guardarPersonas y guardo las variables (propiedades) de personas recorriendo cada objeto
+#persona de la lista personas. Las voy guardar en una archivo .json en mi carpeta raiz
 
-
+def guardarPersonas():
+    print("OK")
+    cadena = json.dumps([vars(persona)for persona in personas]) 
+    print(cadena)                   
+    archivo = open("jugadores.json","w")
+    archivo.write(cadena)
+    
 #Creo ventana
 raiz = tk.Tk()
 
 #Creo un lienzo que es donde se va a desarrollar el programa
-lienzo = tk.Canvas(width=1024,height=700)
+lienzo = tk.Canvas(raiz,width=1024,height=700)
 lienzo.pack()
+
+
+#Botón para guardar la posición de los objetos
+boton = tk.Button(raiz,text = "Guardar",command=guardarPersonas)
+boton.pack()
 
 
 #Utilizo un bucle for para interar numeropersonas(20 veces) en cada iteracion crea una instancia
