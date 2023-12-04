@@ -15,13 +15,13 @@ class Persona:
         self.posx = random.randint(0,1024) #Cada vez que ejecute el programa el objeto 
         self.posy = random.randint(0,1024) #se posicinará en un lugar diferente
         self.radio = 30
-        self.lados = 8                                                                       # Número de lados para el polígono
+        self.lados = 5                                                                       # Número de lados para el polígono
         self.angulo_inicial = -math.pi / 2                                                   # Ángulo inicial para orientar el polígono
         self.direccion = random.randint(0,360)
-        self.color = "blue"                                                                  #Cambio de color
+        self.color = "green"                                                                  #Cambio de color
         self.entidad = "" #Propiedad para hacer que el objeto se mueva
         
-#Método para crear óvalos rojos en el centro del lienzo      
+#Método para crear figuras en el lienzo      
     def dibuja(self, tipo="oval"):
         if tipo == "oval":
             self.entidad = lienzo.create_oval(
@@ -83,7 +83,7 @@ def guardarPersonas():
 raiz = tk.Tk()
 
 #Creo un lienzo que es donde se va a desarrollar el programa
-lienzo = tk.Canvas(raiz,width=1024,height=700)                      #Hago el alto del linezo más pequeño para que entre en la pantalla de mi ordenador
+lienzo = tk.Canvas(raiz,width=1024,height=600)                      #Hago el alto del linezo más pequeño para que entre en la pantalla de mi ordenador
 lienzo.pack()
 
 
@@ -111,7 +111,7 @@ except:
 #Esto lo hará en el caso de que no existan
 
 if len(personas) == 0:
-    numeropersonas = 10                                                                    #Cambio el número de personas
+    numeropersonas = 3                                                                    #Cambio el número de personas
     for i in range (0,numeropersonas):
         personas.append(Persona())
 
@@ -121,7 +121,7 @@ if len(personas) == 0:
 #Ell bulce for itera a través de cada instancia de la clase Persona que hay en la lista personas
 #y en cada una de ellas llama al método dibuja() para pintarlas de color y  darles forma
 for persona in personas:
-    persona.dibuja(tipo="oval")                                                             #Aquí puedo variar el tipo de figuras en el lienzo
+    persona.dibuja(tipo="polygon")                                                             #Aquí puedo variar el tipo de figuras en el lienzo
 
 
 #Bucle para crear movimiento con un bucle for en cada una de las personas de la colección
