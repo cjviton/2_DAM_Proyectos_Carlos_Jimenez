@@ -1,5 +1,6 @@
 import tkinter as tk
-import random
+import random          #Para usar los métodos de la calse random
+import math  #Importo la librería matemática
 
 #Creo un array de objetos del tipo persona
 personas = []
@@ -12,7 +13,7 @@ class Persona:
         self.posx = random.randint(0,1024) #Cada vez que ejecute el programa el objeto 
         self.posy = random.randint(0,1024) #se posicinará en un lugar diferente
         self.radio = 30
-        self.direccion = 0
+        self.direccion = random.randint(0,360)
         self.color = "blue"
         self.entidad = "" #Propiedad para hacer que el objeto se mueva
         
@@ -25,14 +26,28 @@ class Persona:
             self.posy+self.radio/2,
             fill=self.color)
 
-#Método mueve
+#Método mueve para que se muevan los objetos 
     def mueve(self):
-        pass
+        self.colisiona()#Lamo el método colisiona 
+        lienzo.move(
+            self.entidad,
+            math.cos(self.direccion),
+            math.sin(self.direccion))
+        self.posx += math.cos(self.direccion)  #Actualizo las posiciones para que funcione el método colisiona
+        self.posy += math.sin(self.direccion)
 
+#Método colisiona para que os objetos permanezcan dentro del lienzo
+    def colisiona(self):
+        if self.posx < 0 or self.posx > 1024 or self.posy < 0 or self.posy > 700:
+            self.direccion += 180
+
+
+
+#Creo ventana
 raiz = tk.Tk()
 
 #Creo un lienzo que es donde se va a desarrollar el programa
-lienzo = tk.Canvas(width=1024,height=1024)
+lienzo = tk.Canvas(width=1024,height=700)
 lienzo.pack()
 
 
@@ -43,11 +58,18 @@ for i in range (0,numeropersonas):
 
 
 #Ell bulce for itera a través de cada instancia de la clase Persona que hay en la lista personas
-#y en cada una de ellas llama al método dibuja()    
+#y en cada una de ellas llama al método dibuja() para pintarlas de color 
 for persona in personas:
     persona.dibuja()
 
 
+#Bucle para crear movimiento con un bucle for en cada una de las personas de la colección
+def bucle():
+    for persona in personas: 
+        persona.mueve()  #Llamo al método mueve
+    raiz.after(10,bucle)  #En 10 milisegundos vuelvo a ejecutar el bucle y se mueven los objetos
+
+bucle()   #Llamo al método bucle
 
 '''
 #Creo un objeto de la clase persona
