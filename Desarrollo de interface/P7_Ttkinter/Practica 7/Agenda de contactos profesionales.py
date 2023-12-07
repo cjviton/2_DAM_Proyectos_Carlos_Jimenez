@@ -99,10 +99,10 @@ def insertTelMail():
 #Metodos para llamar y escribir email
 
 def llamar():
-    print("Lama al teléfono" +telefono_seleccionado)
+    print("Lama al teléfono:  " +telefono_seleccionado)
 
 def escribir():
-    print("Ecribe un email a la direccion" + email_seleccionado)
+    print("Ecribe un email a la direccion:  " + email_seleccionado)
 
     
 
@@ -304,6 +304,3 @@ estilo.configure('TButton', background='#c9e9f2', font=('Britannic Bold', 16), r
 
 raiz.mainloop()
 
-
-
-                   
