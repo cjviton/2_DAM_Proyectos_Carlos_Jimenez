@@ -215,27 +215,27 @@ label14.configure(style='Label14.TLabel')
 
 
 #Entry
-entry10 = ttk.Entry(marco1)
+entry10 = ttk.Entry(marco1,font=('Helvetica', 14))
 entry10.grid(row=1,column=4,padx=5,pady=5)
-estilo.configure('entry10.TLabel',relief='raised')
+estilo.configure('entry10.TLabel')
 entry10.configure(style='entry10.TLabel')
 
-entry11 = ttk.Entry(marco1)
+entry11 = ttk.Entry(marco1,font=('Helvetica', 14))
 entry11.grid(row=2,column=4,padx=10,pady=10)
 estilo.configure('entry11.TLabel',relief='raised')
 entry11.configure(style='entry11.TLabel')
 
-entry12 = ttk.Entry(marco1)
+entry12 = ttk.Entry(marco1,font=('Helvetica', 14))
 entry12.grid(row=3,column=4,padx=10,pady=10)
 estilo.configure('entry12.TLabel',relief='raised')
 entry12.configure(style='entry12.TLabel')
 
-entry13 = ttk.Entry(marco1)
+entry13 = ttk.Entry(marco1,font=('Helvetica', 14))
 entry13.grid(row=4,column=4,padx=10,pady=10)
 estilo.configure('entry13.TLabel',relief='raised')
 entry13.configure(style='entry13.TLabel')
 
-entry14 = ttk.Entry(marco1)
+entry14 = ttk.Entry(marco1,font=('Helvetica', 14))
 entry14.grid(row=5,column=4,padx=10,pady=10)
 estilo.configure('entry14.TLabel',relief='raised')
 entry14.configure(style='entry14.TLabel')
