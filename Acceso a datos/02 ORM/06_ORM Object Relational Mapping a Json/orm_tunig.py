@@ -60,7 +60,7 @@ class Persona:
     def colisiona(self):                                                        #Cambio el método colision para que el objeto haga un rebote más natural
         if self.posx < 0 or self.posx > 1024:
             self.direccion = math.pi - self.direccion    # Invertir dirección en el eje x
-        if self.posy < 0 or self.posy > 700:
+        if self.posy < 0 or self.posy > 600:
             self.direccion = -self.direccion # Invertir dirección en el eje y
         
         '''
@@ -107,7 +107,7 @@ except:
 
 
 #Utilizo un bucle for para interar numeropersonas(x veces) en cada iteracion crea una instancia
-#de la clase persona y la agrega a la lista personas mediante el mátodo .append
+#de la clase persona y la agrega a la lista personas mediante el método .append
 #Esto lo hará en el caso de que no existan
 
 if len(personas) == 0:
