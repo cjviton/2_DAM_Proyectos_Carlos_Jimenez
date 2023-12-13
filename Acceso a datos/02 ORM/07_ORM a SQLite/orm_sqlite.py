@@ -2,11 +2,15 @@ import tkinter as tk
 import random          #Para usar los métodos de la calse random
 import math            #Importo la librería matemática
 import json            #Importo la libreria json para hacer el guardado de datos
+import sqlite3
 
-
+#Declaración de variables globales
 #Creo un array de objetos del tipo persona
 personas = []
 numeropersonas = 1
+#conecto con la base de datos mediante la variable global conexion
+conexion = sqlite3.connect("jugadores.sqlite3")
+cursor = conexion.cursor()  #El cursor es necesario para hacer peticiones a la base de datos
 
 
 #Creo una clase persona con un método constructor y dos parametros
@@ -46,12 +50,30 @@ class Persona:
 #Metodo del botón guardarPersonas y guardo las variables (propiedades) de personas recorriendo cada objeto
 #persona de la lista personas. Las voy guardar en una archivo .json en mi carpeta raiz
 
-def guardarPersonas():
+def guardarPersonas():#En archivo json
     print("OK")
     cadena = json.dumps([vars(persona)for persona in personas]) 
     print(cadena)                   
     archivo = open("jugadores.json","w")
     archivo.write(cadena)
+
+    #Guardo los jugadores en SQL con la sentencia insert
+    for perosna in personas:
+        cursor.execute('''
+            INSERT INTO jugadores
+            VALUES (
+                NULL,
+                '''+str(persona.poxt)+''',
+                '''+str(persona.poxy)+''',
+                '''+str(persona.radio)+''',
+                '''+str(persona.direccion)+''',
+                "'''+str(persona.color)+'''",
+                "'''+str(persona.entidad)+'''"
+            )
+            ''')
+
+
+    
     
 #Creo ventana
 raiz = tk.Tk()
