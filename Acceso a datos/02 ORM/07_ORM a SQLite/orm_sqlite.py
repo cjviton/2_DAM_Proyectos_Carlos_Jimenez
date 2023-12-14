@@ -8,9 +8,7 @@ import sqlite3
 #Creo un array de objetos del tipo persona
 personas = []
 numeropersonas = 1
-#conecto con la base de datos mediante la variable global conexion
-conexion = sqlite3.connect("jugadores.sqlite3")
-cursor = conexion.cursor()  #El cursor es necesario para hacer peticiones a la base de datos
+
 
 
 #Creo una clase persona con un método constructor y dos parametros
@@ -57,23 +55,30 @@ def guardarPersonas():#En archivo json
     archivo = open("jugadores.json","w")
     archivo.write(cadena)
 
+
+#Aquí tengo toda la secuencia para hacer una  conexión con la base de datos---------------------------------------
     #Guardo los jugadores en SQL con la sentencia insert
+    
+    conexion = sqlite3.connect("jugadores.sqlite3") #conecto con la base de datos mediante la variable conexion
+    cursor = conexion.cursor()#El cursor es necesario para hacer peticiones a la base de datos
     for perosna in personas:
         cursor.execute('''
             INSERT INTO jugadores
             VALUES (
                 NULL,
-                '''+str(persona.poxt)+''',
-                '''+str(persona.poxy)+''',
+                '''+str(persona.posx)+''',
+                '''+str(persona.posy)+''',
                 '''+str(persona.radio)+''',
                 '''+str(persona.direccion)+''',
                 "'''+str(persona.color)+'''",
                 "'''+str(persona.entidad)+'''"
             )
             ''')
+    print(cursor)
+    conexion.commit()#Hago un commit a la base de datos
+    conexion.close()  #Cierro la conexión
 
 
-    
     
 #Creo ventana
 raiz = tk.Tk()
