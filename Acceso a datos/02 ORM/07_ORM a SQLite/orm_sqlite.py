@@ -48,17 +48,11 @@ class Persona:
 #Metodo del botón guardarPersonas y guardo las variables (propiedades) de personas recorriendo cada objeto
 #persona de la lista personas. Las voy guardar en una archivo .json en mi carpeta raiz
 
-def guardarPersonas():#En archivo json
-    print("OK")
-    cadena = json.dumps([vars(persona)for persona in personas]) 
-    print(cadena)                   
-    archivo = open("jugadores.json","w")
-    archivo.write(cadena)
 
 
 #Aquí tengo toda la secuencia para hacer una  conexión con la base de datos---------------------------------------
-    #Guardo los jugadores en SQL con la sentencia insert
-    
+#Guardo los jugadores en SQL con la sentencia insert
+def guardarPersonas():
     conexion = sqlite3.connect("jugadores.sqlite3") #conecto con la base de datos mediante la variable conexion
     cursor = conexion.cursor()#El cursor es necesario para hacer peticiones a la base de datos
     for perosna in personas:
@@ -104,6 +98,22 @@ try:
 except:
     print("")
     
+
+#Cargar objetos de personas desde SQL
+conexion = sqlite3.connect("jugadores.sqlite3") #conecto con la base de datos mediante la variable conexion
+cursor = conexion.cursor()#El cursor es necesario para hacer peticiones a la base de datos
+
+
+cursor.execute("SELECT * FROM jugadores")
+while True:
+    fila = cursor.fetchone()
+    if fila is None:
+        break
+    print(fila)
+
+conexion.close()  #Cierro la conexión
+
+  
 
 
 
