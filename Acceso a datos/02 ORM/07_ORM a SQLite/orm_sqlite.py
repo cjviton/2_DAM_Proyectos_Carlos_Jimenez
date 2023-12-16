@@ -55,6 +55,12 @@ class Persona:
 def guardarPersonas():
     conexion = sqlite3.connect("jugadores.sqlite3") #conecto con la base de datos mediante la variable conexion
     cursor = conexion.cursor()#El cursor es necesario para hacer peticiones a la base de datos
+                       #Borro todos los datos que pudiera haber en la base de datos antes fe guardar los nuevos
+    cursor.execute('''          
+            DELETE FROM jugadores
+            ''')
+    conexion.commit()
+    
     for persona in personas:
         cursor.execute('''
             INSERT INTO jugadores
@@ -95,8 +101,13 @@ try:
     cursor.execute('''
             SELECT *
             FROM jugadores
-            WHERE posx < 100
             ''')
+
+#Sentencia SQL de consulta
+# WHERE posx < 540
+#       AND
+#       posy < 540
+    
     while True:
         fila = cursor.fetchone()
         if fila is None:
