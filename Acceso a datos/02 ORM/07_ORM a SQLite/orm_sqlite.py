@@ -59,22 +59,37 @@ class Persona:
 
     #Método mueve para que se muevan los objetos 
     def mueve(self):
-        self.colisiona()#Llamo el método colisiona 
+        #Con el movimiento va perdiendo energía y descanso
+        if self.energia > 0:
+            self.energia -= 0.1
+        if self.descanso > 0:
+            self.descanso -= 0.1
+            
+        self.colisiona()#Llamo el método colisiona
+
+        #Creo dirección
         lienzo.move(
             self.entidad,
             math.cos(self.direccion),
             math.sin(self.direccion))
+        anchuradescanso = (self.descanso/100)*self.radio
 
         #Creo movimiento en los rectángulos a la vez que el objeto
-        lienzo.move(
-            self.entidadenergia,
-            math.cos(self.direccion),
-            math.sin(self.direccion))
-        
-        lienzo.move(
+        lienzo.coords(
             self.entidaddescanso,
-            math.cos(self.direccion),
-            math.sin(self.direccion))
+            self.posx - self.radio/2,
+            self.posy - self.radio/2 - 16,
+            self.posx - self.radio/2 + anchuradescanso,
+            self.posy - self.radio/2 - 14
+        )
+        anchuraenergia = (self.energia/100)*self.radio
+        lienzo.coords(
+            self.entidadenergia,
+            self.posx - self.radio/2,
+            self.posy - self.radio/2 - 10,
+            self.posx - self.radio/2 + anchuraenergia,
+            self.posy - self.radio/2 - 8
+        )
         
         
         self.posx += math.cos(self.direccion)  #Actualizo las posiciones para que funcione el método colisiona
@@ -112,7 +127,11 @@ def guardarPersonas():
                 '''+str(persona.radio)+''',
                 '''+str(persona.direccion)+''',
                 "'''+str(persona.color)+'''",
-                "'''+str(persona.entidad)+'''"
+                "'''+str(persona.entidad)+'''",
+                '''+str(persona.energia)+''',
+                '''+str(persona.descanso)+''',
+                "'''+str(persona.entidadenergia)+'''",
+                "'''+str(persona.entidaddescanso)+'''"
             )
             ''')
     print(cursor)
@@ -162,6 +181,10 @@ try:
         persona.direccion = fila[4]
         persona.color = fila[5]
         persona.entidad = fila[6]
+        persona.energia = fila[7]
+        persona.descanso = fila[8]
+        persona.entidadenergia = fila[9]
+        persona.entidaddescanso = fila[10]
         personas.append(persona)
         
 
