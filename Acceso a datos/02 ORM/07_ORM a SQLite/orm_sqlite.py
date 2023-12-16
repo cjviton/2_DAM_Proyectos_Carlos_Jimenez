@@ -7,21 +7,28 @@ import sqlite3
 #Declaración de variables globales
 #Creo un array de objetos del tipo persona
 personas = []
-numeropersonas = 0
+numeropersonas = 50
 
 
 
 #Creo una clase persona con un método constructor y dos parametros
 class Persona:
     def __init__(self):
-        self.posx = random.randint(0,1024) #Cada vez que ejecute el programa el objeto 
-        self.posy = random.randint(0,1024) #se posicinará en un lugar diferente
+        self.posx = random.randint(0,700) #Cada vez que ejecute el programa el objeto 
+        self.posy = random.randint(0,700) #se posicinará en un lugar diferente
         self.radio = 30
         self.direccion = random.randint(0,360)
         self.color = "green"                                                                 #Cambio de color
         self.entidad = "" #Propiedad para hacer que el objeto se mueva
         
-#Método para crear óvalos rojos en el centro del lienzo      
+        #En la segunda parte del ejer creo estos atributos en la clese persona 
+        self.energia = 100
+        self.descanso = 100
+        self.entidadenergia = ""
+        self.entidaddescanso = ""
+
+        
+    #Método para crear óvalos rojos en el centro del lienzo      
     def dibuja(self):
         self.entidad = lienzo.create_oval(
             self.posx-self.radio/2,
@@ -30,26 +37,60 @@ class Persona:
             self.posy+self.radio/2,
             fill=self.color)
 
-#Método mueve para que se muevan los objetos 
+        #Creo dos rectángulos en cada instancia, uno de energía y otro de descanso
+        self.entidadenergia = lienzo.create_rectangle(
+            self.posx-self.radio/2,
+            self.posy-self.radio/2-10,
+            self.posx+self.radio/2,
+            self.posy-self.radio/2-8,
+            fill="green"
+            )
+        self.entidaddescanso = lienzo.create_rectangle(
+            self.posx-self.radio/2,
+            self.posy-self.radio/2-16,
+            self.posx+self.radio/2,
+            self.posy-self.radio/2-14,
+            fill="blue"
+            )
+
+        
+
+
+
+    #Método mueve para que se muevan los objetos 
     def mueve(self):
-        self.colisiona()#Lamo el método colisiona 
+        self.colisiona()#Llamo el método colisiona 
         lienzo.move(
             self.entidad,
             math.cos(self.direccion),
             math.sin(self.direccion))
+
+        #Creo movimiento en los rectángulos a la vez que el objeto
+        lienzo.move(
+            self.entidadenergia,
+            math.cos(self.direccion),
+            math.sin(self.direccion))
+        
+        lienzo.move(
+            self.entidaddescanso,
+            math.cos(self.direccion),
+            math.sin(self.direccion))
+        
+        
         self.posx += math.cos(self.direccion)  #Actualizo las posiciones para que funcione el método colisiona
         self.posy += math.sin(self.direccion)
 
-#Método colisiona para que os objetos permanezcan dentro del lienzo
+    #Método colisiona para que os objetos permanezcan dentro del lienzo
     def colisiona(self):
         if self.posx < 0 or self.posx > 1024 or self.posy < 0 or self.posy > 700:
             self.direccion += math.pi #con .pi rebotará en la misma dirección
 
+
+
+
+
 #Metodo del botón guardarPersonas y guardo las variables (propiedades) de personas recorriendo cada objeto
 #persona de la lista personas. Las voy guardar en una base de datos sqlite
-
-
-
 #Aquí tengo toda la secuencia para hacer una  conexión con la base de datos---------------------------------------
 #Guardo los jugadores en SQL con la sentencia insert
 def guardarPersonas():
@@ -84,7 +125,7 @@ def guardarPersonas():
 raiz = tk.Tk()
 
 #Creo un lienzo que es donde se va a desarrollar el programa
-lienzo = tk.Canvas(raiz,width=1024,height=700)                   #Hago el alto del linezo más pequeño para que entre en la pantalla de mi ordenador
+lienzo = tk.Canvas(raiz,width=1024,height=700)
 lienzo.pack()
 
 
@@ -122,6 +163,7 @@ try:
         persona.color = fila[5]
         persona.entidad = fila[6]
         personas.append(persona)
+        
 
     conexion.close()  #Cierro la conexión
 
@@ -135,7 +177,7 @@ except:
 #Esto lo hará en el caso de que no existan
 
 if len(personas) == 0:
-    numeropersonas =400                    #Cambio el nñumero de personas
+    numeropersonas =50                   #Cambio el nñumero de personas
     for i in range (0,numeropersonas):
         personas.append(Persona())
 
