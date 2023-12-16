@@ -92,7 +92,11 @@ try:
     conexion = sqlite3.connect("jugadores.sqlite3") #conecto con la base de datos mediante la variable conexion
     cursor = conexion.cursor()#El cursor es necesario para hacer peticiones a la base de datos
 
-    cursor.execute("SELECT* FROM jugadores")
+    cursor.execute('''
+            SELECT *
+            FROM jugadores
+            WHERE posx < 100
+            ''')
     while True:
         fila = cursor.fetchone()
         if fila is None:
@@ -111,7 +115,7 @@ try:
     conexion.close()  #Cierro la conexión
 
 except:
-    print("Error")
+    print("Error al leer base de datos")
 
 
 
@@ -120,7 +124,7 @@ except:
 #Esto lo hará en el caso de que no existan
 
 if len(personas) == 0:
-    numeropersonas =20                    #Cambio el nñumero de personas
+    numeropersonas =400                    #Cambio el nñumero de personas
     for i in range (0,numeropersonas):
         personas.append(Persona())
 
