@@ -7,7 +7,7 @@ import sqlite3
 #Declaración de variables globales
 #Creo un array de objetos del tipo persona
 personas = []
-numeropersonas = 1
+numeropersonas = 0
 
 
 
@@ -46,7 +46,7 @@ class Persona:
             self.direccion += math.pi #con .pi rebotará en la misma dirección
 
 #Metodo del botón guardarPersonas y guardo las variables (propiedades) de personas recorriendo cada objeto
-#persona de la lista personas. Las voy guardar en una archivo .json en mi carpeta raiz
+#persona de la lista personas. Las voy guardar en una base de datos sqlite
 
 
 
@@ -55,7 +55,7 @@ class Persona:
 def guardarPersonas():
     conexion = sqlite3.connect("jugadores.sqlite3") #conecto con la base de datos mediante la variable conexion
     cursor = conexion.cursor()#El cursor es necesario para hacer peticiones a la base de datos
-    for perosna in personas:
+    for persona in personas:
         cursor.execute('''
             INSERT INTO jugadores
             VALUES (
@@ -86,46 +86,43 @@ lienzo.pack()
 boton = tk.Button(raiz,text = "Guardar",command=guardarPersonas)
 boton.pack()
 
-#Rescatar posiciones de las personas que tenemos guardadas en el archivo json
-try:
-    carga = open ("jugadores.json",'r')
-    cargado = carga.read()
-    cargadolista = json.loads(cargado)
-    for elemento in cargadolista:
-        persona = Persona()
-        persona.__dict__.update(elemento)
-        personas.append(persona)
-except:
-    print("")
-    
 
 #Cargar objetos de personas desde SQL
-conexion = sqlite3.connect("jugadores.sqlite3") #conecto con la base de datos mediante la variable conexion
-cursor = conexion.cursor()#El cursor es necesario para hacer peticiones a la base de datos
+try:    
+    conexion = sqlite3.connect("jugadores.sqlite3") #conecto con la base de datos mediante la variable conexion
+    cursor = conexion.cursor()#El cursor es necesario para hacer peticiones a la base de datos
 
+    cursor.execute("SELECT* FROM jugadores")
+    while True:
+        fila = cursor.fetchone()
+        if fila is None:
+            break
+        print(fila)
+        
+        persona = Persona()
+        persona.posx = fila[1]
+        persona.posy = fila[2]
+        persona.radio = fila[3]
+        persona.direccion = fila[4]
+        persona.color = fila[5]
+        persona.entidad = fila[6]
+        personas.append(persona)
 
-cursor.execute("SELECT * FROM jugadores")
-while True:
-    fila = cursor.fetchone()
-    if fila is None:
-        break
-    print(fila)
+    conexion.close()  #Cierro la conexión
 
-conexion.close()  #Cierro la conexión
-
-  
+except:
+    print("Error")
 
 
 
 #Utilizo un bucle for para interar numeropersonas(x veces) en cada iteracion crea una instancia
-#de la clase persona y la agrega a la lista personas mediante el mátodo .append
+#de la clase persona y la agrega a la lista personas mediante el método .append
 #Esto lo hará en el caso de que no existan
 
 if len(personas) == 0:
-    numeropersonas = 10                        #Cambio el nñumero de personas
+    numeropersonas =20                    #Cambio el nñumero de personas
     for i in range (0,numeropersonas):
         personas.append(Persona())
-
 
 
 
@@ -143,13 +140,7 @@ def bucle():
 
 bucle()   #Llamo al método bucle
 
-'''
-#Creo un objeto de la clase persona
-persona = Persona()
 
-#Y uso el método dibuja
-persona.dibuja()
-'''
 
 
 
