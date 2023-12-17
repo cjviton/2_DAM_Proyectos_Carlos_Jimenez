@@ -43,6 +43,11 @@ en el momento de apertura de una página */
 
     }
 
+    /*doy color a link de home. Primer elemento de la lista*/
+    ul li:first-child a {
+        color:blue; 
+    }
+
     header nav h2 {
         /*podría dar estilo a varios elenentos a la vez*/
     }
