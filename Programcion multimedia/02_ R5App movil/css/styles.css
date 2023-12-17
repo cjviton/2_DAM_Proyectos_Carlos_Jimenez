@@ -1,0 +1,65 @@
+
+/* MUY MUY IMPORTATE INICIAR SIEMPRE ASI el documento css. es como un reset 
+en el momento de apertura de una página */
+*{                  
+    padding: 0;
+    margin: 0;
+}
+
+/*Selectores de CSS
+    class        .
+    id           #
+    etiqueta  etiqueta*/
+
+    body{ 
+        /* Pongo el width en la etiqueta body y me centra toda la página y height en cada etiqueta */
+        width: 500px;
+        margin: 0 auto;  /*con o auto me lo centra*/
+        background-color: darkolivegreen;
+        
+    }
+
+    header{
+        background-color:lawngreen;   /*para ver que opciones tiene la propiedad
+                                     después de escribirla ctrl y espacio */
+        text-align:center ;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        height: 170px;
+        
+    }
+
+    h2{
+        background-color:yellow;
+        color:lawngreen;
+    }
+
+    nav{
+        background-color:darkgreen;   /*para ver que opciones tiene la propiedad
+                                        después de escribirla ctrl y espacio */
+        color:blue;
+        text-align:center ;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        height: 80px;
+
+    }
+
+    header nav h2 {
+        /*podría dar estilo a varios elenentos a la vez*/
+    }
+
+
+    section{
+
+        background-color: darkslategray;
+    }
+   
+    footer{
+
+        background-color: lime;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;    /*para centrar en altura con el mismo número de px que height*/
+    }
+
+
+

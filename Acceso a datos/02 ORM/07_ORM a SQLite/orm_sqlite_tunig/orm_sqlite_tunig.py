@@ -1,8 +1,7 @@
 import tkinter as tk
 import random          #Para usar los métodos de la calse random
 import math            #Importo la librería matemática
-import json            #Importo la libreria json para hacer el guardado de datos
-import sqlite3
+import sqlite3                   #Importo la libreria sqlite3 para las conexiones con la base de datos
 
 #Declaración de variables globales
 #Creo un array de objetos del tipo persona
