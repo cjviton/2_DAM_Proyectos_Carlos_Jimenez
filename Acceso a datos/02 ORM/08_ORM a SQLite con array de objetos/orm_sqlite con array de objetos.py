@@ -27,6 +27,12 @@ class Persona:
         self.entidadenergia = ""
         self.entidaddescanso = ""
 
+        #En la tercera parte del ejercio voy a crear una lista
+        self.inventario = [1,2,3,4]
+
+
+
+        
         
     #Método para crear óvalos rojos en el centro del lienzo      
     def dibuja(self):
@@ -109,6 +115,14 @@ class Persona:
 #Aquí tengo toda la secuencia para hacer una  conexión con la base de datos---------------------------------------
 #Guardo los jugadores en SQL con la sentencia insert
 def guardarPersonas():
+    
+    print("guardo a los jugadores")
+    #También guardo en json con fines demostrativos
+    cadena = json.dumps([vars(persona) for persona in personas])
+    print(cadena)
+    archivo = open("jugadores.json",'w')
+    archivo.write(cadena)
+    
     conexion = sqlite3.connect("jugadores.sqlite3") #conecto con la base de datos mediante la variable conexion
     cursor = conexion.cursor()#El cursor es necesario para hacer peticiones a la base de datos
                        #Borro todos los datos que pudiera haber en la base de datos antes fe guardar los nuevos
