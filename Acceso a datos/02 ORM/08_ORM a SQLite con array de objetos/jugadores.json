@@ -1,1 +1,3052 @@
-[{"posx": 395.8301619046119, "posy": 93.39802516389196, "radio": 30, "direccion": 155, "color": "green", "entidad": 1, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 2, "entidaddescanso": 3, "inventario": [1, 2, 3, 4]}, {"posx": 894.0349581433998, "posy": 257.515646440324, "radio": 30, "direccion": 233.14159265358978, "color": "green", "entidad": 4, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 5, "entidaddescanso": 6, "inventario": [1, 2, 3, 4]}, {"posx": 974.9395648125865, "posy": 173.0347831318386, "radio": 30, "direccion": 59.1415926535898, "color": "green", "entidad": 7, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 8, "entidaddescanso": 9, "inventario": [1, 2, 3, 4]}, {"posx": 45.317599500792994, "posy": 640.1202534195751, "radio": 30, "direccion": 209, "color": "green", "entidad": 10, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 11, "entidaddescanso": 12, "inventario": [1, 2, 3, 4]}, {"posx": 136.6155760991555, "posy": 153.65190783845895, "radio": 30, "direccion": 265.1415926535898, "color": "green", "entidad": 13, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 14, "entidaddescanso": 15, "inventario": [1, 2, 3, 4]}, {"posx": 947.6874478479407, "posy": 196.9824480216183, "radio": 30, "direccion": 216.14159265358978, "color": "green", "entidad": 16, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 17, "entidaddescanso": 18, "inventario": [1, 2, 3, 4]}, {"posx": 676.983692871454, "posy": 439.3418078266314, "radio": 30, "direccion": 111.1415926535898, "color": "green", "entidad": 19, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 20, "entidaddescanso": 21, "inventario": [1, 2, 3, 4]}, {"posx": 150.4272700889513, "posy": 350.90711610488347, "radio": 30, "direccion": 296.1415926535898, "color": "green", "entidad": 22, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 23, "entidaddescanso": 24, "inventario": [1, 2, 3, 4]}, {"posx": 590.2782957594297, "posy": 286.2890021277677, "radio": 30, "direccion": 8.141592653589793, "color": "green", "entidad": 25, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 26, "entidaddescanso": 27, "inventario": [1, 2, 3, 4]}, {"posx": 90.50297045092248, "posy": 209.46801594370066, "radio": 30, "direccion": 287.1415926535898, "color": "green", "entidad": 28, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 29, "entidaddescanso": 30, "inventario": [1, 2, 3, 4]}, {"posx": 484.9999998000873, "posy": 391.01326351546595, "radio": 30, "direccion": 358.1415926535898, "color": "green", "entidad": 31, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 32, "entidaddescanso": 33, "inventario": [1, 2, 3, 4]}, {"posx": 837.7505428286686, "posy": 44.391555028499894, "radio": 30, "direccion": 351, "color": "green", "entidad": 34, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 35, "entidaddescanso": 36, "inventario": [1, 2, 3, 4]}, {"posx": 837.8105924979996, "posy": 417.35095495817296, "radio": 30, "direccion": 6, "color": "green", "entidad": 37, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 38, "entidaddescanso": 39, "inventario": [1, 2, 3, 4]}, {"posx": 929.517804774493, "posy": 141.15458680395605, "radio": 30, "direccion": 135.14159265358978, "color": "green", "entidad": 40, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 41, "entidaddescanso": 42, "inventario": [1, 2, 3, 4]}, {"posx": 840.7582050411111, "posy": 466.3789225578987, "radio": 30, "direccion": 62.1415926535898, "color": "green", "entidad": 43, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 44, "entidaddescanso": 45, "inventario": [1, 2, 3, 4]}, {"posx": 815.8128721279029, "posy": 667.8908172080005, "radio": 30, "direccion": 289, "color": "green", "entidad": 46, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 47, "entidaddescanso": 48, "inventario": [1, 2, 3, 4]}, {"posx": 87.59954248402727, "posy": 193.82584674741705, "radio": 30, "direccion": 100.1415926535898, "color": "green", "entidad": 49, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 50, "entidaddescanso": 51, "inventario": [1, 2, 3, 4]}, {"posx": 620.9226907542104, "posy": 323.51726594870644, "radio": 30, "direccion": 341.1415926535898, "color": "green", "entidad": 52, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 53, "entidaddescanso": 54, "inventario": [1, 2, 3, 4]}, {"posx": 347.7067858533009, "posy": 322.28775203331935, "radio": 30, "direccion": 277.1415926535898, "color": "green", "entidad": 55, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 56, "entidaddescanso": 57, "inventario": [1, 2, 3, 4]}, {"posx": 220.73284583938147, "posy": 366.4410326219323, "radio": 30, "direccion": 186.14159265358978, "color": "green", "entidad": 58, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 59, "entidaddescanso": 60, "inventario": [1, 2, 3, 4]}, {"posx": 84.69817957407088, "posy": 127.31741303299609, "radio": 30, "direccion": 188.14159265358978, "color": "green", "entidad": 61, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 62, "entidaddescanso": 63, "inventario": [1, 2, 3, 4]}, {"posx": 254.55041380035746, "posy": 655.1416505898969, "radio": 30, "direccion": 87.1415926535898, "color": "green", "entidad": 64, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 65, "entidaddescanso": 66, "inventario": [1, 2, 3, 4]}, {"posx": 4.020840358059093, "posy": 453.29110345751883, "radio": 30, "direccion": 22, "color": "green", "entidad": 67, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 68, "entidaddescanso": 69, "inventario": [1, 2, 3, 4]}, {"posx": 77.81459034491525, "posy": 503.96261421332883, "radio": 30, "direccion": 224.14159265358978, "color": "green", "entidad": 70, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 71, "entidaddescanso": 72, "inventario": [1, 2, 3, 4]}, {"posx": 191.74864953936049, "posy": 598.2781634072379, "radio": 30, "direccion": 193.14159265358978, "color": "green", "entidad": 73, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 74, "entidaddescanso": 75, "inventario": [1, 2, 3, 4]}, {"posx": 955.4794603473072, "posy": 111.85079339348363, "radio": 30, "direccion": 339, "color": "green", "entidad": 76, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 77, "entidaddescanso": 78, "inventario": [1, 2, 3, 4]}, {"posx": 182.68390832034, "posy": 49.17767982279618, "radio": 30, "direccion": 31.141592653589793, "color": "green", "entidad": 79, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 80, "entidaddescanso": 81, "inventario": [1, 2, 3, 4]}, {"posx": 74.64490014325324, "posy": 121.67355044129386, "radio": 30, "direccion": 32.1415926535898, "color": "green", "entidad": 82, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 83, "entidaddescanso": 84, "inventario": [1, 2, 3, 4]}, {"posx": 84.72470601930071, "posy": 330.5542424996933, "radio": 30, "direccion": 163.14159265358978, "color": "green", "entidad": 85, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 86, "entidaddescanso": 87, "inventario": [1, 2, 3, 4]}, {"posx": -0.5580026741215832, "posy": 14.57454269304723, "radio": 30, "direccion": 178.1061869541039, "color": "green", "entidad": 88, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 89, "entidaddescanso": 90, "inventario": [1, 2, 3, 4]}, {"posx": 429.289499681733, "posy": 186.58875109994602, "radio": 30, "direccion": 233.14159265358978, "color": "green", "entidad": 91, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 92, "entidaddescanso": 93, "inventario": [1, 2, 3, 4]}, {"posx": 143.8220798022328, "posy": 685.7614696395667, "radio": 30, "direccion": 205.28318530717956, "color": "green", "entidad": 94, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 95, "entidaddescanso": 96, "inventario": [1, 2, 3, 4]}, {"posx": 874.0911097445235, "posy": 638.7187748280311, "radio": 30, "direccion": 318.1415926535898, "color": "green", "entidad": 97, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 98, "entidaddescanso": 99, "inventario": [1, 2, 3, 4]}, {"posx": 284.0778422267613, "posy": 411.89801888974927, "radio": 30, "direccion": 90.1415926535898, "color": "green", "entidad": 100, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 101, "entidaddescanso": 102, "inventario": [1, 2, 3, 4]}, {"posx": 301.9537019222001, "posy": 471.382754883041, "radio": 30, "direccion": 270.1415926535898, "color": "green", "entidad": 103, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 104, "entidaddescanso": 105, "inventario": [1, 2, 3, 4]}, {"posx": 30.19388866342809, "posy": 264.33555697070346, "radio": 30, "direccion": 349, "color": "green", "entidad": 106, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 107, "entidaddescanso": 108, "inventario": [1, 2, 3, 4]}, {"posx": 236.37290845260463, "posy": 32.29601104869265, "radio": 30, "direccion": 231, "color": "green", "entidad": 109, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 110, "entidaddescanso": 111, "inventario": [1, 2, 3, 4]}, {"posx": 265.2308045730563, "posy": 660.7280575105992, "radio": 30, "direccion": 5.141592653589793, "color": "green", "entidad": 112, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 113, "entidaddescanso": 114, "inventario": [1, 2, 3, 4]}, {"posx": 349.1170005159993, "posy": 373.05375818514534, "radio": 30, "direccion": 140.14159265358978, "color": "green", "entidad": 115, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 116, "entidaddescanso": 117, "inventario": [1, 2, 3, 4]}, {"posx": 221.5879258129266, "posy": 390.17254049671146, "radio": 30, "direccion": 93.1415926535898, "color": "green", "entidad": 118, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 119, "entidaddescanso": 120, "inventario": [1, 2, 3, 4]}, {"posx": 152.6822268262188, "posy": 5.5729732626988, "radio": 30, "direccion": 330, "color": "green", "entidad": 121, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 122, "entidaddescanso": 123, "inventario": [1, 2, 3, 4]}, {"posx": 212.0608912837852, "posy": 193.98379206062555, "radio": 30, "direccion": 269.1415926535898, "color": "green", "entidad": 124, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 125, "entidaddescanso": 126, "inventario": [1, 2, 3, 4]}, {"posx": 720.927431412757, "posy": 341.74161383810093, "radio": 30, "direccion": 133.14159265358978, "color": "green", "entidad": 127, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 128, "entidaddescanso": 129, "inventario": [1, 2, 3, 4]}, {"posx": 669.569108786162, "posy": 130.29878622567588, "radio": 30, "direccion": 307, "color": "green", "entidad": 130, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 131, "entidaddescanso": 132, "inventario": [1, 2, 3, 4]}, {"posx": 854.6314219596638, "posy": 172.02172534820465, "radio": 30, "direccion": 207, "color": "green", "entidad": 133, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 134, "entidaddescanso": 135, "inventario": [1, 2, 3, 4]}, {"posx": 494.9222400173427, "posy": 506.49862258329495, "radio": 30, "direccion": 149.14159265358978, "color": "green", "entidad": 136, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 137, "entidaddescanso": 138, "inventario": [1, 2, 3, 4]}, {"posx": 248.14612400234495, "posy": 683.090683352425, "radio": 30, "direccion": 66.2831853071796, "color": "green", "entidad": 139, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 140, "entidaddescanso": 141, "inventario": [1, 2, 3, 4]}, {"posx": 38.59200757312946, "posy": 110.38375275636312, "radio": 30, "direccion": 14.283185307179586, "color": "green", "entidad": 142, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 143, "entidaddescanso": 144, "inventario": [1, 2, 3, 4]}, {"posx": 240.81831434501282, "posy": 236.34223538029164, "radio": 30, "direccion": 83.1415926535898, "color": "green", "entidad": 145, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 146, "entidaddescanso": 147, "inventario": [1, 2, 3, 4]}, {"posx": 406.30216072133294, "posy": 480.89329339255914, "radio": 30, "direccion": 137.14159265358978, "color": "green", "entidad": 148, "energia": 46.8000000000018, "descanso": 46.8000000000018, "entidadenergia": 149, "entidaddescanso": 150, "inventario": [1, 2, 3, 4]}]
+[
+    {
+        "posx": 511.48523525624864,
+        "posy": 351.1148225522013,
+        "radio": 30,
+        "direccion": 284.1415926535898,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 1014,
+                "posy": 1004,
+                "color": "blue"
+            },
+            {
+                "posx": 124,
+                "posy": 832,
+                "color": "blue"
+            },
+            {
+                "posx": 938,
+                "posy": 136,
+                "color": "blue"
+            },
+            {
+                "posx": 858,
+                "posy": 818,
+                "color": "blue"
+            },
+            {
+                "posx": 244,
+                "posy": 720,
+                "color": "blue"
+            },
+            {
+                "posx": 990,
+                "posy": 95,
+                "color": "blue"
+            },
+            {
+                "posx": 379,
+                "posy": 311,
+                "color": "blue"
+            },
+            {
+                "posx": 509,
+                "posy": 356,
+                "color": "blue"
+            },
+            {
+                "posx": 419,
+                "posy": 985,
+                "color": "blue"
+            },
+            {
+                "posx": 388,
+                "posy": 778,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 697.0043955539202,
+        "posy": 838.9999903395062,
+        "radio": 30,
+        "direccion": 1553.5131716320855,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 896,
+                "posy": 249,
+                "color": "blue"
+            },
+            {
+                "posx": 995,
+                "posy": 46,
+                "color": "blue"
+            },
+            {
+                "posx": 762,
+                "posy": 177,
+                "color": "blue"
+            },
+            {
+                "posx": 814,
+                "posy": 869,
+                "color": "blue"
+            },
+            {
+                "posx": 228,
+                "posy": 899,
+                "color": "blue"
+            },
+            {
+                "posx": 890,
+                "posy": 806,
+                "color": "blue"
+            },
+            {
+                "posx": 12,
+                "posy": 186,
+                "color": "blue"
+            },
+            {
+                "posx": 408,
+                "posy": 663,
+                "color": "blue"
+            },
+            {
+                "posx": 784,
+                "posy": 401,
+                "color": "blue"
+            },
+            {
+                "posx": 562,
+                "posy": 372,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 1018.7816153120139,
+        "posy": 556.686989881766,
+        "radio": 30,
+        "direccion": 286.1415926535898,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 182,
+                "posy": 317,
+                "color": "blue"
+            },
+            {
+                "posx": 275,
+                "posy": 904,
+                "color": "blue"
+            },
+            {
+                "posx": 809,
+                "posy": 690,
+                "color": "blue"
+            },
+            {
+                "posx": 265,
+                "posy": 134,
+                "color": "blue"
+            },
+            {
+                "posx": 357,
+                "posy": 139,
+                "color": "blue"
+            },
+            {
+                "posx": 324,
+                "posy": 363,
+                "color": "blue"
+            },
+            {
+                "posx": 965,
+                "posy": 218,
+                "color": "blue"
+            },
+            {
+                "posx": 107,
+                "posy": 133,
+                "color": "blue"
+            },
+            {
+                "posx": 480,
+                "posy": 604,
+                "color": "blue"
+            },
+            {
+                "posx": 780,
+                "posy": 215,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 40.23510856073799,
+        "posy": 555.5995185431617,
+        "radio": 30,
+        "direccion": 128,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 208,
+                "posy": 21,
+                "color": "blue"
+            },
+            {
+                "posx": 901,
+                "posy": 385,
+                "color": "blue"
+            },
+            {
+                "posx": 271,
+                "posy": 445,
+                "color": "blue"
+            },
+            {
+                "posx": 324,
+                "posy": 217,
+                "color": "blue"
+            },
+            {
+                "posx": 629,
+                "posy": 28,
+                "color": "blue"
+            },
+            {
+                "posx": 104,
+                "posy": 441,
+                "color": "blue"
+            },
+            {
+                "posx": 93,
+                "posy": 380,
+                "color": "blue"
+            },
+            {
+                "posx": 203,
+                "posy": 937,
+                "color": "blue"
+            },
+            {
+                "posx": 730,
+                "posy": 612,
+                "color": "blue"
+            },
+            {
+                "posx": 449,
+                "posy": 564,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 356.6797226476642,
+        "posy": 486.0910470968863,
+        "radio": 30,
+        "direccion": 274.1415926535898,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 35,
+                "posy": 790,
+                "color": "blue"
+            },
+            {
+                "posx": 503,
+                "posy": 493,
+                "color": "blue"
+            },
+            {
+                "posx": 643,
+                "posy": 240,
+                "color": "blue"
+            },
+            {
+                "posx": 690,
+                "posy": 1021,
+                "color": "blue"
+            },
+            {
+                "posx": 399,
+                "posy": 926,
+                "color": "blue"
+            },
+            {
+                "posx": 477,
+                "posy": 895,
+                "color": "blue"
+            },
+            {
+                "posx": 241,
+                "posy": 905,
+                "color": "blue"
+            },
+            {
+                "posx": 989,
+                "posy": 414,
+                "color": "blue"
+            },
+            {
+                "posx": 39,
+                "posy": 316,
+                "color": "blue"
+            },
+            {
+                "posx": 799,
+                "posy": 142,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 259.0121292609199,
+        "posy": 404.4070366773282,
+        "radio": 30,
+        "direccion": 295.1415926535898,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 545,
+                "posy": 285,
+                "color": "blue"
+            },
+            {
+                "posx": 922,
+                "posy": 617,
+                "color": "blue"
+            },
+            {
+                "posx": 997,
+                "posy": 913,
+                "color": "blue"
+            },
+            {
+                "posx": 551,
+                "posy": 911,
+                "color": "blue"
+            },
+            {
+                "posx": 965,
+                "posy": 871,
+                "color": "blue"
+            },
+            {
+                "posx": 482,
+                "posy": 106,
+                "color": "blue"
+            },
+            {
+                "posx": 740,
+                "posy": 440,
+                "color": "blue"
+            },
+            {
+                "posx": 164,
+                "posy": 656,
+                "color": "blue"
+            },
+            {
+                "posx": 122,
+                "posy": 275,
+                "color": "blue"
+            },
+            {
+                "posx": 641,
+                "posy": 896,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 3.6634162923341966,
+        "posy": 419.6207367908827,
+        "radio": 30,
+        "direccion": 106.1415926535898,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 85,
+                "posy": 46,
+                "color": "blue"
+            },
+            {
+                "posx": 143,
+                "posy": 11,
+                "color": "blue"
+            },
+            {
+                "posx": 730,
+                "posy": 556,
+                "color": "blue"
+            },
+            {
+                "posx": 396,
+                "posy": 306,
+                "color": "blue"
+            },
+            {
+                "posx": 573,
+                "posy": 642,
+                "color": "blue"
+            },
+            {
+                "posx": 716,
+                "posy": 46,
+                "color": "blue"
+            },
+            {
+                "posx": 259,
+                "posy": 176,
+                "color": "blue"
+            },
+            {
+                "posx": 672,
+                "posy": 233,
+                "color": "blue"
+            },
+            {
+                "posx": 566,
+                "posy": 541,
+                "color": "blue"
+            },
+            {
+                "posx": 379,
+                "posy": 150,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 419.973642018118,
+        "posy": 837.2280816094187,
+        "radio": 30,
+        "direccion": 1426.513171632081,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 595,
+                "posy": 459,
+                "color": "blue"
+            },
+            {
+                "posx": 892,
+                "posy": 6,
+                "color": "blue"
+            },
+            {
+                "posx": 736,
+                "posy": 684,
+                "color": "blue"
+            },
+            {
+                "posx": 747,
+                "posy": 884,
+                "color": "blue"
+            },
+            {
+                "posx": 455,
+                "posy": 316,
+                "color": "blue"
+            },
+            {
+                "posx": 285,
+                "posy": 405,
+                "color": "blue"
+            },
+            {
+                "posx": 291,
+                "posy": 102,
+                "color": "blue"
+            },
+            {
+                "posx": 295,
+                "posy": 948,
+                "color": "blue"
+            },
+            {
+                "posx": 951,
+                "posy": 340,
+                "color": "blue"
+            },
+            {
+                "posx": 921,
+                "posy": 590,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 449.69746115814826,
+        "posy": 421.88331499783203,
+        "radio": 30,
+        "direccion": 49.1415926535898,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 318,
+                "posy": 698,
+                "color": "blue"
+            },
+            {
+                "posx": 405,
+                "posy": 336,
+                "color": "blue"
+            },
+            {
+                "posx": 522,
+                "posy": 861,
+                "color": "blue"
+            },
+            {
+                "posx": 478,
+                "posy": 58,
+                "color": "blue"
+            },
+            {
+                "posx": 838,
+                "posy": 631,
+                "color": "blue"
+            },
+            {
+                "posx": 9,
+                "posy": 70,
+                "color": "blue"
+            },
+            {
+                "posx": 658,
+                "posy": 624,
+                "color": "blue"
+            },
+            {
+                "posx": 992,
+                "posy": 784,
+                "color": "blue"
+            },
+            {
+                "posx": 362,
+                "posy": 1015,
+                "color": "blue"
+            },
+            {
+                "posx": 395,
+                "posy": 1013,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 527.926468108689,
+        "posy": 416.16016018749156,
+        "radio": 30,
+        "direccion": 320,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 749,
+                "posy": 970,
+                "color": "blue"
+            },
+            {
+                "posx": 182,
+                "posy": 856,
+                "color": "blue"
+            },
+            {
+                "posx": 103,
+                "posy": 43,
+                "color": "blue"
+            },
+            {
+                "posx": 154,
+                "posy": 999,
+                "color": "blue"
+            },
+            {
+                "posx": 463,
+                "posy": 703,
+                "color": "blue"
+            },
+            {
+                "posx": 126,
+                "posy": 839,
+                "color": "blue"
+            },
+            {
+                "posx": 409,
+                "posy": 952,
+                "color": "blue"
+            },
+            {
+                "posx": 125,
+                "posy": 52,
+                "color": "blue"
+            },
+            {
+                "posx": 937,
+                "posy": 703,
+                "color": "blue"
+            },
+            {
+                "posx": 217,
+                "posy": 991,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 129.3011000754947,
+        "posy": 68.1572230839522,
+        "radio": 30,
+        "direccion": 16,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 880,
+                "posy": 458,
+                "color": "blue"
+            },
+            {
+                "posx": 1020,
+                "posy": 625,
+                "color": "blue"
+            },
+            {
+                "posx": 670,
+                "posy": 66,
+                "color": "blue"
+            },
+            {
+                "posx": 936,
+                "posy": 156,
+                "color": "blue"
+            },
+            {
+                "posx": 459,
+                "posy": 625,
+                "color": "blue"
+            },
+            {
+                "posx": 167,
+                "posy": 904,
+                "color": "blue"
+            },
+            {
+                "posx": 580,
+                "posy": 443,
+                "color": "blue"
+            },
+            {
+                "posx": 556,
+                "posy": 333,
+                "color": "blue"
+            },
+            {
+                "posx": 454,
+                "posy": 389,
+                "color": "blue"
+            },
+            {
+                "posx": 170,
+                "posy": 493,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 19.526558637472487,
+        "posy": 617.2047324357379,
+        "radio": 30,
+        "direccion": 27,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 469,
+                "posy": 316,
+                "color": "blue"
+            },
+            {
+                "posx": 375,
+                "posy": 298,
+                "color": "blue"
+            },
+            {
+                "posx": 1002,
+                "posy": 333,
+                "color": "blue"
+            },
+            {
+                "posx": 349,
+                "posy": 245,
+                "color": "blue"
+            },
+            {
+                "posx": 288,
+                "posy": 971,
+                "color": "blue"
+            },
+            {
+                "posx": 834,
+                "posy": 475,
+                "color": "blue"
+            },
+            {
+                "posx": 829,
+                "posy": 911,
+                "color": "blue"
+            },
+            {
+                "posx": 981,
+                "posy": 645,
+                "color": "blue"
+            },
+            {
+                "posx": 227,
+                "posy": 666,
+                "color": "blue"
+            },
+            {
+                "posx": 925,
+                "posy": 590,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 58.0070364979129,
+        "posy": 72.72955110980456,
+        "radio": 30,
+        "direccion": 132.14159265358978,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 171,
+                "posy": 881,
+                "color": "blue"
+            },
+            {
+                "posx": 564,
+                "posy": 670,
+                "color": "blue"
+            },
+            {
+                "posx": 390,
+                "posy": 571,
+                "color": "blue"
+            },
+            {
+                "posx": 622,
+                "posy": 112,
+                "color": "blue"
+            },
+            {
+                "posx": 318,
+                "posy": 679,
+                "color": "blue"
+            },
+            {
+                "posx": 931,
+                "posy": 587,
+                "color": "blue"
+            },
+            {
+                "posx": 817,
+                "posy": 688,
+                "color": "blue"
+            },
+            {
+                "posx": 407,
+                "posy": 865,
+                "color": "blue"
+            },
+            {
+                "posx": 233,
+                "posy": 773,
+                "color": "blue"
+            },
+            {
+                "posx": 258,
+                "posy": 98,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 183.59998705723748,
+        "posy": 896.9165094901978,
+        "radio": 30,
+        "direccion": 1522.5131716320843,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 677,
+                "posy": 811,
+                "color": "blue"
+            },
+            {
+                "posx": 268,
+                "posy": 747,
+                "color": "blue"
+            },
+            {
+                "posx": 98,
+                "posy": 554,
+                "color": "blue"
+            },
+            {
+                "posx": 959,
+                "posy": 355,
+                "color": "blue"
+            },
+            {
+                "posx": 825,
+                "posy": 547,
+                "color": "blue"
+            },
+            {
+                "posx": 955,
+                "posy": 383,
+                "color": "blue"
+            },
+            {
+                "posx": 386,
+                "posy": 417,
+                "color": "blue"
+            },
+            {
+                "posx": 338,
+                "posy": 65,
+                "color": "blue"
+            },
+            {
+                "posx": 610,
+                "posy": 519,
+                "color": "blue"
+            },
+            {
+                "posx": 237,
+                "posy": 726,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 651.2700871755355,
+        "posy": 420.824423212374,
+        "radio": 30,
+        "direccion": 125,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 849,
+                "posy": 954,
+                "color": "blue"
+            },
+            {
+                "posx": 847,
+                "posy": 942,
+                "color": "blue"
+            },
+            {
+                "posx": 423,
+                "posy": 446,
+                "color": "blue"
+            },
+            {
+                "posx": 395,
+                "posy": 262,
+                "color": "blue"
+            },
+            {
+                "posx": 839,
+                "posy": 784,
+                "color": "blue"
+            },
+            {
+                "posx": 945,
+                "posy": 1,
+                "color": "blue"
+            },
+            {
+                "posx": 558,
+                "posy": 76,
+                "color": "blue"
+            },
+            {
+                "posx": 564,
+                "posy": 730,
+                "color": "blue"
+            },
+            {
+                "posx": 66,
+                "posy": 383,
+                "color": "blue"
+            },
+            {
+                "posx": 368,
+                "posy": 472,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 442.57018390928226,
+        "posy": 141.43194461658052,
+        "radio": 30,
+        "direccion": 63,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 543,
+                "posy": 158,
+                "color": "blue"
+            },
+            {
+                "posx": 586,
+                "posy": 341,
+                "color": "blue"
+            },
+            {
+                "posx": 452,
+                "posy": 935,
+                "color": "blue"
+            },
+            {
+                "posx": 788,
+                "posy": 335,
+                "color": "blue"
+            },
+            {
+                "posx": 407,
+                "posy": 459,
+                "color": "blue"
+            },
+            {
+                "posx": 925,
+                "posy": 93,
+                "color": "blue"
+            },
+            {
+                "posx": 959,
+                "posy": 476,
+                "color": "blue"
+            },
+            {
+                "posx": 825,
+                "posy": 1010,
+                "color": "blue"
+            },
+            {
+                "posx": 183,
+                "posy": 683,
+                "color": "blue"
+            },
+            {
+                "posx": 372,
+                "posy": 534,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 171.00000001862833,
+        "posy": 218.99876408151223,
+        "radio": 30,
+        "direccion": 358.1415926535898,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 819,
+                "posy": 543,
+                "color": "blue"
+            },
+            {
+                "posx": 891,
+                "posy": 567,
+                "color": "blue"
+            },
+            {
+                "posx": 254,
+                "posy": 18,
+                "color": "blue"
+            },
+            {
+                "posx": 1024,
+                "posy": 59,
+                "color": "blue"
+            },
+            {
+                "posx": 82,
+                "posy": 763,
+                "color": "blue"
+            },
+            {
+                "posx": 961,
+                "posy": 764,
+                "color": "blue"
+            },
+            {
+                "posx": 351,
+                "posy": 879,
+                "color": "blue"
+            },
+            {
+                "posx": 640,
+                "posy": 17,
+                "color": "blue"
+            },
+            {
+                "posx": 1016,
+                "posy": 419,
+                "color": "blue"
+            },
+            {
+                "posx": 321,
+                "posy": 27,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 445.81928824528956,
+        "posy": 877.5733818719931,
+        "radio": 30,
+        "direccion": 1307.5131716320768,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 846,
+                "posy": 220,
+                "color": "blue"
+            },
+            {
+                "posx": 135,
+                "posy": 828,
+                "color": "blue"
+            },
+            {
+                "posx": 868,
+                "posy": 214,
+                "color": "blue"
+            },
+            {
+                "posx": 405,
+                "posy": 383,
+                "color": "blue"
+            },
+            {
+                "posx": 234,
+                "posy": 220,
+                "color": "blue"
+            },
+            {
+                "posx": 541,
+                "posy": 550,
+                "color": "blue"
+            },
+            {
+                "posx": 690,
+                "posy": 403,
+                "color": "blue"
+            },
+            {
+                "posx": 527,
+                "posy": 325,
+                "color": "blue"
+            },
+            {
+                "posx": 147,
+                "posy": 25,
+                "color": "blue"
+            },
+            {
+                "posx": 386,
+                "posy": 480,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 263.4875170622809,
+        "posy": 85.30171671432295,
+        "radio": 30,
+        "direccion": 83.1415926535898,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 85,
+                "posy": 273,
+                "color": "blue"
+            },
+            {
+                "posx": 711,
+                "posy": 960,
+                "color": "blue"
+            },
+            {
+                "posx": 975,
+                "posy": 554,
+                "color": "blue"
+            },
+            {
+                "posx": 841,
+                "posy": 651,
+                "color": "blue"
+            },
+            {
+                "posx": 30,
+                "posy": 40,
+                "color": "blue"
+            },
+            {
+                "posx": 883,
+                "posy": 178,
+                "color": "blue"
+            },
+            {
+                "posx": 78,
+                "posy": 623,
+                "color": "blue"
+            },
+            {
+                "posx": 130,
+                "posy": 490,
+                "color": "blue"
+            },
+            {
+                "posx": 146,
+                "posy": 405,
+                "color": "blue"
+            },
+            {
+                "posx": 833,
+                "posy": 294,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 56.313513449090664,
+        "posy": 804.7271425000788,
+        "radio": 30,
+        "direccion": 1315.5131716320768,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 615,
+                "posy": 93,
+                "color": "blue"
+            },
+            {
+                "posx": 272,
+                "posy": 325,
+                "color": "blue"
+            },
+            {
+                "posx": 638,
+                "posy": 366,
+                "color": "blue"
+            },
+            {
+                "posx": 897,
+                "posy": 370,
+                "color": "blue"
+            },
+            {
+                "posx": 816,
+                "posy": 484,
+                "color": "blue"
+            },
+            {
+                "posx": 786,
+                "posy": 910,
+                "color": "blue"
+            },
+            {
+                "posx": 66,
+                "posy": 763,
+                "color": "blue"
+            },
+            {
+                "posx": 534,
+                "posy": 875,
+                "color": "blue"
+            },
+            {
+                "posx": 664,
+                "posy": 341,
+                "color": "blue"
+            },
+            {
+                "posx": 908,
+                "posy": 292,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 35.246097745657856,
+        "posy": 1000.3430134012801,
+        "radio": 30,
+        "direccion": 1216.5131716320739,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 70,
+                "posy": 653,
+                "color": "blue"
+            },
+            {
+                "posx": 506,
+                "posy": 573,
+                "color": "blue"
+            },
+            {
+                "posx": 125,
+                "posy": 518,
+                "color": "blue"
+            },
+            {
+                "posx": 607,
+                "posy": 607,
+                "color": "blue"
+            },
+            {
+                "posx": 419,
+                "posy": 366,
+                "color": "blue"
+            },
+            {
+                "posx": 725,
+                "posy": 79,
+                "color": "blue"
+            },
+            {
+                "posx": 950,
+                "posy": 803,
+                "color": "blue"
+            },
+            {
+                "posx": 599,
+                "posy": 469,
+                "color": "blue"
+            },
+            {
+                "posx": 573,
+                "posy": 342,
+                "color": "blue"
+            },
+            {
+                "posx": 902,
+                "posy": 395,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 1022.511920969453,
+        "posy": 212.98568132398623,
+        "radio": 30,
+        "direccion": 50,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 16,
+                "posy": 822,
+                "color": "blue"
+            },
+            {
+                "posx": 275,
+                "posy": 731,
+                "color": "blue"
+            },
+            {
+                "posx": 482,
+                "posy": 765,
+                "color": "blue"
+            },
+            {
+                "posx": 268,
+                "posy": 267,
+                "color": "blue"
+            },
+            {
+                "posx": 29,
+                "posy": 521,
+                "color": "blue"
+            },
+            {
+                "posx": 930,
+                "posy": 439,
+                "color": "blue"
+            },
+            {
+                "posx": 983,
+                "posy": 356,
+                "color": "blue"
+            },
+            {
+                "posx": 575,
+                "posy": 566,
+                "color": "blue"
+            },
+            {
+                "posx": 204,
+                "posy": 184,
+                "color": "blue"
+            },
+            {
+                "posx": 38,
+                "posy": 798,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 964.2531214165995,
+        "posy": 39.69086429212857,
+        "radio": 30,
+        "direccion": 247.14159265358978,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 940,
+                "posy": 706,
+                "color": "blue"
+            },
+            {
+                "posx": 452,
+                "posy": 196,
+                "color": "blue"
+            },
+            {
+                "posx": 355,
+                "posy": 777,
+                "color": "blue"
+            },
+            {
+                "posx": 911,
+                "posy": 779,
+                "color": "blue"
+            },
+            {
+                "posx": 983,
+                "posy": 652,
+                "color": "blue"
+            },
+            {
+                "posx": 205,
+                "posy": 882,
+                "color": "blue"
+            },
+            {
+                "posx": 736,
+                "posy": 581,
+                "color": "blue"
+            },
+            {
+                "posx": 357,
+                "posy": 44,
+                "color": "blue"
+            },
+            {
+                "posx": 468,
+                "posy": 906,
+                "color": "blue"
+            },
+            {
+                "posx": 261,
+                "posy": 700,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 172.70487102377666,
+        "posy": 240.7416431851617,
+        "radio": 30,
+        "direccion": 148,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 30,
+                "posy": 551,
+                "color": "blue"
+            },
+            {
+                "posx": 571,
+                "posy": 802,
+                "color": "blue"
+            },
+            {
+                "posx": 26,
+                "posy": 149,
+                "color": "blue"
+            },
+            {
+                "posx": 636,
+                "posy": 294,
+                "color": "blue"
+            },
+            {
+                "posx": 625,
+                "posy": 286,
+                "color": "blue"
+            },
+            {
+                "posx": 572,
+                "posy": 507,
+                "color": "blue"
+            },
+            {
+                "posx": 812,
+                "posy": 544,
+                "color": "blue"
+            },
+            {
+                "posx": 372,
+                "posy": 395,
+                "color": "blue"
+            },
+            {
+                "posx": 802,
+                "posy": 528,
+                "color": "blue"
+            },
+            {
+                "posx": 826,
+                "posy": 606,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 421.7346185057675,
+        "posy": 119.47295110645356,
+        "radio": 30,
+        "direccion": 269,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 599,
+                "posy": 387,
+                "color": "blue"
+            },
+            {
+                "posx": 734,
+                "posy": 470,
+                "color": "blue"
+            },
+            {
+                "posx": 148,
+                "posy": 81,
+                "color": "blue"
+            },
+            {
+                "posx": 387,
+                "posy": 578,
+                "color": "blue"
+            },
+            {
+                "posx": 655,
+                "posy": 17,
+                "color": "blue"
+            },
+            {
+                "posx": 695,
+                "posy": 913,
+                "color": "blue"
+            },
+            {
+                "posx": 543,
+                "posy": 470,
+                "color": "blue"
+            },
+            {
+                "posx": 318,
+                "posy": 21,
+                "color": "blue"
+            },
+            {
+                "posx": 323,
+                "posy": 670,
+                "color": "blue"
+            },
+            {
+                "posx": 172,
+                "posy": 575,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 10.017220417959388,
+        "posy": 869.8152182554359,
+        "radio": 30,
+        "direccion": 1316.513171632077,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 883,
+                "posy": 886,
+                "color": "blue"
+            },
+            {
+                "posx": 784,
+                "posy": 502,
+                "color": "blue"
+            },
+            {
+                "posx": 404,
+                "posy": 294,
+                "color": "blue"
+            },
+            {
+                "posx": 337,
+                "posy": 379,
+                "color": "blue"
+            },
+            {
+                "posx": 59,
+                "posy": 206,
+                "color": "blue"
+            },
+            {
+                "posx": 290,
+                "posy": 247,
+                "color": "blue"
+            },
+            {
+                "posx": 408,
+                "posy": 13,
+                "color": "blue"
+            },
+            {
+                "posx": 386,
+                "posy": 726,
+                "color": "blue"
+            },
+            {
+                "posx": 645,
+                "posy": 859,
+                "color": "blue"
+            },
+            {
+                "posx": 766,
+                "posy": 866,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 254.81760672663523,
+        "posy": 338.28959053894994,
+        "radio": 30,
+        "direccion": 323,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 743,
+                "posy": 1024,
+                "color": "blue"
+            },
+            {
+                "posx": 199,
+                "posy": 797,
+                "color": "blue"
+            },
+            {
+                "posx": 237,
+                "posy": 555,
+                "color": "blue"
+            },
+            {
+                "posx": 560,
+                "posy": 692,
+                "color": "blue"
+            },
+            {
+                "posx": 987,
+                "posy": 621,
+                "color": "blue"
+            },
+            {
+                "posx": 478,
+                "posy": 793,
+                "color": "blue"
+            },
+            {
+                "posx": 883,
+                "posy": 252,
+                "color": "blue"
+            },
+            {
+                "posx": 914,
+                "posy": 127,
+                "color": "blue"
+            },
+            {
+                "posx": 74,
+                "posy": 408,
+                "color": "blue"
+            },
+            {
+                "posx": 211,
+                "posy": 466,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 945.1103872438356,
+        "posy": 824.9938886539231,
+        "radio": 30,
+        "direccion": 1289.5131716320761,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 514,
+                "posy": 442,
+                "color": "blue"
+            },
+            {
+                "posx": 376,
+                "posy": 928,
+                "color": "blue"
+            },
+            {
+                "posx": 394,
+                "posy": 776,
+                "color": "blue"
+            },
+            {
+                "posx": 460,
+                "posy": 347,
+                "color": "blue"
+            },
+            {
+                "posx": 121,
+                "posy": 855,
+                "color": "blue"
+            },
+            {
+                "posx": 581,
+                "posy": 342,
+                "color": "blue"
+            },
+            {
+                "posx": 126,
+                "posy": 240,
+                "color": "blue"
+            },
+            {
+                "posx": 589,
+                "posy": 651,
+                "color": "blue"
+            },
+            {
+                "posx": 948,
+                "posy": 127,
+                "color": "blue"
+            },
+            {
+                "posx": 194,
+                "posy": 930,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 215.1086906474686,
+        "posy": 466.16200052055876,
+        "radio": 30,
+        "direccion": 150.14159265358978,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 558,
+                "posy": 37,
+                "color": "blue"
+            },
+            {
+                "posx": 147,
+                "posy": 579,
+                "color": "blue"
+            },
+            {
+                "posx": 366,
+                "posy": 221,
+                "color": "blue"
+            },
+            {
+                "posx": 794,
+                "posy": 956,
+                "color": "blue"
+            },
+            {
+                "posx": 119,
+                "posy": 536,
+                "color": "blue"
+            },
+            {
+                "posx": 375,
+                "posy": 514,
+                "color": "blue"
+            },
+            {
+                "posx": 350,
+                "posy": 189,
+                "color": "blue"
+            },
+            {
+                "posx": 1013,
+                "posy": 190,
+                "color": "blue"
+            },
+            {
+                "posx": 677,
+                "posy": 921,
+                "color": "blue"
+            },
+            {
+                "posx": 875,
+                "posy": 716,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 502.84574855010976,
+        "posy": 925.9880316240925,
+        "radio": 30,
+        "direccion": 1239.5131716320745,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 564,
+                "posy": 570,
+                "color": "blue"
+            },
+            {
+                "posx": 689,
+                "posy": 586,
+                "color": "blue"
+            },
+            {
+                "posx": 712,
+                "posy": 544,
+                "color": "blue"
+            },
+            {
+                "posx": 280,
+                "posy": 550,
+                "color": "blue"
+            },
+            {
+                "posx": 226,
+                "posy": 444,
+                "color": "blue"
+            },
+            {
+                "posx": 341,
+                "posy": 149,
+                "color": "blue"
+            },
+            {
+                "posx": 1014,
+                "posy": 989,
+                "color": "blue"
+            },
+            {
+                "posx": 861,
+                "posy": 840,
+                "color": "blue"
+            },
+            {
+                "posx": 972,
+                "posy": 135,
+                "color": "blue"
+            },
+            {
+                "posx": 113,
+                "posy": 932,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 764.0327570635083,
+        "posy": 957.7461474802025,
+        "radio": 30,
+        "direccion": 1492.5131716320832,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 311,
+                "posy": 1011,
+                "color": "blue"
+            },
+            {
+                "posx": 72,
+                "posy": 889,
+                "color": "blue"
+            },
+            {
+                "posx": 437,
+                "posy": 122,
+                "color": "blue"
+            },
+            {
+                "posx": 813,
+                "posy": 344,
+                "color": "blue"
+            },
+            {
+                "posx": 362,
+                "posy": 470,
+                "color": "blue"
+            },
+            {
+                "posx": 97,
+                "posy": 833,
+                "color": "blue"
+            },
+            {
+                "posx": 459,
+                "posy": 137,
+                "color": "blue"
+            },
+            {
+                "posx": 260,
+                "posy": 587,
+                "color": "blue"
+            },
+            {
+                "posx": 375,
+                "posy": 308,
+                "color": "blue"
+            },
+            {
+                "posx": 429,
+                "posy": 980,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 307.4558158607828,
+        "posy": 328.17537478243463,
+        "radio": 30,
+        "direccion": 104,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 3,
+                "posy": 25,
+                "color": "blue"
+            },
+            {
+                "posx": 279,
+                "posy": 405,
+                "color": "blue"
+            },
+            {
+                "posx": 383,
+                "posy": 361,
+                "color": "blue"
+            },
+            {
+                "posx": 385,
+                "posy": 868,
+                "color": "blue"
+            },
+            {
+                "posx": 156,
+                "posy": 493,
+                "color": "blue"
+            },
+            {
+                "posx": 314,
+                "posy": 27,
+                "color": "blue"
+            },
+            {
+                "posx": 335,
+                "posy": 587,
+                "color": "blue"
+            },
+            {
+                "posx": 749,
+                "posy": 671,
+                "color": "blue"
+            },
+            {
+                "posx": 740,
+                "posy": 211,
+                "color": "blue"
+            },
+            {
+                "posx": 128,
+                "posy": 75,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 50.175033268849944,
+        "posy": 578.8145897273466,
+        "radio": 30,
+        "direccion": 98.1415926535898,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 473,
+                "posy": 873,
+                "color": "blue"
+            },
+            {
+                "posx": 773,
+                "posy": 1016,
+                "color": "blue"
+            },
+            {
+                "posx": 521,
+                "posy": 161,
+                "color": "blue"
+            },
+            {
+                "posx": 729,
+                "posy": 103,
+                "color": "blue"
+            },
+            {
+                "posx": 629,
+                "posy": 414,
+                "color": "blue"
+            },
+            {
+                "posx": 293,
+                "posy": 720,
+                "color": "blue"
+            },
+            {
+                "posx": 258,
+                "posy": 183,
+                "color": "blue"
+            },
+            {
+                "posx": 734,
+                "posy": 170,
+                "color": "blue"
+            },
+            {
+                "posx": 764,
+                "posy": 160,
+                "color": "blue"
+            },
+            {
+                "posx": 691,
+                "posy": 156,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 679.2977536430345,
+        "posy": 679.1914733366345,
+        "radio": 30,
+        "direccion": 111.1415926535898,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 344,
+                "posy": 882,
+                "color": "blue"
+            },
+            {
+                "posx": 408,
+                "posy": 920,
+                "color": "blue"
+            },
+            {
+                "posx": 522,
+                "posy": 457,
+                "color": "blue"
+            },
+            {
+                "posx": 881,
+                "posy": 415,
+                "color": "blue"
+            },
+            {
+                "posx": 306,
+                "posy": 502,
+                "color": "blue"
+            },
+            {
+                "posx": 631,
+                "posy": 625,
+                "color": "blue"
+            },
+            {
+                "posx": 0,
+                "posy": 644,
+                "color": "blue"
+            },
+            {
+                "posx": 254,
+                "posy": 954,
+                "color": "blue"
+            },
+            {
+                "posx": 237,
+                "posy": 276,
+                "color": "blue"
+            },
+            {
+                "posx": 456,
+                "posy": 874,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 117.18922048340596,
+        "posy": 479.6080684501369,
+        "radio": 30,
+        "direccion": 183.14159265358978,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 772,
+                "posy": 520,
+                "color": "blue"
+            },
+            {
+                "posx": 58,
+                "posy": 324,
+                "color": "blue"
+            },
+            {
+                "posx": 333,
+                "posy": 404,
+                "color": "blue"
+            },
+            {
+                "posx": 221,
+                "posy": 139,
+                "color": "blue"
+            },
+            {
+                "posx": 854,
+                "posy": 493,
+                "color": "blue"
+            },
+            {
+                "posx": 522,
+                "posy": 477,
+                "color": "blue"
+            },
+            {
+                "posx": 920,
+                "posy": 749,
+                "color": "blue"
+            },
+            {
+                "posx": 345,
+                "posy": 379,
+                "color": "blue"
+            },
+            {
+                "posx": 763,
+                "posy": 976,
+                "color": "blue"
+            },
+            {
+                "posx": 892,
+                "posy": 126,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 247.26451045793772,
+        "posy": 635.5438615185699,
+        "radio": 30,
+        "direccion": 121,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 616,
+                "posy": 397,
+                "color": "blue"
+            },
+            {
+                "posx": 150,
+                "posy": 651,
+                "color": "blue"
+            },
+            {
+                "posx": 730,
+                "posy": 586,
+                "color": "blue"
+            },
+            {
+                "posx": 252,
+                "posy": 980,
+                "color": "blue"
+            },
+            {
+                "posx": 60,
+                "posy": 549,
+                "color": "blue"
+            },
+            {
+                "posx": 162,
+                "posy": 216,
+                "color": "blue"
+            },
+            {
+                "posx": 347,
+                "posy": 783,
+                "color": "blue"
+            },
+            {
+                "posx": 1020,
+                "posy": 904,
+                "color": "blue"
+            },
+            {
+                "posx": 147,
+                "posy": 824,
+                "color": "blue"
+            },
+            {
+                "posx": 845,
+                "posy": 1003,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 266.88845231911654,
+        "posy": 535.9660661412968,
+        "radio": 30,
+        "direccion": 33,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 142,
+                "posy": 692,
+                "color": "blue"
+            },
+            {
+                "posx": 236,
+                "posy": 668,
+                "color": "blue"
+            },
+            {
+                "posx": 119,
+                "posy": 664,
+                "color": "blue"
+            },
+            {
+                "posx": 197,
+                "posy": 469,
+                "color": "blue"
+            },
+            {
+                "posx": 554,
+                "posy": 31,
+                "color": "blue"
+            },
+            {
+                "posx": 844,
+                "posy": 690,
+                "color": "blue"
+            },
+            {
+                "posx": 36,
+                "posy": 164,
+                "color": "blue"
+            },
+            {
+                "posx": 775,
+                "posy": 642,
+                "color": "blue"
+            },
+            {
+                "posx": 769,
+                "posy": 963,
+                "color": "blue"
+            },
+            {
+                "posx": 115,
+                "posy": 29,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 774.9830124266215,
+        "posy": 135.0256841975543,
+        "radio": 30,
+        "direccion": 170.14159265358978,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 960,
+                "posy": 502,
+                "color": "blue"
+            },
+            {
+                "posx": 609,
+                "posy": 18,
+                "color": "blue"
+            },
+            {
+                "posx": 290,
+                "posy": 543,
+                "color": "blue"
+            },
+            {
+                "posx": 995,
+                "posy": 2,
+                "color": "blue"
+            },
+            {
+                "posx": 385,
+                "posy": 951,
+                "color": "blue"
+            },
+            {
+                "posx": 344,
+                "posy": 234,
+                "color": "blue"
+            },
+            {
+                "posx": 515,
+                "posy": 437,
+                "color": "blue"
+            },
+            {
+                "posx": 890,
+                "posy": 725,
+                "color": "blue"
+            },
+            {
+                "posx": 470,
+                "posy": 588,
+                "color": "blue"
+            },
+            {
+                "posx": 800,
+                "posy": 4,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 544.5477292602261,
+        "posy": 884.1633443614643,
+        "radio": 30,
+        "direccion": 1230.5131716320743,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 925,
+                "posy": 691,
+                "color": "blue"
+            },
+            {
+                "posx": 47,
+                "posy": 351,
+                "color": "blue"
+            },
+            {
+                "posx": 734,
+                "posy": 114,
+                "color": "blue"
+            },
+            {
+                "posx": 381,
+                "posy": 944,
+                "color": "blue"
+            },
+            {
+                "posx": 479,
+                "posy": 532,
+                "color": "blue"
+            },
+            {
+                "posx": 353,
+                "posy": 237,
+                "color": "blue"
+            },
+            {
+                "posx": 885,
+                "posy": 517,
+                "color": "blue"
+            },
+            {
+                "posx": 407,
+                "posy": 285,
+                "color": "blue"
+            },
+            {
+                "posx": 146,
+                "posy": 6,
+                "color": "blue"
+            },
+            {
+                "posx": 876,
+                "posy": 467,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 255.6281130199136,
+        "posy": 532.7537776621396,
+        "radio": 30,
+        "direccion": 342,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 271,
+                "posy": 179,
+                "color": "blue"
+            },
+            {
+                "posx": 723,
+                "posy": 944,
+                "color": "blue"
+            },
+            {
+                "posx": 956,
+                "posy": 319,
+                "color": "blue"
+            },
+            {
+                "posx": 239,
+                "posy": 212,
+                "color": "blue"
+            },
+            {
+                "posx": 425,
+                "posy": 84,
+                "color": "blue"
+            },
+            {
+                "posx": 973,
+                "posy": 778,
+                "color": "blue"
+            },
+            {
+                "posx": 905,
+                "posy": 853,
+                "color": "blue"
+            },
+            {
+                "posx": 219,
+                "posy": 924,
+                "color": "blue"
+            },
+            {
+                "posx": 751,
+                "posy": 211,
+                "color": "blue"
+            },
+            {
+                "posx": 1018,
+                "posy": 910,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 903.4722993527774,
+        "posy": 651.3696349625841,
+        "radio": 30,
+        "direccion": 340,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 576,
+                "posy": 160,
+                "color": "blue"
+            },
+            {
+                "posx": 788,
+                "posy": 832,
+                "color": "blue"
+            },
+            {
+                "posx": 341,
+                "posy": 288,
+                "color": "blue"
+            },
+            {
+                "posx": 46,
+                "posy": 672,
+                "color": "blue"
+            },
+            {
+                "posx": 288,
+                "posy": 449,
+                "color": "blue"
+            },
+            {
+                "posx": 766,
+                "posy": 34,
+                "color": "blue"
+            },
+            {
+                "posx": 971,
+                "posy": 809,
+                "color": "blue"
+            },
+            {
+                "posx": 930,
+                "posy": 325,
+                "color": "blue"
+            },
+            {
+                "posx": 893,
+                "posy": 953,
+                "color": "blue"
+            },
+            {
+                "posx": 893,
+                "posy": 237,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 388.28689072875187,
+        "posy": 605.8209756686911,
+        "radio": 30,
+        "direccion": 141,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 453,
+                "posy": 167,
+                "color": "blue"
+            },
+            {
+                "posx": 336,
+                "posy": 589,
+                "color": "blue"
+            },
+            {
+                "posx": 926,
+                "posy": 302,
+                "color": "blue"
+            },
+            {
+                "posx": 110,
+                "posy": 948,
+                "color": "blue"
+            },
+            {
+                "posx": 30,
+                "posy": 335,
+                "color": "blue"
+            },
+            {
+                "posx": 604,
+                "posy": 557,
+                "color": "blue"
+            },
+            {
+                "posx": 871,
+                "posy": 561,
+                "color": "blue"
+            },
+            {
+                "posx": 84,
+                "posy": 835,
+                "color": "blue"
+            },
+            {
+                "posx": 576,
+                "posy": 646,
+                "color": "blue"
+            },
+            {
+                "posx": 62,
+                "posy": 97,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 508.32100254016837,
+        "posy": 528.6479108756507,
+        "radio": 30,
+        "direccion": 60,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 315,
+                "posy": 869,
+                "color": "blue"
+            },
+            {
+                "posx": 592,
+                "posy": 746,
+                "color": "blue"
+            },
+            {
+                "posx": 512,
+                "posy": 95,
+                "color": "blue"
+            },
+            {
+                "posx": 773,
+                "posy": 675,
+                "color": "blue"
+            },
+            {
+                "posx": 138,
+                "posy": 660,
+                "color": "blue"
+            },
+            {
+                "posx": 99,
+                "posy": 983,
+                "color": "blue"
+            },
+            {
+                "posx": 388,
+                "posy": 452,
+                "color": "blue"
+            },
+            {
+                "posx": 656,
+                "posy": 555,
+                "color": "blue"
+            },
+            {
+                "posx": 835,
+                "posy": 610,
+                "color": "blue"
+            },
+            {
+                "posx": 140,
+                "posy": 523,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 855.1657766394967,
+        "posy": 810.4485733187561,
+        "radio": 30,
+        "direccion": 1241.5131716320745,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 438,
+                "posy": 126,
+                "color": "blue"
+            },
+            {
+                "posx": 67,
+                "posy": 421,
+                "color": "blue"
+            },
+            {
+                "posx": 495,
+                "posy": 578,
+                "color": "blue"
+            },
+            {
+                "posx": 819,
+                "posy": 542,
+                "color": "blue"
+            },
+            {
+                "posx": 75,
+                "posy": 933,
+                "color": "blue"
+            },
+            {
+                "posx": 662,
+                "posy": 587,
+                "color": "blue"
+            },
+            {
+                "posx": 258,
+                "posy": 440,
+                "color": "blue"
+            },
+            {
+                "posx": 532,
+                "posy": 126,
+                "color": "blue"
+            },
+            {
+                "posx": 43,
+                "posy": 828,
+                "color": "blue"
+            },
+            {
+                "posx": 645,
+                "posy": 218,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 221.7387784948812,
+        "posy": 488.16067015640795,
+        "radio": 30,
+        "direccion": 154,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 389,
+                "posy": 167,
+                "color": "blue"
+            },
+            {
+                "posx": 354,
+                "posy": 969,
+                "color": "blue"
+            },
+            {
+                "posx": 18,
+                "posy": 990,
+                "color": "blue"
+            },
+            {
+                "posx": 194,
+                "posy": 719,
+                "color": "blue"
+            },
+            {
+                "posx": 712,
+                "posy": 697,
+                "color": "blue"
+            },
+            {
+                "posx": 994,
+                "posy": 650,
+                "color": "blue"
+            },
+            {
+                "posx": 353,
+                "posy": 822,
+                "color": "blue"
+            },
+            {
+                "posx": 497,
+                "posy": 512,
+                "color": "blue"
+            },
+            {
+                "posx": 880,
+                "posy": 7,
+                "color": "blue"
+            },
+            {
+                "posx": 467,
+                "posy": 548,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 773.7411591715168,
+        "posy": 643.5917601324973,
+        "radio": 30,
+        "direccion": 310,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 877,
+                "posy": 808,
+                "color": "blue"
+            },
+            {
+                "posx": 456,
+                "posy": 19,
+                "color": "blue"
+            },
+            {
+                "posx": 788,
+                "posy": 419,
+                "color": "blue"
+            },
+            {
+                "posx": 731,
+                "posy": 189,
+                "color": "blue"
+            },
+            {
+                "posx": 65,
+                "posy": 768,
+                "color": "blue"
+            },
+            {
+                "posx": 748,
+                "posy": 1000,
+                "color": "blue"
+            },
+            {
+                "posx": 276,
+                "posy": 746,
+                "color": "blue"
+            },
+            {
+                "posx": 914,
+                "posy": 944,
+                "color": "blue"
+            },
+            {
+                "posx": 308,
+                "posy": 718,
+                "color": "blue"
+            },
+            {
+                "posx": 709,
+                "posy": 325,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 723.3803421443494,
+        "posy": 117.04765413392954,
+        "radio": 30,
+        "direccion": 294,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 410,
+                "posy": 328,
+                "color": "blue"
+            },
+            {
+                "posx": 718,
+                "posy": 899,
+                "color": "blue"
+            },
+            {
+                "posx": 658,
+                "posy": 762,
+                "color": "blue"
+            },
+            {
+                "posx": 909,
+                "posy": 503,
+                "color": "blue"
+            },
+            {
+                "posx": 181,
+                "posy": 607,
+                "color": "blue"
+            },
+            {
+                "posx": 848,
+                "posy": 1011,
+                "color": "blue"
+            },
+            {
+                "posx": 521,
+                "posy": 65,
+                "color": "blue"
+            },
+            {
+                "posx": 645,
+                "posy": 794,
+                "color": "blue"
+            },
+            {
+                "posx": 401,
+                "posy": 258,
+                "color": "blue"
+            },
+            {
+                "posx": 460,
+                "posy": 37,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 583.8485702747868,
+        "posy": 943.4709173138817,
+        "radio": 30,
+        "direccion": 1243.5131716320745,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 279,
+                "posy": 515,
+                "color": "blue"
+            },
+            {
+                "posx": 585,
+                "posy": 348,
+                "color": "blue"
+            },
+            {
+                "posx": 897,
+                "posy": 424,
+                "color": "blue"
+            },
+            {
+                "posx": 844,
+                "posy": 543,
+                "color": "blue"
+            },
+            {
+                "posx": 743,
+                "posy": 111,
+                "color": "blue"
+            },
+            {
+                "posx": 104,
+                "posy": 706,
+                "color": "blue"
+            },
+            {
+                "posx": 294,
+                "posy": 967,
+                "color": "blue"
+            },
+            {
+                "posx": 541,
+                "posy": 285,
+                "color": "blue"
+            },
+            {
+                "posx": 252,
+                "posy": 978,
+                "color": "blue"
+            },
+            {
+                "posx": 842,
+                "posy": 151,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 639.3635843389848,
+        "posy": 569.2030671763133,
+        "radio": 30,
+        "direccion": 356.1415926535898,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 580,
+                "posy": 679,
+                "color": "blue"
+            },
+            {
+                "posx": 916,
+                "posy": 384,
+                "color": "blue"
+            },
+            {
+                "posx": 735,
+                "posy": 65,
+                "color": "blue"
+            },
+            {
+                "posx": 59,
+                "posy": 690,
+                "color": "blue"
+            },
+            {
+                "posx": 477,
+                "posy": 790,
+                "color": "blue"
+            },
+            {
+                "posx": 578,
+                "posy": 8,
+                "color": "blue"
+            },
+            {
+                "posx": 522,
+                "posy": 538,
+                "color": "blue"
+            },
+            {
+                "posx": 637,
+                "posy": 379,
+                "color": "blue"
+            },
+            {
+                "posx": 10,
+                "posy": 928,
+                "color": "blue"
+            },
+            {
+                "posx": 406,
+                "posy": 774,
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "posx": 474.74000019628573,
+        "posy": 665.8535143649002,
+        "radio": 30,
+        "direccion": 303,
+        "color": "blue",
+        "energia": 61.50000000000201,
+        "descanso": 61.50000000000201,
+        "inventario": [
+            {
+                "posx": 159,
+                "posy": 251,
+                "color": "blue"
+            },
+            {
+                "posx": 909,
+                "posy": 725,
+                "color": "blue"
+            },
+            {
+                "posx": 934,
+                "posy": 401,
+                "color": "blue"
+            },
+            {
+                "posx": 219,
+                "posy": 966,
+                "color": "blue"
+            },
+            {
+                "posx": 881,
+                "posy": 835,
+                "color": "blue"
+            },
+            {
+                "posx": 629,
+                "posy": 585,
+                "color": "blue"
+            },
+            {
+                "posx": 312,
+                "posy": 210,
+                "color": "blue"
+            },
+            {
+                "posx": 473,
+                "posy": 685,
+                "color": "blue"
+            },
+            {
+                "posx": 504,
+                "posy": 923,
+                "color": "blue"
+            },
+            {
+                "posx": 253,
+                "posy": 779,
+                "color": "blue"
+            }
+        ]
+    }
+]

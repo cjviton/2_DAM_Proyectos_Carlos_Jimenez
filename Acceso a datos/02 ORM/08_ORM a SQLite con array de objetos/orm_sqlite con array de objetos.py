@@ -9,17 +9,38 @@ import sqlite3
 personas = []
 numeropersonas = 50
 
-
-
-#Creo una clase persona con un método constructor y dos parametros
-class Persona:
+'''
+#Creo la clase entidad de la cual van a heredar recogible y parsona
+class Entidad:
     def __init__(self):
-        self.posx = random.randint(0,700) #Cada vez que ejecute el programa el objeto 
-        self.posy = random.randint(0,700) #se posicinará en un lugar diferente
+        self.posx = random.randint(0,1024)
+        self.posy = random.randint(0,1024)
+        self.color = "blue"
+'''
+
+class Recogible:                                         #Creo dos clases constructoras más que me van a 
+    def __init__(self):                                  #generar  objetos de la clase Recogible que luego 
+        self.posx = random.randint(0,1024)               #meteré ne la lista inventario
+        self.posy = random.randint(0,1024)
+        self.color = "green"
+
+    def serializar(self):                               #Con el método serializar convierte un objeto con varias 
+        recogible_serializado = {                       #propiedades en formas que facilita su almacenamiento.                     
+            "posx":self.posx,
+            "posy":self.posy,
+            "color":self.color
+            }
+        return recogible_serializado
+              
+
+#Creo una clase persona con un método constructor y hereda de Entidad
+class Persona():
+    def __init__(self):
+        self.posx = random.randint(0,1024)
+        self.posy = random.randint(0,1024)
+        self.color = "blue"
         self.radio = 30
         self.direccion = random.randint(0,360)
-        self.color = "green"                                                                 #Cambio de color
-        self.entidad = "" #Propiedad para hacer que el objeto se mueva
         
         #En la segunda parte del ejer creo estos atributos en la clese persona 
         self.energia = 100
@@ -28,8 +49,9 @@ class Persona:
         self.entidaddescanso = ""
 
         #En la tercera parte del ejercio voy a crear una lista
-        self.inventario = [1,2,3,4]
-
+        self.inventario = []                                            #Creo una lista con 1o objetos de la clase recogibles y se
+        for i in range(0,10):                                           #asigna a la propiedad inventario
+            self.inventario.append(Recogible())         
 
 
         
@@ -106,7 +128,18 @@ class Persona:
         if self.posx < 0 or self.posx > 1024 or self.posy < 0 or self.posy > 700:
             self.direccion += math.pi #con .pi rebotará en la misma dirección
 
-
+    def serializar(self):
+        persona_serializada = {
+            "posx":self.posx,
+            "posy":self.posy,
+            "radio":self.radio,
+            "direccion":self.direccion,
+            "color":self.color,
+            "energia":self.energia,
+            "descanso":self.descanso,
+            "inventario":[item.serializar() for item in self.inventario]
+            }
+        return persona_serializada
 
 
 
@@ -117,13 +150,18 @@ class Persona:
 def guardarPersonas():
     
     print("guardo a los jugadores")
-    #También guardo en json con fines demostrativos
-    cadena = json.dumps([vars(persona) for persona in personas])
-    print(cadena)
-    archivo = open("jugadores.json",'w')
-    archivo.write(cadena)
     
-    conexion = sqlite3.connect("jugadores.sqlite3") #conecto con la base de datos mediante la variable conexion
+    personas_serializadas = [persona.serializar() for persona in personas]                      #Serializa la información de todas las personas
+##    cadena = json.dumps(personas_serializadas)                                                #en la lista persoans
+##    
+##    archivo = open("jugadores.json",'w')
+##    archivo.write(cadena)
+
+    with open("jugadores.json","w") as archivo:               
+        
+        json.dump(personas_serializadas,archivo,indent=4)                                       #Guarda la información serializada en json
+    
+    conexion = sqlite3.connect("jugadores_con_arrayObjetos.sqlite3") #conecto con la base de datos mediante la variable conexion
     cursor = conexion.cursor()#El cursor es necesario para hacer peticiones a la base de datos
                        #Borro todos los datos que pudiera haber en la base de datos antes fe guardar los nuevos
     cursor.execute('''          
@@ -145,9 +183,10 @@ def guardarPersonas():
                 '''+str(persona.energia)+''',
                 '''+str(persona.descanso)+''',
                 "'''+str(persona.entidadenergia)+'''",
-                "'''+str(persona.entidaddescanso)+'''"
+                "'''+str(persona.entidaddescanso)+'''",
+                "'''+str(persona.inventario)+'''"       
             )
-            ''')
+            ''')                                #Añado el nuevo campo inventario a la sentecia insert
     print(cursor)
     conexion.commit()#Hago un commit a la base de datos
     conexion.close()  #Cierro la conexión
@@ -169,7 +208,7 @@ boton.pack()
 
 #Cargar objetos de personas desde SQL
 try:    
-    conexion = sqlite3.connect("jugadores.sqlite3") #conecto con la base de datos mediante la variable conexion
+    conexion = sqlite3.connect("jugadores_con_arrayObjetos.sqlite3") #conecto con la base de datos mediante la variable conexion
     cursor = conexion.cursor()#El cursor es necesario para hacer peticiones a la base de datos
 
     cursor.execute('''
