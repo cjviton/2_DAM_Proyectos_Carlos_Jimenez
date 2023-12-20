@@ -161,17 +161,23 @@ def guardarPersonas():
         
         json.dump(personas_serializadas,archivo,indent=4)                                       #Guarda la información serializada en json
     
+
+
+
+
     conexion = sqlite3.connect("jugadores_con_arrayObjetos.sqlite3") #conecto con la base de datos mediante la variable conexion
     cursor = conexion.cursor()#El cursor es necesario para hacer peticiones a la base de datos
                                                                                     #Borro todos los datos que pudiera haber en la base de datos antes de guardar los nuevos
     cursor.execute('''          
             DELETE FROM jugadores
             ''')
+    conexion.commit()
     
     cursor.execute('''          
             DELETE FROM recogibles
             ''')
     conexion.commit()
+    
     
     for persona in personas:
         cursor.execute('''
@@ -193,7 +199,8 @@ def guardarPersonas():
             ''')                                #Añado el nuevo campo inventario a la sentecia insert
     
 
-                                                                                              #Creo la sentencia SQL de guadador de los objetos 
+        
+                                                                                             #Creo la sentencia SQL de guadador de los objetos 
         for recogible in persona.inventario:                                                  #de la calse recogibles en la tabla
             peticion = '''  
             INSERT INTO recogibles
