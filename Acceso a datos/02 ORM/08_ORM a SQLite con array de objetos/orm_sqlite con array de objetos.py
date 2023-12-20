@@ -20,9 +20,9 @@ class Entidad:
 
 class Recogible:                                         #Creo dos clases constructoras más que me van a 
     def __init__(self):                                  #generar  objetos de la clase Recogible que luego 
-        self.posx = random.randint(0,1024)               #meteré ne la lista inventario
-        self.posy = random.randint(0,1024)
-        self.color = "green"
+        self.posx = random.randint(0,1024)               #meteré en el atributo lista inventario de la clase 
+        self.posy = random.randint(0,1024)               #persona
+        self.color = "blue"
 
     def serializar(self):                               #Con el método serializar convierte un objeto con varias 
         recogible_serializado = {                       #propiedades en formas que facilita su almacenamiento.                     
@@ -42,7 +42,7 @@ class Persona():
         self.radio = 30
         self.direccion = random.randint(0,360)
         
-        #En la segunda parte del ejer creo estos atributos en la clese persona 
+        #En la segunda parte del ejer creo estos atributos en la clese persona
         self.energia = 100
         self.descanso = 100
         self.entidadenergia = ""
@@ -163,9 +163,13 @@ def guardarPersonas():
     
     conexion = sqlite3.connect("jugadores_con_arrayObjetos.sqlite3") #conecto con la base de datos mediante la variable conexion
     cursor = conexion.cursor()#El cursor es necesario para hacer peticiones a la base de datos
-                       #Borro todos los datos que pudiera haber en la base de datos antes fe guardar los nuevos
+                                                                                    #Borro todos los datos que pudiera haber en la base de datos antes de guardar los nuevos
     cursor.execute('''          
             DELETE FROM jugadores
+            ''')
+    
+    cursor.execute('''          
+            DELETE FROM recogibles
             ''')
     conexion.commit()
     
@@ -187,7 +191,24 @@ def guardarPersonas():
                 "'''+str(persona.inventario)+'''"       
             )
             ''')                                #Añado el nuevo campo inventario a la sentecia insert
-    print(cursor)
+    
+
+                                                                                              #Creo la sentencia SQL de guadador de los objetos 
+        for recogible in persona.inventario:                                                  #de la calse recogibles en la tabla
+            peticion = '''  
+            INSERT INTO recogibles
+            VALUES (
+                NULL,
+                '''+str(persona.entidad)+''',
+                "'''+str(recogible.posx)+'''",
+                "'''+str(recogible.posy)+'''",
+                "'''+str(recogible.color)+'''"
+            )      
+            '''
+
+            cursor.execute(peticion)
+            
+            
     conexion.commit()#Hago un commit a la base de datos
     conexion.close()  #Cierro la conexión
 
@@ -225,7 +246,7 @@ try:
         fila = cursor.fetchone()
         if fila is None:
             break
-        print(fila)
+        
         
         persona = Persona()
         persona.posx = fila[1]
@@ -238,13 +259,33 @@ try:
         persona.descanso = fila[8]
         persona.entidadenergia = fila[9]
         persona.entidaddescanso = fila[10]
+        
+        cursor2 = conexion.cursor()
+        nuevapeticion = '''
+            SELECT *
+            FROM recogibles
+            WHERE persona = '''+persona.entidad+'''
+            '''
+        
+        cursor2.execute(nuevapeticion)                                          #Cargo objetos de la tabla racogible
+        while True:
+            fila2 = cursor2.fetchone()
+            if fila2 is None:
+                break
+            nuevorecogible = Recogible()
+            nuevorecogible.posx = fila2[2]
+            nuevorecogible.posy = fila2[3]
+            nuevorecogible.color = fila2[4]
+            persona.inventario.append(nuevorecogible)
+            #pass
+        
         personas.append(persona)
         
 
     conexion.close()  #Cierro la conexión
 
-except:
-    print("Error al leer base de datos")
+except sqlite3.Error as error:
+    print("error al leer base de datos",error)
 
 
 
