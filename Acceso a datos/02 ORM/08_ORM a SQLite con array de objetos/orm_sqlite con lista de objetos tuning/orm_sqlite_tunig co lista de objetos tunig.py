@@ -13,7 +13,7 @@ numeropersonas = 50
                                                                   #-Creo la clase moneda la cual almacenaré dentro de una lista monedero en las personas
 class Moneda:
     def __init__(self):                                             
-        self.valor = random.randint(0,100),                      #Atributos (Pais de origen, valor,fecha emidión y cantidad)
+        self.valor = random.randint(0,100)                      #Atributos (Pais de origen, valor,fecha emidión y cantidad)
         self.anoemision = random.randint(0,2023)
         self.cantidad = random.randint(0,100)
         self.pais = "Egipto"
@@ -207,27 +207,28 @@ def guardarPersonas():
             )
             ''')
 
-    cursor.execute('''          
-            DELETE FROM premios
-            ''')
-    conexion.commit()
+##        cursor.execute('''          
+##            DELETE FROM premios
+##            ''')
+##        conexion.commit()
                                                                                         #Creo la sentencia SQL de guadado de los objetos
-    for moneda in persona.monedero:                                                     #de la calse moneda en la tabla premios
-            peticion = '''     
-            INSERT INTO premios
+        for moneda in persona.monedero:                                                     #de la calse moneda en la tabla premios
+            peticion = f'''     
+            INSERT INTO moneda
             VALUES (
                 NULL,
                 '''+str(persona.entidad)+''',
-                '''+str(premios.valor)+''',
-                '''+str(premios.anoemision)+''',
-                '''+str(premios.cantidad)+''',
-                "'''+str(premios.pais)+'''"
+                '''+str(moneda.valor)+''',
+                '''+str(moneda.anoemision)+''',
+                '''+str(moneda.cantidad)+''',
+                "'''+str(moneda.pais)+'''"
             )      
             '''
+            print(peticion)
 
             cursor.execute(peticion)
     
-    print(cursor)
+    
     conexion.commit()#Hago un commit a la base de datos
     conexion.close()  #Cierro la conexión
 
