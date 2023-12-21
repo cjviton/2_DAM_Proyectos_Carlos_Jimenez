@@ -187,6 +187,11 @@ def guardarPersonas():
             ''')
     conexion.commit()
     
+    cursor.execute('''          
+            DELETE FROM monedas
+            ''')
+    conexion.commit()
+    
     for persona in personas:     #Añado la inserción de los valores nuevos del constructor
         cursor.execute('''  
             INSERT INTO jugadores
@@ -207,14 +212,12 @@ def guardarPersonas():
             )
             ''')
 
-##        cursor.execute('''          
-##            DELETE FROM premios
-##            ''')
-##        conexion.commit()
-                                                                                        #Creo la sentencia SQL de guadado de los objetos
+
+        
+                                                                                            #Creo la sentencia SQL de guadado de los objetos
         for moneda in persona.monedero:                                                     #de la calse moneda en la tabla premios
-            peticion = f'''     
-            INSERT INTO moneda
+            peticion ='''     
+            INSERT INTO monedas
             VALUES (
                 NULL,
                 '''+str(persona.entidad)+''',
@@ -224,7 +227,7 @@ def guardarPersonas():
                 "'''+str(moneda.pais)+'''"
             )      
             '''
-            print(peticion)
+            
 
             cursor.execute(peticion)
     
@@ -247,7 +250,7 @@ boton = tk.Button(raiz,text = "Guardar",command=guardarPersonas)
 boton.pack()
 
 
-#Cargar objetos de personas desde SQL
+#Cargar objetos de personas desde SQL----------------------------------------------------------------------------------------------------------
 try:    
     conexion = sqlite3.connect("jugadores con lista de objetos Tunig.sqlite3") #conecto con la base de datos mediante la variable conexion
     cursor = conexion.cursor()#El cursor es necesario para hacer peticiones a la base de datos
@@ -257,11 +260,7 @@ try:
             FROM jugadores
             ''')
 
-#Sentencia SQL de consulta
-# WHERE posx < 540
-#       AND
-#       posy < 540
-    
+
     while True:
         fila = cursor.fetchone()
         if fila is None:
@@ -272,7 +271,7 @@ try:
         persona.posx = fila[1]
         persona.posy = fila[2]
         persona.radio = fila[3]
-        persona.lados = fila[4]                                     #Añado los campos nuevos con su indice correspondiente
+        persona.lados = fila[4]                                     
         persona.angulo_inicial = fila[5]
         persona.direccion = fila[6]
         persona.color = fila[7]
@@ -281,6 +280,30 @@ try:
         persona.descanso = fila[10]
         persona.entidadenergia = fila[11]
         persona.entidaddescanso = fila[12]
+
+                                                                                #Cargo los atributos de la tabla nueva monedas
+        cursor2 = conexion.cursor()
+        nuevapeticion = '''
+            SELECT *
+            FROM monedas
+            WHERE persona = '''+persona.entidad+'''
+            '''
+        
+        cursor2.execute(nuevapeticion)                                          #Cargo objetos de la tabla racogible
+        while True:
+            fila2 = cursor2.fetchone()
+            if fila2 is None:
+                break
+            nuevamoneda = Moneda()
+            nuevamoneda.valor = fila2[2]
+            nuevamoneda.anoemision = fila2[3]
+            nuevamoneda.cantidad = fila2[4]
+            nuevamoneda.pais = fila2[5]
+            persona.monedero.append(nuevamoneda)
+            
+
+
+        
         personas.append(persona)
         
 
