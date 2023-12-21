@@ -9,14 +9,7 @@ import sqlite3
 personas = []
 numeropersonas = 50
 
-'''
-#Creo la clase entidad de la cual van a heredar recogible y parsona
-class Entidad:
-    def __init__(self):
-        self.posx = random.randint(0,1024)
-        self.posy = random.randint(0,1024)
-        self.color = "blue"
-'''
+
 
 class Recogible:                                         #Creo dos clases constructoras más que me van a 
     def __init__(self):                                  #generar  objetos de la clase Recogible que luego 
@@ -173,11 +166,6 @@ def guardarPersonas():
             ''')
     conexion.commit()
     
-    cursor.execute('''          
-            DELETE FROM recogibles
-            ''')
-    conexion.commit()
-    
     
     for persona in personas:
         cursor.execute('''
@@ -198,7 +186,10 @@ def guardarPersonas():
             )
             ''')                                #Añado el nuevo campo inventario a la sentecia insert
     
-
+        cursor.execute('''          
+            DELETE FROM recogibles
+            ''')
+        conexion.commit()
         
                                                                                              #Creo la sentencia SQL de guadador de los objetos 
         for recogible in persona.inventario:                                                  #de la calse recogibles en la tabla

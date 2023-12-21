@@ -1,0 +1,3952 @@
+[
+    {
+        "posx": 90.09111072986212,
+        "posy": 205.8895211892866,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 1,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 2,
+        "entidaddescanso": 3,
+        "monedero": [
+            {
+                "valor": [
+                    87
+                ],
+                "ano_emision": 130,
+                "cantidad": 80,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    66
+                ],
+                "ano_emision": 639,
+                "cantidad": 84,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    2
+                ],
+                "ano_emision": 877,
+                "cantidad": 93,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    22
+                ],
+                "ano_emision": 1715,
+                "cantidad": 67,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    1
+                ],
+                "ano_emision": 1577,
+                "cantidad": 100,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    31
+                ],
+                "ano_emision": 1919,
+                "cantidad": 44,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    67
+                ],
+                "ano_emision": 639,
+                "cantidad": 58,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    0
+                ],
+                "ano_emision": 1532,
+                "cantidad": 31,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 21.31607092766058,
+        "posy": 687.8093945558699,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 4,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 5,
+        "entidaddescanso": 6,
+        "monedero": [
+            {
+                "valor": [
+                    86
+                ],
+                "ano_emision": 1756,
+                "cantidad": 10,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    35
+                ],
+                "ano_emision": 1697,
+                "cantidad": 90,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    53
+                ],
+                "ano_emision": 386,
+                "cantidad": 65,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    22
+                ],
+                "ano_emision": 1017,
+                "cantidad": 10,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    47
+                ],
+                "ano_emision": 1507,
+                "cantidad": 39,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    52
+                ],
+                "ano_emision": 1001,
+                "cantidad": 21,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    70
+                ],
+                "ano_emision": 1782,
+                "cantidad": 59,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    41
+                ],
+                "ano_emision": 1836,
+                "cantidad": 99,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 758.9673187945037,
+        "posy": 591.4982341577117,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 7,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 8,
+        "entidaddescanso": 9,
+        "monedero": [
+            {
+                "valor": [
+                    77
+                ],
+                "ano_emision": 85,
+                "cantidad": 59,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    28
+                ],
+                "ano_emision": 530,
+                "cantidad": 31,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    36
+                ],
+                "ano_emision": 346,
+                "cantidad": 9,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    21
+                ],
+                "ano_emision": 518,
+                "cantidad": 66,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    76
+                ],
+                "ano_emision": 1210,
+                "cantidad": 13,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    83
+                ],
+                "ano_emision": 1364,
+                "cantidad": 23,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    93
+                ],
+                "ano_emision": 886,
+                "cantidad": 51,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    26
+                ],
+                "ano_emision": 1668,
+                "cantidad": 42,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 400.51510920950125,
+        "posy": 206.98185191959237,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 10,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 11,
+        "entidaddescanso": 12,
+        "monedero": [
+            {
+                "valor": [
+                    40
+                ],
+                "ano_emision": 1594,
+                "cantidad": 52,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    16
+                ],
+                "ano_emision": 440,
+                "cantidad": 80,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    80
+                ],
+                "ano_emision": 739,
+                "cantidad": 29,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    70
+                ],
+                "ano_emision": 417,
+                "cantidad": 3,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    28
+                ],
+                "ano_emision": 1043,
+                "cantidad": 60,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    39
+                ],
+                "ano_emision": 338,
+                "cantidad": 50,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    98
+                ],
+                "ano_emision": 979,
+                "cantidad": 6,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    1
+                ],
+                "ano_emision": 534,
+                "cantidad": 67,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 8.288018910002089,
+        "posy": 167.46353809238315,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 13,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 14,
+        "entidaddescanso": 15,
+        "monedero": [
+            {
+                "valor": [
+                    40
+                ],
+                "ano_emision": 1472,
+                "cantidad": 26,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    52
+                ],
+                "ano_emision": 1404,
+                "cantidad": 27,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    9
+                ],
+                "ano_emision": 1526,
+                "cantidad": 45,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    3
+                ],
+                "ano_emision": 645,
+                "cantidad": 3,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    99
+                ],
+                "ano_emision": 1647,
+                "cantidad": 79,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    78
+                ],
+                "ano_emision": 275,
+                "cantidad": 7,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    79
+                ],
+                "ano_emision": 1794,
+                "cantidad": 75,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    78
+                ],
+                "ano_emision": 1781,
+                "cantidad": 81,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 329.15924068761296,
+        "posy": 86.86049106163387,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 16,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 17,
+        "entidaddescanso": 18,
+        "monedero": [
+            {
+                "valor": [
+                    92
+                ],
+                "ano_emision": 1068,
+                "cantidad": 18,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    28
+                ],
+                "ano_emision": 233,
+                "cantidad": 90,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    99
+                ],
+                "ano_emision": 517,
+                "cantidad": 96,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    99
+                ],
+                "ano_emision": 1173,
+                "cantidad": 61,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    28
+                ],
+                "ano_emision": 1973,
+                "cantidad": 57,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    6
+                ],
+                "ano_emision": 921,
+                "cantidad": 30,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    29
+                ],
+                "ano_emision": 841,
+                "cantidad": 68,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    74
+                ],
+                "ano_emision": 869,
+                "cantidad": 55,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 661.3435020486581,
+        "posy": 10.585006063940973,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 19,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 20,
+        "entidaddescanso": 21,
+        "monedero": [
+            {
+                "valor": [
+                    38
+                ],
+                "ano_emision": 1185,
+                "cantidad": 75,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    13
+                ],
+                "ano_emision": 553,
+                "cantidad": 88,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    17
+                ],
+                "ano_emision": 53,
+                "cantidad": 27,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    9
+                ],
+                "ano_emision": 102,
+                "cantidad": 28,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    55
+                ],
+                "ano_emision": 1126,
+                "cantidad": 41,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    77
+                ],
+                "ano_emision": 674,
+                "cantidad": 43,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    17
+                ],
+                "ano_emision": 1020,
+                "cantidad": 69,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    85
+                ],
+                "ano_emision": 1534,
+                "cantidad": 6,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 790.0903611500949,
+        "posy": 26.745750013715735,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 22,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 23,
+        "entidaddescanso": 24,
+        "monedero": [
+            {
+                "valor": [
+                    88
+                ],
+                "ano_emision": 778,
+                "cantidad": 16,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    5
+                ],
+                "ano_emision": 272,
+                "cantidad": 2,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    42
+                ],
+                "ano_emision": 890,
+                "cantidad": 81,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    84
+                ],
+                "ano_emision": 475,
+                "cantidad": 15,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    14
+                ],
+                "ano_emision": 1858,
+                "cantidad": 4,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    22
+                ],
+                "ano_emision": 338,
+                "cantidad": 83,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    100
+                ],
+                "ano_emision": 272,
+                "cantidad": 34,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    65
+                ],
+                "ano_emision": 844,
+                "cantidad": 42,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 23.471529006397837,
+        "posy": 105.46334711728665,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 25,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 26,
+        "entidaddescanso": 27,
+        "monedero": [
+            {
+                "valor": [
+                    97
+                ],
+                "ano_emision": 550,
+                "cantidad": 77,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    47
+                ],
+                "ano_emision": 1478,
+                "cantidad": 39,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    61
+                ],
+                "ano_emision": 773,
+                "cantidad": 40,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    95
+                ],
+                "ano_emision": 1419,
+                "cantidad": 64,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    66
+                ],
+                "ano_emision": 259,
+                "cantidad": 28,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    94
+                ],
+                "ano_emision": 1934,
+                "cantidad": 94,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    41
+                ],
+                "ano_emision": 1307,
+                "cantidad": 4,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    51
+                ],
+                "ano_emision": 1304,
+                "cantidad": 34,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 744.9929948639839,
+        "posy": 305.0672933117112,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 28,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 29,
+        "entidaddescanso": 30,
+        "monedero": [
+            {
+                "valor": [
+                    18
+                ],
+                "ano_emision": 1764,
+                "cantidad": 42,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    82
+                ],
+                "ano_emision": 1149,
+                "cantidad": 93,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    2
+                ],
+                "ano_emision": 865,
+                "cantidad": 26,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    7
+                ],
+                "ano_emision": 924,
+                "cantidad": 66,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    67
+                ],
+                "ano_emision": 1815,
+                "cantidad": 2,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    51
+                ],
+                "ano_emision": 962,
+                "cantidad": 95,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    84
+                ],
+                "ano_emision": 628,
+                "cantidad": 18,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    89
+                ],
+                "ano_emision": 1113,
+                "cantidad": 63,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 384.0891764134888,
+        "posy": 348.7417467405575,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 31,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 32,
+        "entidaddescanso": 33,
+        "monedero": [
+            {
+                "valor": [
+                    46
+                ],
+                "ano_emision": 1797,
+                "cantidad": 48,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    87
+                ],
+                "ano_emision": 1057,
+                "cantidad": 8,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    86
+                ],
+                "ano_emision": 573,
+                "cantidad": 53,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    97
+                ],
+                "ano_emision": 1602,
+                "cantidad": 47,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    63
+                ],
+                "ano_emision": 98,
+                "cantidad": 13,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    89
+                ],
+                "ano_emision": 1800,
+                "cantidad": 43,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    49
+                ],
+                "ano_emision": 75,
+                "cantidad": 97,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    30
+                ],
+                "ano_emision": 710,
+                "cantidad": 77,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 936.012821260832,
+        "posy": 166.65359371849615,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 34,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 35,
+        "entidaddescanso": 36,
+        "monedero": [
+            {
+                "valor": [
+                    40
+                ],
+                "ano_emision": 1163,
+                "cantidad": 31,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    37
+                ],
+                "ano_emision": 746,
+                "cantidad": 38,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    73
+                ],
+                "ano_emision": 323,
+                "cantidad": 27,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    96
+                ],
+                "ano_emision": 1872,
+                "cantidad": 63,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    90
+                ],
+                "ano_emision": 343,
+                "cantidad": 21,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    17
+                ],
+                "ano_emision": 162,
+                "cantidad": 5,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    98
+                ],
+                "ano_emision": 588,
+                "cantidad": 18,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    27
+                ],
+                "ano_emision": 1062,
+                "cantidad": 62,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 849.6405547046681,
+        "posy": 654.8997642987979,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 37,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 38,
+        "entidaddescanso": 39,
+        "monedero": [
+            {
+                "valor": [
+                    7
+                ],
+                "ano_emision": 652,
+                "cantidad": 85,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    82
+                ],
+                "ano_emision": 1000,
+                "cantidad": 25,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    44
+                ],
+                "ano_emision": 1879,
+                "cantidad": 39,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    4
+                ],
+                "ano_emision": 1685,
+                "cantidad": 25,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    89
+                ],
+                "ano_emision": 87,
+                "cantidad": 1,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    88
+                ],
+                "ano_emision": 231,
+                "cantidad": 40,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    23
+                ],
+                "ano_emision": 1451,
+                "cantidad": 13,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    87
+                ],
+                "ano_emision": 1371,
+                "cantidad": 89,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 194.6111528663324,
+        "posy": 132.59574044271287,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 40,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 41,
+        "entidaddescanso": 42,
+        "monedero": [
+            {
+                "valor": [
+                    93
+                ],
+                "ano_emision": 325,
+                "cantidad": 92,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    22
+                ],
+                "ano_emision": 136,
+                "cantidad": 20,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    31
+                ],
+                "ano_emision": 1597,
+                "cantidad": 15,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    61
+                ],
+                "ano_emision": 1511,
+                "cantidad": 12,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    37
+                ],
+                "ano_emision": 1737,
+                "cantidad": 69,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    36
+                ],
+                "ano_emision": 751,
+                "cantidad": 87,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    80
+                ],
+                "ano_emision": 1435,
+                "cantidad": 63,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    84
+                ],
+                "ano_emision": 1720,
+                "cantidad": 44,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 395.51510920950125,
+        "posy": 165.116033871367,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 43,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 44,
+        "entidaddescanso": 45,
+        "monedero": [
+            {
+                "valor": [
+                    94
+                ],
+                "ano_emision": 857,
+                "cantidad": 77,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    97
+                ],
+                "ano_emision": 821,
+                "cantidad": 94,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    40
+                ],
+                "ano_emision": 1903,
+                "cantidad": 20,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    29
+                ],
+                "ano_emision": 1124,
+                "cantidad": 74,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    19
+                ],
+                "ano_emision": 66,
+                "cantidad": 5,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    81
+                ],
+                "ano_emision": 1068,
+                "cantidad": 94,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    11
+                ],
+                "ano_emision": 1252,
+                "cantidad": 63,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    66
+                ],
+                "ano_emision": 829,
+                "cantidad": 16,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 806.7505669106695,
+        "posy": 633.0885244880169,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 46,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 47,
+        "entidaddescanso": 48,
+        "monedero": [
+            {
+                "valor": [
+                    73
+                ],
+                "ano_emision": 651,
+                "cantidad": 87,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    21
+                ],
+                "ano_emision": 1138,
+                "cantidad": 47,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    70
+                ],
+                "ano_emision": 836,
+                "cantidad": 55,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    39
+                ],
+                "ano_emision": 1475,
+                "cantidad": 94,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    44
+                ],
+                "ano_emision": 1023,
+                "cantidad": 48,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    15
+                ],
+                "ano_emision": 1738,
+                "cantidad": 8,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    9
+                ],
+                "ano_emision": 998,
+                "cantidad": 88,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    30
+                ],
+                "ano_emision": 962,
+                "cantidad": 32,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 22.809315713209127,
+        "posy": 270.22340520106013,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 49,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 50,
+        "entidaddescanso": 51,
+        "monedero": [
+            {
+                "valor": [
+                    33
+                ],
+                "ano_emision": 234,
+                "cantidad": 6,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    24
+                ],
+                "ano_emision": 1936,
+                "cantidad": 72,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    18
+                ],
+                "ano_emision": 482,
+                "cantidad": 17,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    80
+                ],
+                "ano_emision": 825,
+                "cantidad": 38,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    80
+                ],
+                "ano_emision": 1671,
+                "cantidad": 76,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    62
+                ],
+                "ano_emision": 1701,
+                "cantidad": 61,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    73
+                ],
+                "ano_emision": 1841,
+                "cantidad": 92,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    60
+                ],
+                "ano_emision": 349,
+                "cantidad": 31,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 163.43212297909045,
+        "posy": 482.5782097723661,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 52,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 53,
+        "entidaddescanso": 54,
+        "monedero": [
+            {
+                "valor": [
+                    18
+                ],
+                "ano_emision": 1765,
+                "cantidad": 21,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    26
+                ],
+                "ano_emision": 1192,
+                "cantidad": 80,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    89
+                ],
+                "ano_emision": 976,
+                "cantidad": 5,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    90
+                ],
+                "ano_emision": 884,
+                "cantidad": 70,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    99
+                ],
+                "ano_emision": 921,
+                "cantidad": 44,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    75
+                ],
+                "ano_emision": 404,
+                "cantidad": 69,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    94
+                ],
+                "ano_emision": 1942,
+                "cantidad": 41,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    29
+                ],
+                "ano_emision": 1773,
+                "cantidad": 67,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 67.20296017218539,
+        "posy": 251.77595944268103,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 55,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 56,
+        "entidaddescanso": 57,
+        "monedero": [
+            {
+                "valor": [
+                    19
+                ],
+                "ano_emision": 627,
+                "cantidad": 92,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    49
+                ],
+                "ano_emision": 293,
+                "cantidad": 90,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    96
+                ],
+                "ano_emision": 1818,
+                "cantidad": 65,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    82
+                ],
+                "ano_emision": 1081,
+                "cantidad": 92,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    16
+                ],
+                "ano_emision": 438,
+                "cantidad": 25,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    86
+                ],
+                "ano_emision": 1481,
+                "cantidad": 27,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    57
+                ],
+                "ano_emision": 1401,
+                "cantidad": 53,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    50
+                ],
+                "ano_emision": 1160,
+                "cantidad": 9,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 833.146997133731,
+        "posy": 434.59357258863645,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 58,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 59,
+        "entidaddescanso": 60,
+        "monedero": [
+            {
+                "valor": [
+                    93
+                ],
+                "ano_emision": 1914,
+                "cantidad": 45,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    60
+                ],
+                "ano_emision": 1388,
+                "cantidad": 54,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    61
+                ],
+                "ano_emision": 1073,
+                "cantidad": 38,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    40
+                ],
+                "ano_emision": 675,
+                "cantidad": 99,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    17
+                ],
+                "ano_emision": 550,
+                "cantidad": 13,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    16
+                ],
+                "ano_emision": 1333,
+                "cantidad": 51,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    18
+                ],
+                "ano_emision": 30,
+                "cantidad": 3,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    25
+                ],
+                "ano_emision": 612,
+                "cantidad": 38,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 165.4213785484309,
+        "posy": 674.0373653812128,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 61,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 62,
+        "entidaddescanso": 63,
+        "monedero": [
+            {
+                "valor": [
+                    92
+                ],
+                "ano_emision": 677,
+                "cantidad": 36,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    84
+                ],
+                "ano_emision": 1187,
+                "cantidad": 10,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    68
+                ],
+                "ano_emision": 1552,
+                "cantidad": 9,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    20
+                ],
+                "ano_emision": 1325,
+                "cantidad": 59,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    89
+                ],
+                "ano_emision": 928,
+                "cantidad": 49,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    5
+                ],
+                "ano_emision": 224,
+                "cantidad": 64,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    34
+                ],
+                "ano_emision": 1238,
+                "cantidad": 47,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    73
+                ],
+                "ano_emision": 1929,
+                "cantidad": 52,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 276.1410812834304,
+        "posy": 641.1509720680622,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 64,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 65,
+        "entidaddescanso": 66,
+        "monedero": [
+            {
+                "valor": [
+                    30
+                ],
+                "ano_emision": 318,
+                "cantidad": 90,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    23
+                ],
+                "ano_emision": 1603,
+                "cantidad": 82,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    74
+                ],
+                "ano_emision": 875,
+                "cantidad": 84,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    76
+                ],
+                "ano_emision": 508,
+                "cantidad": 62,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    27
+                ],
+                "ano_emision": 1840,
+                "cantidad": 89,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    98
+                ],
+                "ano_emision": 1655,
+                "cantidad": 98,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    19
+                ],
+                "ano_emision": 176,
+                "cantidad": 48,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    95
+                ],
+                "ano_emision": 346,
+                "cantidad": 25,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 329.095835822455,
+        "posy": 379.96542369131635,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 67,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 68,
+        "entidaddescanso": 69,
+        "monedero": [
+            {
+                "valor": [
+                    93
+                ],
+                "ano_emision": 2023,
+                "cantidad": 23,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    80
+                ],
+                "ano_emision": 1225,
+                "cantidad": 52,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    7
+                ],
+                "ano_emision": 1628,
+                "cantidad": 7,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    97
+                ],
+                "ano_emision": 502,
+                "cantidad": 12,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    83
+                ],
+                "ano_emision": 102,
+                "cantidad": 40,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    67
+                ],
+                "ano_emision": 1659,
+                "cantidad": 72,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    70
+                ],
+                "ano_emision": 1773,
+                "cantidad": 54,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    63
+                ],
+                "ano_emision": 343,
+                "cantidad": 54,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 85.12597252262833,
+        "posy": 313.6165257608525,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 70,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 71,
+        "entidaddescanso": 72,
+        "monedero": [
+            {
+                "valor": [
+                    31
+                ],
+                "ano_emision": 781,
+                "cantidad": 53,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    9
+                ],
+                "ano_emision": 1146,
+                "cantidad": 15,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    42
+                ],
+                "ano_emision": 1399,
+                "cantidad": 12,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    46
+                ],
+                "ano_emision": 798,
+                "cantidad": 6,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    7
+                ],
+                "ano_emision": 560,
+                "cantidad": 14,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    0
+                ],
+                "ano_emision": 1464,
+                "cantidad": 83,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    50
+                ],
+                "ano_emision": 1482,
+                "cantidad": 94,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    42
+                ],
+                "ano_emision": 245,
+                "cantidad": 78,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 41.247456562508575,
+        "posy": 240.39447285300463,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 73,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 74,
+        "entidaddescanso": 75,
+        "monedero": [
+            {
+                "valor": [
+                    46
+                ],
+                "ano_emision": 1341,
+                "cantidad": 23,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    75
+                ],
+                "ano_emision": 1502,
+                "cantidad": 30,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    39
+                ],
+                "ano_emision": 1505,
+                "cantidad": 9,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    23
+                ],
+                "ano_emision": 1285,
+                "cantidad": 85,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    46
+                ],
+                "ano_emision": 1985,
+                "cantidad": 84,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    81
+                ],
+                "ano_emision": 661,
+                "cantidad": 4,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    40
+                ],
+                "ano_emision": 780,
+                "cantidad": 92,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    43
+                ],
+                "ano_emision": 977,
+                "cantidad": 54,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 176.5778467694509,
+        "posy": 313.58329754053136,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 76,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 77,
+        "entidaddescanso": 78,
+        "monedero": [
+            {
+                "valor": [
+                    19
+                ],
+                "ano_emision": 1419,
+                "cantidad": 82,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    4
+                ],
+                "ano_emision": 1349,
+                "cantidad": 38,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    43
+                ],
+                "ano_emision": 349,
+                "cantidad": 1,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    49
+                ],
+                "ano_emision": 1839,
+                "cantidad": 19,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    97
+                ],
+                "ano_emision": 1861,
+                "cantidad": 11,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    77
+                ],
+                "ano_emision": 1689,
+                "cantidad": 24,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    43
+                ],
+                "ano_emision": 1758,
+                "cantidad": 32,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    41
+                ],
+                "ano_emision": 1759,
+                "cantidad": 46,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 402.57238645464963,
+        "posy": 680.3473136793007,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 79,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 80,
+        "entidaddescanso": 81,
+        "monedero": [
+            {
+                "valor": [
+                    26
+                ],
+                "ano_emision": 173,
+                "cantidad": 99,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    76
+                ],
+                "ano_emision": 954,
+                "cantidad": 67,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    59
+                ],
+                "ano_emision": 73,
+                "cantidad": 37,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    53
+                ],
+                "ano_emision": 947,
+                "cantidad": 78,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    57
+                ],
+                "ano_emision": 853,
+                "cantidad": 10,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    68
+                ],
+                "ano_emision": 1389,
+                "cantidad": 2,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    21
+                ],
+                "ano_emision": 853,
+                "cantidad": 92,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    86
+                ],
+                "ano_emision": 670,
+                "cantidad": 93,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 964.0903611500949,
+        "posy": 514.745750013727,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 82,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 83,
+        "entidaddescanso": 84,
+        "monedero": [
+            {
+                "valor": [
+                    44
+                ],
+                "ano_emision": 1483,
+                "cantidad": 73,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    79
+                ],
+                "ano_emision": 611,
+                "cantidad": 85,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    87
+                ],
+                "ano_emision": 1013,
+                "cantidad": 81,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    97
+                ],
+                "ano_emision": 1130,
+                "cantidad": 50,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    13
+                ],
+                "ano_emision": 422,
+                "cantidad": 61,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    57
+                ],
+                "ano_emision": 1546,
+                "cantidad": 30,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    20
+                ],
+                "ano_emision": 1170,
+                "cantidad": 26,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    63
+                ],
+                "ano_emision": 2005,
+                "cantidad": 56,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 829.5151092094786,
+        "posy": 340.981851919583,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 85,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 86,
+        "entidaddescanso": 87,
+        "monedero": [
+            {
+                "valor": [
+                    66
+                ],
+                "ano_emision": 688,
+                "cantidad": 19,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    40
+                ],
+                "ano_emision": 795,
+                "cantidad": 20,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    91
+                ],
+                "ano_emision": 444,
+                "cantidad": 28,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    35
+                ],
+                "ano_emision": 801,
+                "cantidad": 55,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    97
+                ],
+                "ano_emision": 597,
+                "cantidad": 45,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    79
+                ],
+                "ano_emision": 605,
+                "cantidad": 71,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    79
+                ],
+                "ano_emision": 1794,
+                "cantidad": 31,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    27
+                ],
+                "ano_emision": 808,
+                "cantidad": 89,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 99.85849370941273,
+        "posy": 574.6797369278709,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 88,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 89,
+        "entidaddescanso": 90,
+        "monedero": [
+            {
+                "valor": [
+                    2
+                ],
+                "ano_emision": 425,
+                "cantidad": 29,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    34
+                ],
+                "ano_emision": 887,
+                "cantidad": 85,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    66
+                ],
+                "ano_emision": 979,
+                "cantidad": 61,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    26
+                ],
+                "ano_emision": 1944,
+                "cantidad": 45,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    98
+                ],
+                "ano_emision": 1570,
+                "cantidad": 99,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    81
+                ],
+                "ano_emision": 649,
+                "cantidad": 25,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    20
+                ],
+                "ano_emision": 18,
+                "cantidad": 74,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    51
+                ],
+                "ano_emision": 979,
+                "cantidad": 70,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 675.146997133731,
+        "posy": 560.5935725886301,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 91,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 92,
+        "entidaddescanso": 93,
+        "monedero": [
+            {
+                "valor": [
+                    17
+                ],
+                "ano_emision": 47,
+                "cantidad": 98,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    48
+                ],
+                "ano_emision": 615,
+                "cantidad": 12,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    82
+                ],
+                "ano_emision": 52,
+                "cantidad": 1,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    34
+                ],
+                "ano_emision": 1543,
+                "cantidad": 55,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    100
+                ],
+                "ano_emision": 744,
+                "cantidad": 30,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    30
+                ],
+                "ano_emision": 1830,
+                "cantidad": 81,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    85
+                ],
+                "ano_emision": 1212,
+                "cantidad": 82,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    37
+                ],
+                "ano_emision": 1601,
+                "cantidad": 41,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 43.03352486633685,
+        "posy": 75.36083650754972,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 94,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 95,
+        "entidaddescanso": 96,
+        "monedero": [
+            {
+                "valor": [
+                    74
+                ],
+                "ano_emision": 427,
+                "cantidad": 21,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    86
+                ],
+                "ano_emision": 1726,
+                "cantidad": 13,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    78
+                ],
+                "ano_emision": 794,
+                "cantidad": 53,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    43
+                ],
+                "ano_emision": 335,
+                "cantidad": 60,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    91
+                ],
+                "ano_emision": 751,
+                "cantidad": 23,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    7
+                ],
+                "ano_emision": 2015,
+                "cantidad": 59,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    30
+                ],
+                "ano_emision": 1964,
+                "cantidad": 59,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    40
+                ],
+                "ano_emision": 896,
+                "cantidad": 59,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 200.728754123932,
+        "posy": 534.7315482770352,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 97,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 98,
+        "entidaddescanso": 99,
+        "monedero": [
+            {
+                "valor": [
+                    6
+                ],
+                "ano_emision": 1955,
+                "cantidad": 27,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    36
+                ],
+                "ano_emision": 1182,
+                "cantidad": 24,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    68
+                ],
+                "ano_emision": 251,
+                "cantidad": 83,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    89
+                ],
+                "ano_emision": 351,
+                "cantidad": 58,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    91
+                ],
+                "ano_emision": 80,
+                "cantidad": 32,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    80
+                ],
+                "ano_emision": 1896,
+                "cantidad": 52,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    90
+                ],
+                "ano_emision": 1266,
+                "cantidad": 33,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    64
+                ],
+                "ano_emision": 77,
+                "cantidad": 21,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 430.818050479033,
+        "posy": 91.11859806227278,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 100,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 101,
+        "entidaddescanso": 102,
+        "monedero": [
+            {
+                "valor": [
+                    88
+                ],
+                "ano_emision": 1229,
+                "cantidad": 18,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    78
+                ],
+                "ano_emision": 608,
+                "cantidad": 77,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    35
+                ],
+                "ano_emision": 100,
+                "cantidad": 15,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    52
+                ],
+                "ano_emision": 1757,
+                "cantidad": 9,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    37
+                ],
+                "ano_emision": 178,
+                "cantidad": 5,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    89
+                ],
+                "ano_emision": 1025,
+                "cantidad": 50,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    72
+                ],
+                "ano_emision": 487,
+                "cantidad": 33,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    49
+                ],
+                "ano_emision": 248,
+                "cantidad": 53,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 483.08264428302357,
+        "posy": 329.2476259193033,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 103,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 104,
+        "entidaddescanso": 105,
+        "monedero": [
+            {
+                "valor": [
+                    96
+                ],
+                "ano_emision": 428,
+                "cantidad": 93,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    64
+                ],
+                "ano_emision": 1779,
+                "cantidad": 65,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    54
+                ],
+                "ano_emision": 1954,
+                "cantidad": 76,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    90
+                ],
+                "ano_emision": 491,
+                "cantidad": 80,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    16
+                ],
+                "ano_emision": 614,
+                "cantidad": 64,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    77
+                ],
+                "ano_emision": 1601,
+                "cantidad": 5,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    49
+                ],
+                "ano_emision": 882,
+                "cantidad": 89,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    4
+                ],
+                "ano_emision": 19,
+                "cantidad": 92,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 184.49058633493212,
+        "posy": 183.56323113905458,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 106,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 107,
+        "entidaddescanso": 108,
+        "monedero": [
+            {
+                "valor": [
+                    74
+                ],
+                "ano_emision": 325,
+                "cantidad": 45,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    30
+                ],
+                "ano_emision": 751,
+                "cantidad": 93,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    29
+                ],
+                "ano_emision": 1942,
+                "cantidad": 74,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    54
+                ],
+                "ano_emision": 1281,
+                "cantidad": 97,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    11
+                ],
+                "ano_emision": 1032,
+                "cantidad": 72,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    35
+                ],
+                "ano_emision": 1782,
+                "cantidad": 53,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    27
+                ],
+                "ano_emision": 1896,
+                "cantidad": 83,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    5
+                ],
+                "ano_emision": 1723,
+                "cantidad": 86,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 119.29296641707305,
+        "posy": 187.69036740989168,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 109,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 110,
+        "entidaddescanso": 111,
+        "monedero": [
+            {
+                "valor": [
+                    87
+                ],
+                "ano_emision": 1013,
+                "cantidad": 21,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    80
+                ],
+                "ano_emision": 1785,
+                "cantidad": 99,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    89
+                ],
+                "ano_emision": 1615,
+                "cantidad": 81,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    7
+                ],
+                "ano_emision": 75,
+                "cantidad": 6,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    73
+                ],
+                "ano_emision": 593,
+                "cantidad": 21,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    77
+                ],
+                "ano_emision": 723,
+                "cantidad": 89,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    71
+                ],
+                "ano_emision": 332,
+                "cantidad": 33,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    25
+                ],
+                "ano_emision": 1114,
+                "cantidad": 7,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 204.94900802247196,
+        "posy": 470.2488634500887,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 112,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 113,
+        "entidaddescanso": 114,
+        "monedero": [
+            {
+                "valor": [
+                    2
+                ],
+                "ano_emision": 145,
+                "cantidad": 34,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    88
+                ],
+                "ano_emision": 149,
+                "cantidad": 26,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    87
+                ],
+                "ano_emision": 1836,
+                "cantidad": 49,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    84
+                ],
+                "ano_emision": 1009,
+                "cantidad": 43,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    79
+                ],
+                "ano_emision": 230,
+                "cantidad": 90,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    47
+                ],
+                "ano_emision": 603,
+                "cantidad": 68,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    26
+                ],
+                "ano_emision": 616,
+                "cantidad": 92,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    2
+                ],
+                "ano_emision": 1245,
+                "cantidad": 92,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 940.4823190249167,
+        "posy": 593.0093607706981,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 115,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 116,
+        "entidaddescanso": 117,
+        "monedero": [
+            {
+                "valor": [
+                    85
+                ],
+                "ano_emision": 733,
+                "cantidad": 91,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    26
+                ],
+                "ano_emision": 346,
+                "cantidad": 35,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    62
+                ],
+                "ano_emision": 1122,
+                "cantidad": 11,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    65
+                ],
+                "ano_emision": 421,
+                "cantidad": 72,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    2
+                ],
+                "ano_emision": 611,
+                "cantidad": 23,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    93
+                ],
+                "ano_emision": 1454,
+                "cantidad": 25,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    98
+                ],
+                "ano_emision": 440,
+                "cantidad": 74,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    100
+                ],
+                "ano_emision": 821,
+                "cantidad": 38,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 160.5667024131709,
+        "posy": 569.2600868891279,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 118,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 119,
+        "entidaddescanso": 120,
+        "monedero": [
+            {
+                "valor": [
+                    28
+                ],
+                "ano_emision": 711,
+                "cantidad": 43,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    71
+                ],
+                "ano_emision": 547,
+                "cantidad": 100,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    56
+                ],
+                "ano_emision": 1095,
+                "cantidad": 13,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    67
+                ],
+                "ano_emision": 142,
+                "cantidad": 88,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    69
+                ],
+                "ano_emision": 1654,
+                "cantidad": 31,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    48
+                ],
+                "ano_emision": 1908,
+                "cantidad": 57,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    30
+                ],
+                "ano_emision": 1459,
+                "cantidad": 46,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    63
+                ],
+                "ano_emision": 747,
+                "cantidad": 44,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 326.14764720803817,
+        "posy": 511.6518505099446,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 121,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 122,
+        "entidaddescanso": 123,
+        "monedero": [
+            {
+                "valor": [
+                    89
+                ],
+                "ano_emision": 214,
+                "cantidad": 31,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    81
+                ],
+                "ano_emision": 477,
+                "cantidad": 78,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    97
+                ],
+                "ano_emision": 1158,
+                "cantidad": 96,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    21
+                ],
+                "ano_emision": 1108,
+                "cantidad": 67,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    44
+                ],
+                "ano_emision": 1940,
+                "cantidad": 23,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    82
+                ],
+                "ano_emision": 574,
+                "cantidad": 55,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    73
+                ],
+                "ano_emision": 1862,
+                "cantidad": 24,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    63
+                ],
+                "ano_emision": 729,
+                "cantidad": 85,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 822.0403177355361,
+        "posy": 665.9054519535323,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 124,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 125,
+        "entidaddescanso": 126,
+        "monedero": [
+            {
+                "valor": [
+                    71
+                ],
+                "ano_emision": 1534,
+                "cantidad": 80,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    40
+                ],
+                "ano_emision": 187,
+                "cantidad": 16,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    60
+                ],
+                "ano_emision": 315,
+                "cantidad": 9,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    8
+                ],
+                "ano_emision": 732,
+                "cantidad": 40,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    31
+                ],
+                "ano_emision": 1597,
+                "cantidad": 3,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    94
+                ],
+                "ano_emision": 405,
+                "cantidad": 11,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    61
+                ],
+                "ano_emision": 1155,
+                "cantidad": 55,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    22
+                ],
+                "ano_emision": 1928,
+                "cantidad": 70,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 209.8210211778599,
+        "posy": 638.1558973514365,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 127,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 128,
+        "entidaddescanso": 129,
+        "monedero": [
+            {
+                "valor": [
+                    82
+                ],
+                "ano_emision": 39,
+                "cantidad": 29,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    60
+                ],
+                "ano_emision": 972,
+                "cantidad": 45,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    96
+                ],
+                "ano_emision": 1447,
+                "cantidad": 49,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    94
+                ],
+                "ano_emision": 311,
+                "cantidad": 54,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    11
+                ],
+                "ano_emision": 595,
+                "cantidad": 30,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    73
+                ],
+                "ano_emision": 332,
+                "cantidad": 35,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    15
+                ],
+                "ano_emision": 1929,
+                "cantidad": 33,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    47
+                ],
+                "ano_emision": 153,
+                "cantidad": 24,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 399.3938929427625,
+        "posy": 236.13789321913134,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 130,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 131,
+        "entidaddescanso": 132,
+        "monedero": [
+            {
+                "valor": [
+                    28
+                ],
+                "ano_emision": 1825,
+                "cantidad": 85,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    94
+                ],
+                "ano_emision": 1783,
+                "cantidad": 38,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    80
+                ],
+                "ano_emision": 1947,
+                "cantidad": 64,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    51
+                ],
+                "ano_emision": 1457,
+                "cantidad": 95,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    56
+                ],
+                "ano_emision": 1387,
+                "cantidad": 84,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    19
+                ],
+                "ano_emision": 1061,
+                "cantidad": 6,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    68
+                ],
+                "ano_emision": 222,
+                "cantidad": 42,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    63
+                ],
+                "ano_emision": 1604,
+                "cantidad": 83,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 43.554394170352055,
+        "posy": 600.1618839000738,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 133,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 134,
+        "entidaddescanso": 135,
+        "monedero": [
+            {
+                "valor": [
+                    94
+                ],
+                "ano_emision": 1572,
+                "cantidad": 44,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    81
+                ],
+                "ano_emision": 2019,
+                "cantidad": 67,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    70
+                ],
+                "ano_emision": 199,
+                "cantidad": 91,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    86
+                ],
+                "ano_emision": 485,
+                "cantidad": 10,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    72
+                ],
+                "ano_emision": 1588,
+                "cantidad": 12,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    60
+                ],
+                "ano_emision": 1673,
+                "cantidad": 64,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    45
+                ],
+                "ano_emision": 1245,
+                "cantidad": 1,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    33
+                ],
+                "ano_emision": 1591,
+                "cantidad": 100,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 530.1139548855081,
+        "posy": 57.3447356338334,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 136,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 137,
+        "entidaddescanso": 138,
+        "monedero": [
+            {
+                "valor": [
+                    17
+                ],
+                "ano_emision": 1838,
+                "cantidad": 60,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    63
+                ],
+                "ano_emision": 1084,
+                "cantidad": 55,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    16
+                ],
+                "ano_emision": 1792,
+                "cantidad": 20,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    54
+                ],
+                "ano_emision": 1351,
+                "cantidad": 8,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    27
+                ],
+                "ano_emision": 1512,
+                "cantidad": 100,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    50
+                ],
+                "ano_emision": 1126,
+                "cantidad": 96,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    29
+                ],
+                "ano_emision": 39,
+                "cantidad": 62,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    17
+                ],
+                "ano_emision": 1965,
+                "cantidad": 3,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 37.68588157236325,
+        "posy": 73.456129300053,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 139,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 140,
+        "entidaddescanso": 141,
+        "monedero": [
+            {
+                "valor": [
+                    9
+                ],
+                "ano_emision": 725,
+                "cantidad": 15,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    43
+                ],
+                "ano_emision": 1754,
+                "cantidad": 83,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    5
+                ],
+                "ano_emision": 1501,
+                "cantidad": 1,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    63
+                ],
+                "ano_emision": 1130,
+                "cantidad": 94,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    100
+                ],
+                "ano_emision": 293,
+                "cantidad": 72,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    12
+                ],
+                "ano_emision": 697,
+                "cantidad": 20,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    10
+                ],
+                "ano_emision": 205,
+                "cantidad": 51,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    2
+                ],
+                "ano_emision": 480,
+                "cantidad": 14,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 574.1296692433245,
+        "posy": 568.2615869652602,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 142,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 143,
+        "entidaddescanso": 144,
+        "monedero": [
+            {
+                "valor": [
+                    15
+                ],
+                "ano_emision": 943,
+                "cantidad": 44,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    42
+                ],
+                "ano_emision": 379,
+                "cantidad": 21,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    5
+                ],
+                "ano_emision": 756,
+                "cantidad": 30,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    86
+                ],
+                "ano_emision": 1386,
+                "cantidad": 11,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    61
+                ],
+                "ano_emision": 135,
+                "cantidad": 46,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    39
+                ],
+                "ano_emision": 655,
+                "cantidad": 78,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    100
+                ],
+                "ano_emision": 1250,
+                "cantidad": 61,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    6
+                ],
+                "ano_emision": 1346,
+                "cantidad": 8,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 203.9699526318523,
+        "posy": 202.14742256111543,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 145,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 146,
+        "entidaddescanso": 147,
+        "monedero": [
+            {
+                "valor": [
+                    46
+                ],
+                "ano_emision": 1963,
+                "cantidad": 86,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    28
+                ],
+                "ano_emision": 420,
+                "cantidad": 50,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    83
+                ],
+                "ano_emision": 754,
+                "cantidad": 14,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    93
+                ],
+                "ano_emision": 1534,
+                "cantidad": 46,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    100
+                ],
+                "ano_emision": 1265,
+                "cantidad": 94,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    69
+                ],
+                "ano_emision": 312,
+                "cantidad": 52,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    63
+                ],
+                "ano_emision": 1439,
+                "cantidad": 90,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    22
+                ],
+                "ano_emision": 1477,
+                "cantidad": 46,
+                "pais": "Egipto"
+            }
+        ]
+    },
+    {
+        "posx": 408.67141518497056,
+        "posy": 596.4060614970207,
+        "radio": 30,
+        "lados": 8,
+        "angulo_inicial": -1.5707963267948966,
+        "color": "#ebab34",
+        "entidad": 148,
+        "energia": 60.20000000000199,
+        "descanso": 60.20000000000199,
+        "entidadenergia": 149,
+        "entidaddescanso": 150,
+        "monedero": [
+            {
+                "valor": [
+                    65
+                ],
+                "ano_emision": 571,
+                "cantidad": 47,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    8
+                ],
+                "ano_emision": 1246,
+                "cantidad": 89,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    75
+                ],
+                "ano_emision": 1857,
+                "cantidad": 42,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    89
+                ],
+                "ano_emision": 396,
+                "cantidad": 80,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    18
+                ],
+                "ano_emision": 162,
+                "cantidad": 44,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    62
+                ],
+                "ano_emision": 597,
+                "cantidad": 55,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    32
+                ],
+                "ano_emision": 1518,
+                "cantidad": 30,
+                "pais": "Egipto"
+            },
+            {
+                "valor": [
+                    10
+                ],
+                "ano_emision": 1960,
+                "cantidad": 99,
+                "pais": "Egipto"
+            }
+        ]
+    }
+]
