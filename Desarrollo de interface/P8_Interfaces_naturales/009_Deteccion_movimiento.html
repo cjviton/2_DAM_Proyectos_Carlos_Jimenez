@@ -1,0 +1,52 @@
+<!--En este programa vamos a acceder a la cámara web y obtener video a tiempo real y utilizaremos un lienzo canvas para la detección de movimiento-->
+
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Detección de movimiento</title>
+    </head>
+    <body>
+        <canvas id="lienzo" width="640px" height="480px"></canvas> <!--define el elemento liezo para dibujar la detección de movimiento. le marco la misma resolución que la imagen para que tengan el mismo tamaño-->
+        <video id="video" autoplay></video>    <!-- define el elemnto video para mostrar el video a tiempo real-->
+        <script>
+            const video = document.getElementById("video");  <!--Optiene el video y lo almacena en la varible video -->
+            const lienzo = document.getElementById("lienzo");<!--Optiene la referencia al lienzo y lo almacena en lienzo-->
+            const contexto = lienzo.getContext("2d");        <!--Optiene el contexto 2d del lienzo para dibujar en el-->
+            const paso = 32;<!--Variable para marcar la captura cada 32 pixeles -->
+            var pixelesviejos = [];
+            var pixelesnuevos = [];
+            
+            navigator.mediaDevices.getUserMedia({video:true})<!--API getusermedia para solicitar acceso a la cámara-->
+                .then(function(flujo){
+                    video.srcObject = flujo; <!--El flujo de video se muestra en el elmento video-->
+                })
+                .catch(function(error){  <!--En caso de error muestra este mensaje -->
+                    console.log("error: "+error)
+                })
+            
+            function videoALienzo(){
+                contexto.drawImage(video,0,0,lienzo.width,lienzo.height)
+                pixelesviejos = pixelesnuevos
+                pixelesnuevos = [];  <!--Reinio el Array -->
+                
+                 for(let x = 0;x<640;x+=paso){
+                    for(let y = 0;y<480;y+=paso){
+                        let pixel = contexto.getImageData(x,y,1,1);<!--Capturo el pixel en cada vuelta del bucle for -->
+                        pixelesnuevos.push(pixel.data)             <!--en las variables x e y-->
+                    }
+                }
+                console.log(pixelesnuevos)
+                requestAnimationFrame(videoALienzo)
+            }
+            
+            video.addEventListener('play',function(){
+                videoALienzo()
+            })
+                
+          
+            
+        </script>
+    </body>
+</html>
+
+<!-- -->

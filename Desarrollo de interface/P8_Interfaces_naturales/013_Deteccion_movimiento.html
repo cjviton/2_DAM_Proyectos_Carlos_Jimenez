@@ -1,0 +1,106 @@
+<!--En este programa vamos a acceder a la cámara web y obtener video a tiempo real y utilizaremos un lienzo canvas para la detección de movimiento-->
+
+<!doctype html>
+<html lang="es">
+    
+    <head>
+        <title>Detección de movimiento</title>
+        <style>
+            html,body{background:black;}
+            video{display:none;}
+            canvas{position:absolute;top:0px;left:0px;}
+            #lienzo2{opacity:0.5;}       
+        </style>
+    </head>
+    
+    <body>
+        <canvas id="lienzo" width="640px" height="480px"></canvas> //define el elemento liezo para dibujar la detección de                                                              //movimiento. le marco la misma resolución que la imagen                                                            //para que tengan el mismo tamaño
+        
+        <canvas id="lienzo2" width="640px" height="480px"></canvas> //Creo el lienzo2 para pintar color donde la comparación                                                             //de colores sea positiva
+    
+        <video id="video" autoplay></video>    //define el elemnto video para mostrar el video a tiempo real
+        <script>
+            //Declaraciónde variables iniciales
+            const video = document.getElementById("video");  //Optiene el video y lo almacena en la varible video 
+            const lienzo = document.getElementById("lienzo"); //Optiene la referencia al lienzo y lo almacena en lienzo
+            const lienzo2 = document.getElementById("lienzo2");
+            const contexto = lienzo.getContext("2d");        //Optiene el contexto 2d del lienzo para dibujar en el
+            const contexto2 = lienzo2.getContext("2d"); 
+            contexto2.fillStyle = "rgba(255,255,255,0.1)"
+            const paso = 16; //Variable para marcar la captura cada 32 pixeles (los cuadrados) 
+            var pixelesviejos = [];//pixeles de la captura anterior
+            var pixelesnuevos = [];//pixeles de la capetura del último fotograma
+            var contador = 0  //contador para la comparación de los de los pixeles viejos con los nuevos
+            
+            navigator.mediaDevices.getUserMedia({video:true}) //API getusermedia para solicitar acceso a la cámara
+                .then(function(flujo){
+                    video.srcObject = flujo; //El flujo de video se muestra en el elmento video
+                })
+                .catch(function(error){  //En caso de error muestra este mensaje 
+                    console.log("error: "+error)
+                })
+            
+            
+            
+            
+            function videoALienzo(){                 
+                contexto2.fillRect(0,0,640,480) // Creo una capa semitransrente
+                
+               
+                contexto.drawImage( //pego el canvas en el video
+                    video,
+                    0,
+                    0,
+                    lienzo.width,
+                    lienzo.height); 
+                pixelesviejos = pixelesnuevos //Asigno a los pixeles viejos, los pixeles nuevos capturados
+                pixelesnuevos = [];  //Reinio el Array -->
+                
+                 for(let x = 0;x<640;x+=paso){        //Capturo el pixelnnuevos en cada vuelta del bucle for 
+                    for(let y = 0;y<480;y+=paso){     //en las variables x e y
+                        let pixel = contexto.getImageData(x,y,1,1);
+                        pixelesnuevos.push({
+                            data:pixel.data,
+                            x:x,
+                            y:y
+                        })            
+                    }
+                }
+                
+                
+                if(contador > 0){ //Bucle para comparar el color del pixel viejo con el nuevo
+                    for(let i = 0;i<pixelesnuevos.length;i++){
+                        let rojonuevo = pixelesnuevos[i].data[0] //Comparo solo con el color rojo 
+                        let rojoviejo = pixelesviejos[i].data[0]
+                        
+                        let diferencia = Math.abs(rojonuevo-rojoviejo) //En la comparación me dará valores positivos 
+                        
+                        if(diferencia > 20){
+                
+                            contexto2.strokeRect(
+                                pixelesnuevos[i].x,
+                                pixelesnuevos[i].y,
+                                paso,
+                                paso)
+                        }
+                        
+                    }
+                }
+                
+                
+                requestAnimationFrame(videoALienzo)
+                contador ++;
+            }
+                        
+            
+            video.addEventListener('play',function(){
+                videoALienzo()
+            })
+                
+          
+            
+        </script>
+    </body>
+</html>
+
+<!-- -->

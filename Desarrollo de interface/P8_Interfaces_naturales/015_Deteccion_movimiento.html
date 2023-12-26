@@ -1,0 +1,168 @@
+<!--En este programa vamos a acceder a la cámara web y obtener video a tiempo real y utilizaremos un lienzo canvas para la detección de movimiento-->
+
+<!doctype html>
+<html lang="es">
+    
+    <head>
+        <title>Detección de movimiento</title>
+        <style>
+            html,body{background:black;}
+            video{display:none;}
+            canvas{position:absolute;top:0px;left:0px;}
+            #lienzo2{opacity:0.5;}       
+        </style>
+    </head>
+    
+    <body>
+        <canvas id="lienzo" width="640px" height="480px"></canvas> //define el elemento liezo para dibujar la detección de                                                              //movimiento. le marco la misma resolución que la imagen                                                            //para que tengan el mismo tamaño
+        
+        <canvas id="lienzo2" width="640px" height="480px"></canvas> //Creo el lienzo2 para pintar color donde la comparación                                                             //de colores sea positiva
+    
+        <video id="video" autoplay></video>    //define el elemnto video para mostrar el video a tiempo real
+        <script>
+            //Declaraciónde variables iniciales
+            const video = document.getElementById("video");  //Optiene el video y lo almacena en la varible video 
+            const lienzo = document.getElementById("lienzo"); //Optiene la referencia al lienzo y lo almacena en lienzo
+            const lienzo2 = document.getElementById("lienzo2");
+            const contexto = lienzo.getContext("2d");        //Optiene el contexto 2d del lienzo para dibujar en el
+            const contexto2 = lienzo2.getContext("2d"); 
+            contexto2.fillStyle = "rgba(255,255,255,0.1)"
+            
+            var cuadrosx = []
+            var cuadrosy = []
+            
+            const paso = 16; //Variable para marcar la captura cada 32 pixeles (los cuadrados) 
+            var pixelesviejos = [];//pixeles de la captura anterior
+            var pixelesnuevos = [];//pixeles de la capetura del último fotograma
+            var contador = 0  //contador para la comparación de los de los pixeles viejos con los nuevos
+            
+            navigator.mediaDevices.getUserMedia({video:true}) //API getusermedia para solicitar acceso a la cámara
+                .then(function(flujo){
+                    video.srcObject = flujo; //El flujo de video se muestra en el elmento video
+                })
+                .catch(function(error){  //En caso de error muestra este mensaje 
+                    console.log("error: "+error)
+                })
+            
+            
+            
+            
+            function videoALienzo(){                 
+                contexto2.fillRect(0,0,640,480) // Creo una capa semitransrente
+                
+               
+                contexto.drawImage( //pego el canvas en el video
+                    video,
+                    0,
+                    0,
+                    lienzo.width,
+                    lienzo.height); 
+                pixelesviejos = pixelesnuevos //Asigno a los pixeles viejos, los pixeles nuevos capturados
+                pixelesnuevos = [];  //Reinio el Array de pixeles nuevos-->
+                
+                 for(let x = 0;x<640;x+=paso){        //Capturo el pixeles nuevos en cada vuelta del bucle for 
+                    for(let y = 0;y<480;y+=paso){     //en las variables x e y
+                        let pixel = contexto.getImageData(x,y,1,1);//Cojo el valor del pixel
+                        pixelesnuevos.push({
+                            data:pixel.data,
+                            x:x,
+                            y:y
+                        })            
+                    }
+                }
+                
+                                //Contador +1 para que en la primera vuelta no compare con viejos, porque no hay
+                if(contador > 0){ //Bucle para comparar el color del pixel viejo con el nuevo
+                    for(let i = 0;i<pixelesnuevos.length;i++){
+                        let rojonuevo = pixelesnuevos[i].data[0] //Comparo con el color rojo 
+                        let rojoviejo = pixelesviejos[i].data[0]
+                        let verdenuevo = pixelesnuevos[i].data[1] //Comparo con el color verde 
+                        let verdeviejo = pixelesviejos[i].data[1]
+                        let azulnuevo = pixelesnuevos[i].data[2] //Comparo con el color azul 
+                        let azulviejo = pixelesviejos[i].data[2]
+                        
+                        let diferenciarojo = Math.abs(rojonuevo-rojoviejo) //En la comparación me dará valores positivos 
+                        let diferenciaverde = Math.abs(verdenuevo-verdeviejo)
+                        let diferenciaazul = Math.abs(azulnuevo-azulviejo)
+                        
+                        let promedio = (diferenciarojo +diferenciaverde + diferenciaazul) /3
+                        
+                        if(promedio > 20){
+                            
+                            contexto2.strokeRect( //Si la comparación es positiva dibuja un cuadro
+                                pixelesnuevos[i].x,
+                                pixelesnuevos[i].y,
+                                paso,
+                                paso)
+                            if(typeof(cuadrosx[pixelesnuevos[i].x]) == 'undefined'){
+                                cuadrosx[pixelesnuevos[i].x] = 1
+                            }else{
+                                cuadrosx[pixelesnuevos[i].x]++
+                            }
+                            if(typeof(cuadrosy[pixelesnuevos[i].y]) == 'undefined'){
+                                cuadrosy[pixelesnuevos[i].y] = 1
+                            }else{
+                                cuadrosy[pixelesnuevos[i].y]++
+                            }
+                        }
+                        
+                    }
+                }
+                
+                //Busaca los piexeles donde se produce mayor movimiento
+                // Búsqueda de máximos en X
+                let maxx = 0
+                let maxcuentax = 0;
+                let maxy = 0
+                let maxcuentay = 0;
+                
+                cuadrosx.forEach(function(number, index) {  //Búsqueda de máximos en X
+                    if(number > maxcuentax){
+                        maxcuentax = number;
+                        maxx = index
+                    }
+                });
+                
+                cuadrosy.forEach(function(number, index) {  //Búsqueda de máximos en y
+                    if(number > maxcuentay){
+                        maxcuentay = number;
+                        maxy = index
+                    }
+                });
+                
+                
+                if(maxx != 0){
+                    // Linea en vertical
+                    contexto2.beginPath();
+                    contexto2.moveTo(maxx,0)
+                    contexto2.lineTo(maxx,480)
+                    contexto2.stroke();
+                    // Linea en horizontal
+                    contexto2.beginPath();
+                    contexto2.moveTo(0,maxy)
+                    contexto2.lineTo(640,maxy)
+                    contexto2.stroke();
+                    
+                    // Dibujo un circulo
+                    contexto2.beginPath()
+                    contexto2.arc(maxx,maxy,30,0,Math.PI*2,true)
+                    contexto2.stroke()
+                }
+                
+                contador ++;
+                requestAnimationFrame(videoALienzo)
+                
+            }
+                        
+            
+            video.addEventListener('play',function(){
+                videoALienzo()
+            })
+                
+          
+            
+        </script>
+    </body>
+</html>
+
+<!-- -->
