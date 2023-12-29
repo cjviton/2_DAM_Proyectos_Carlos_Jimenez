@@ -29,9 +29,11 @@
         <!--Creo un lienzo para albergar el video limpio-->
         <canvas id="lienzoVideo" width="400px" height="320px"></canvas>
         
-        <!--Creo un lienzo para albergar el canvas con el movimiento-->
-        <canvas id="lienzoMovimiento" width="400px" height="320px"></canvas>
         
+        <!--Creo un lienzo3 para albergar el lienzo2 sin video-->
+        <canvas id="lienzo3" width="400px" height="320px"></canvas>
+
+            
         
         <!-- Creo dos botones que detendran y iniciaran el video -->
         <div id="botones-go">
@@ -52,14 +54,18 @@
             
             //--- Variable y contexto para el video limpio
             const lienzoVideo = document.getElementById("lienzoVideo"); 
-            const contextoVideo = lienzoVideo.getContext("2d"); 
+            const contextoVideo = lienzoVideo.getContext("2d");
             
-            //--Variable y contexto para el lienzo que pintq el movimiento
-            const lienzoMovimiento = document.getElementById("lienzoMovimiento");
-            const contextoMovimiento = lienzoMovimiento.getContext("2d");
+            
+            //--- Variable y contexto para el lienzo3 limpio sin video
+            const lienzo3 = document.getElementById("lienzo3");
+            const contexto3 = lienzo3.getContext("2d");
+            contexto3.fillStyle = "rgba(255, 255, 255, 0.01)";
 
             
-            
+                
+
+                     
             var cuadrosx = []
             var cuadrosy = []
             var atencionx = []
@@ -105,6 +111,12 @@
                 contexto2.fillStyle = "rgba(255,255,255,0.01)"
                 contexto2.fillRect(0,0,640,480) // Creo una capa semitransrente
                 
+                
+                //----Dibujo en el lienzo3
+                contexto3.fillStyle = "rgba(255,255,255,0.01)";
+                contexto3.fillRect(0,0,640,480);
+
+                
                 // ----- Dibuja el video en el canvas para el video limpio
                 contextoVideo.drawImage(
                     video,
@@ -113,13 +125,16 @@
                     lienzoVideo.width,
                     lienzoVideo.height);
 
-               
+                
                 contexto.drawImage( //pego el canvas en el video
                     video,
                     0,
                     0,
                     lienzo.width,
                     lienzo.height); 
+                
+                
+                
                 
                 pixelesviejos = pixelesnuevos //Asigno a los pixeles viejos, los pixeles nuevos capturados
                 pixelesnuevos = [];  //Reinio el Array de pixeles nuevos
@@ -168,6 +183,14 @@
                             }else{
                                 cuadrosy[pixelesnuevos[i].y]++
                             }
+                            
+                            //----Dibujo en el lienzo3
+                            contexto3.strokeRect(
+                            pixelesnuevos[i].x,
+                            pixelesnuevos[i].y,
+                            paso,
+                            paso
+                            );
                         }
                         
                     }
