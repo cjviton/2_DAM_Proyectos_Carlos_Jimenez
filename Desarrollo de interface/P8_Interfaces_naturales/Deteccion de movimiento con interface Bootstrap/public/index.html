@@ -17,7 +17,7 @@
     </head>
     
     <body>
-        <h1>INTERFACE NATURAL DE DETECCION DE MOVIMIENTO Y CENTRO DE ATENCIÓN <span class="badge bg-secondary"></span></h1>
+        <h1>INTERFACE NATURAL DE DETECCION DE MOVIMIENTO Y CENTRO DE ATENCION <span class="badge bg-secondary"></span></h1>
         
         <!--define el elemento liezo para dibujar la detección de movimiento. le marco la misma resolución que laimagen
             para que tengan el mismo tamaño-->
@@ -25,7 +25,13 @@
         <!--Creo el lienzo2 para pintar color donde la comparación de colores sea positiva-->
         <canvas id="lienzo2" width="640px" height="480px"></canvas>                                                                        
         <video id="video" autoplay></video>    <!--define el elemnto video para mostrar el video a tiempo real-->
-            
+        
+        <!--Creo un lienzo para albergar el video limpio-->
+        <canvas id="lienzoVideo" width="400px" height="320px"></canvas>
+        
+        <!--Creo un lienzo para albergar el canvas con el movimiento-->
+        <canvas id="lienzoMovimiento" width="400px" height="320px"></canvas>
+        
         
         <!-- Creo dos botones que detendran y iniciaran el video -->
         <div id="botones-go">
@@ -43,6 +49,16 @@
             const contexto = lienzo.getContext("2d");        //Optiene el contexto 2d del lienzo pstopara dibujar en el
             const contexto2 = lienzo2.getContext("2d"); 
             contexto2.fillStyle = "rgba(255,255,255,0.01)"
+            
+            //--- Variable y contexto para el video limpio
+            const lienzoVideo = document.getElementById("lienzoVideo"); 
+            const contextoVideo = lienzoVideo.getContext("2d"); 
+            
+            //--Variable y contexto para el lienzo que pintq el movimiento
+            const lienzoMovimiento = document.getElementById("lienzoMovimiento");
+            const contextoMovimiento = lienzoMovimiento.getContext("2d");
+
+            
             
             var cuadrosx = []
             var cuadrosy = []
@@ -89,6 +105,14 @@
                 contexto2.fillStyle = "rgba(255,255,255,0.01)"
                 contexto2.fillRect(0,0,640,480) // Creo una capa semitransrente
                 
+                // ----- Dibuja el video en el canvas para el video limpio
+                contextoVideo.drawImage(
+                    video,
+                    0,
+                    0,
+                    lienzoVideo.width,
+                    lienzoVideo.height);
+
                
                 contexto.drawImage( //pego el canvas en el video
                     video,
@@ -236,4 +260,3 @@
         
     </body>
 </html>
-

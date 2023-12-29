@@ -26,9 +26,21 @@ canvas{ /*Coloco el canvas en la pantalla*/
     opacity:0.3;
 }
 
+#lienzoVideo { /* Ajusta la posición a la izquierda del lienzo existente */
+    position: absolute;
+    top: 400px;
+    left: 100px; 
+}
+
+#lienzoMovimiento { /* Ajusta la posición a la derecha del nuevo lienzo */
+    position: absolute;
+    top: 400px;
+    left: 1350px;
+    background-color: gray; /* Establece el fondo blanco */
+}
+
 #botones-go{ /*Colocolos botones en la pantalla*/
     position: absolute;
     top: 900px;
     left: 850px;
 }
-
