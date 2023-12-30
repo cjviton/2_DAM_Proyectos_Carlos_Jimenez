@@ -10,6 +10,11 @@ h1{
     color:black;                            /*Doy color a la fuente*/
     background-color: darkgray;             /*Doy color al fondo*/
     font-family: 'Digital-7', sans-serif;   /*Cambio el estilo de letra*/
+    border-style: solid;
+    border-color: white;
+    border-width: 10px; /* Grosor del borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);/*Efecto sombra*/
 }
 
 video{
@@ -20,6 +25,12 @@ canvas{ /*Coloco el canvas en la pantalla*/
     position:absolute;
     top:300px;
     left:600px;
+    border-style: solid;
+    border-color:darkgray;
+    border-width: 10px; /* Grosor del borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);/*Efecto sombra*/
+    
 }
 
 
@@ -32,6 +43,7 @@ canvas{ /*Coloco el canvas en la pantalla*/
     position: absolute;
     top: 400px;
     left: 100px; 
+    
 }
 
 
@@ -40,7 +52,7 @@ canvas{ /*Coloco el canvas en la pantalla*/
     top: 400px;
     left: 1350px;
     
-    
+    background:#6cdb12;
 }
 
 
@@ -48,4 +60,5 @@ canvas{ /*Coloco el canvas en la pantalla*/
     position: absolute;
     top: 900px;
     left: 850px;
+    
 }
