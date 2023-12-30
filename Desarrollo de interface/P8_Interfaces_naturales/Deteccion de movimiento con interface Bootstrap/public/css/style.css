@@ -19,8 +19,8 @@ h1{
 
 #pantallaVideoLimpio { /*Texto encima de la pantalla de video limpio*/
     position:absolute;
-    top:300px;
-    left:230px;
+    top:280px;
+    left:220px;
     display: inline-block;
     background-color: darkgray;             /*Doy color al fondo*/
     font-family: 'Digital-7', sans-serif;   /*Cambio el estilo de letra*/
@@ -34,8 +34,8 @@ h1{
 
 #pantallaVideodetector{/*Texto encima de la pantalla del video con el detector*/
     position:absolute;
-    top:300px;
-    left:230px;
+    top:220px;
+    left:700px;
     display: inline-block;
     background-color: darkgray;             /*Doy color al fondo*/
     font-family: 'Digital-7', sans-serif;   /*Cambio el estilo de letra*/
@@ -51,8 +51,8 @@ h1{
 
 #pantallaDetector{/*Texto encima de la pantalla del detector*/
     position:absolute;
-    top:300px;
-    left:230px;
+    top:280px;
+    left:1450px;
     display: inline-block;
     background-color: darkgray;             /*Doy color al fondo*/
     font-family: 'Digital-7', sans-serif;   /*Cambio el estilo de letra*/
@@ -67,10 +67,10 @@ h1{
 }
 
 
-#selector{
+#selector{ /*Selector de pixeles */
     position:absolute;
-    top:300px;
-    left:230px;
+    top:780px;
+    left:1440px;
     display: inline-block;
     background-color: darkgray;             /*Doy color al fondo*/
     font-family: 'Digital-7', sans-serif;   /*Cambio el estilo de letra*/
@@ -93,7 +93,7 @@ video{ /*Para que no se vea el video original y solo se vea el canvas*/
 
 canvas{ /*Coloco el canvas en la pantalla*/
     position:absolute;
-    top:300px;
+    top:350px;
     left:600px;
     border-style: solid;
     border-color:darkgray;
@@ -126,9 +126,9 @@ canvas{ /*Coloco el canvas en la pantalla*/
 
 #botones-go{ /*Colocolos botones en la pantalla*/
     position: absolute;
-    top: 850px;
+    top: 900px;
     left: 850px;
-    
+    font-size: 16px; 
 }
 
 
