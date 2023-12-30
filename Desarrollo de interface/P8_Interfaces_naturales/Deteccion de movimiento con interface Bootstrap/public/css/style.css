@@ -51,14 +51,25 @@ canvas{ /*Coloco el canvas en la pantalla*/
     position: absolute;
     top: 400px;
     left: 1350px;
-    
-    background:#6cdb12;
 }
 
 
 #botones-go{ /*Colocolos botones en la pantalla*/
     position: absolute;
-    top: 900px;
+    top: 850px;
     left: 850px;
+    
+}
+
+
+#selectPaso{
+    position: absolute;
+    top: 900px;
+    left: 1550px;
+    border-style: solid;
+    border-color:darkgray;
+    border-width: 10px; /* Grosor del borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);/*Efecto sombra*/
     
 }

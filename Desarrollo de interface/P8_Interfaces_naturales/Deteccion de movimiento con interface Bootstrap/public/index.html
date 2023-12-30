@@ -26,16 +26,25 @@
         <canvas id="lienzo2" width="640px" height="480px"></canvas>                                                                        
         <video id="video" autoplay></video>    <!--define el elemnto video para mostrar el video a tiempo real-->
         
-        <!--Creo un lienzo para albergar el video limpio-->
+        <!-- ---Creo un lienzo para albergar el video limpio-->
         <canvas id="lienzoVideo" width="400px" height="320px"></canvas>
         
         
-        <!--Creo un lienzo3 para albergar el lienzo2 sin video-->
+        <!-- ----Creo un lienzo3 para albergar el lienzo2 sin video-->
         <canvas id="lienzo3" width="400px" height="320px"></canvas>
+        
+        
+        <!-- ----Menú desplegable para la selección del la variable paso -->
+        <select id="selectPaso" onchange="cambiarPaso()">
+          <option value="16">16</option>
+          <option value="32" >32</option>
+          <option value="64">64</option>
+          
+        </select>
 
             
         
-        <!-- Creo dos botones que detendran y iniciaran el video -->
+        <!-- ----Creo dos botones que detendran y iniciaran el video -->
         <div id="botones-go">
             <button type="button" class="btn btn-success" onclick="startVideo()">PLAY</button>
             <button type="button" class="btn btn-danger" onclick="stopVideo()">PAUSE</button>
@@ -61,18 +70,26 @@
             const lienzo3 = document.getElementById("lienzo3");
             const contexto3 = lienzo3.getContext("2d");
             contexto3.fillStyle = "rgba(255, 255, 255, 0.01)";
+            
+            
+            //----Funcion que ejecuta el cambio al paso seleccionado ene l menú desplegable
+            function cambiarPaso() {
+              const selectElement = document.getElementById("selectPaso");
+              const nuevoPaso = parseInt(selectElement.value);
+              paso = nuevoPaso;
+                     
+            }
 
             
-                
-
-                     
+                            
             var cuadrosx = []
             var cuadrosy = []
             var atencionx = []
             var atenciony = []
             
             
-            const paso = 16; //Variable para marcar la captura cada 32 pixeles (los cuadrados) 
+            let paso = 16; //Variable para marcar la captura cada 32 pixeles (los cuadrados) 
+                           //---Declaro al variable como let para poder reasignarle el valor que seleccione en el       //  //   desplegable
             var pixelesviejos = [];//pixeles de la captura anterior
             var pixelesnuevos = [];//pixeles de la capetura del último fotograma
             var contador = 0  //contador para la comparación de los de los pixeles viejos con los nuevos
@@ -85,8 +102,8 @@
                     console.log("error: "+error)
                 })
             
-            
-            function startVideo() {   //----Añado las funciones star/stop video y las asigno a los botones succes y danger
+            //----Añado las funciones star/stop video y las asigno a los botones succes y danger
+            function startVideo() {   
                 // Iniciar el video
                 video.play();
                 
@@ -264,8 +281,11 @@
                 }
                 
                 contador ++;
-                requestAnimationFrame(videoALienzo)
                 
+                
+                requestAnimationFrame(videoALienzo);
+                
+                                
             }
                         
             
@@ -276,6 +296,7 @@
         </script>
         
         
+
         
         
         <!--La referencia a javascript al servidor de bootstrap se hace antes del cierre del body-->
