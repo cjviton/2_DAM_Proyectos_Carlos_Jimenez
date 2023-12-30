@@ -17,7 +17,77 @@ h1{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);/*Efecto sombra*/
 }
 
-video{
+#pantallaVideoLimpio { /*Texto encima de la pantalla de video limpio*/
+    position:absolute;
+    top:300px;
+    left:230px;
+    display: inline-block;
+    background-color: darkgray;             /*Doy color al fondo*/
+    font-family: 'Digital-7', sans-serif;   /*Cambio el estilo de letra*/
+    border-style: solid;
+    border-color: white;
+    border-width: 10px; /* Grosor del borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);/*Efecto sombra*/
+    font-size: 40px; /* Tamaño de fuente ajustado */
+}
+
+#pantallaVideodetector{/*Texto encima de la pantalla del video con el detector*/
+    position:absolute;
+    top:300px;
+    left:230px;
+    display: inline-block;
+    background-color: darkgray;             /*Doy color al fondo*/
+    font-family: 'Digital-7', sans-serif;   /*Cambio el estilo de letra*/
+    border-style: solid;
+    border-color: white;
+    border-width: 10px; /* Grosor del borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);/*Efecto sombra*/
+    font-size: 40px; /* Tamaño de fuente ajustado */
+
+    
+}
+
+#pantallaDetector{/*Texto encima de la pantalla del detector*/
+    position:absolute;
+    top:300px;
+    left:230px;
+    display: inline-block;
+    background-color: darkgray;             /*Doy color al fondo*/
+    font-family: 'Digital-7', sans-serif;   /*Cambio el estilo de letra*/
+    border-style: solid;
+    border-color: white;
+    border-width: 10px; /* Grosor del borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);/*Efecto sombra*/
+    font-size: 40px; /* Tamaño de fuente ajustado */
+   
+    
+}
+
+
+#selector{
+    position:absolute;
+    top:300px;
+    left:230px;
+    display: inline-block;
+    background-color: darkgray;             /*Doy color al fondo*/
+    font-family: 'Digital-7', sans-serif;   /*Cambio el estilo de letra*/
+    border-style: solid;
+    border-color: white;
+    border-width: 10px; /* Grosor del borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);/*Efecto sombra*/
+    font-size: 40px; /* Tamaño de fuente ajustado */
+
+    
+}
+
+
+
+
+video{ /*Para que no se vea el video original y solo se vea el canvas*/
     display:none;
 }
 

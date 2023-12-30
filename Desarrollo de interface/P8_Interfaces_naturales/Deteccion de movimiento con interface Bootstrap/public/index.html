@@ -17,7 +17,20 @@
     </head>
     
     <body>
-        <h1>INTERFACE NATURAL DE DETECCION DE MOVIMIENTO Y CENTRO DE ATENCION <span class="badge bg-secondary"></span></h1>
+        <h1>NATURAL INTERFACE FOR MOTION DETECTION AND CENTER OF ATTENTION<span class="badge bg-secondary"></span></h1>
+        
+        <!-- Agrega un contenedor para el texto encima del video -->
+        <div id = "pantallaVideoLimpio">CLEAR VIDEO<span class="badge bg-secondary"></span></div>
+        
+        <!-- Agrega un contenedor para el texto encima del video con detección -->
+        <div id = "pantallaVideodetector">VIRTUAL FOCUS OF ATTENTION <span class="badge bg-secondary"></span></div>
+        
+        <!-- Agrega un contenedor para el texto encima del video con detección -->
+        <div id = "pantallaDetector">MOVING PIXELS<span class="badge bg-secondary"></span></div>
+        
+        <!-- Agrega un contenedor para el texto encima del selector de pixeles -->
+        <div id = "selector">PIXEL GROUP SIZE<span class="badge bg-secondary"></span></div>
+
         
         <!--define el elemento liezo para dibujar la detección de movimiento. le marco la misma resolución que laimagen
             para que tengan el mismo tamaño-->
@@ -34,15 +47,6 @@
         <canvas id="lienzo3" width="400px" height="320px"></canvas>
         
         
-        <!-- ----Menú desplegable para la selección del la variable paso -->
-        <select id="selectPaso" onchange="cambiarPaso()">
-          <option value="16">16</option>
-          <option value="32" >32</option>
-          <option value="64">64</option>
-          
-        </select>
-
-            
         
         <!-- ----Creo dos botones que detendran y iniciaran el video -->
         <div id="botones-go">
@@ -50,6 +54,14 @@
             <button type="button" class="btn btn-danger" onclick="stopVideo()">PAUSE</button>
         </div>
         
+        
+        <!-- ----Menú desplegable para la selección del la variable paso -->
+        <select id="selectPaso" onchange="cambiarPaso()">
+          <option value="16">16</option>
+          <option value="32" >32</option>
+          <option value="64">64</option>
+          
+        </select>
         
         
         <script>
@@ -117,9 +129,10 @@
             // Detener el video
             video.pause();
             }
-                
-                
-                
+             
+            
+            
+            
             
             function videoALienzo(){
                 cuadrosx = []
