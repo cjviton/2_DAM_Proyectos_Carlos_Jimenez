@@ -93,16 +93,18 @@
             }
 
             
-                            
+            //Variables para generan  los arrays de cuadros x e y             
             var cuadrosx = []
             var cuadrosy = []
+            
+            //Variables para allmacenar el promedio de movimento en x e y 
             var atencionx = []
             var atenciony = []
             
             
-            let paso = 16; //Variable para marcar la captura cada 32 pixeles (los cuadrados) 
+            let paso = 16; //Variable para marcar la captura cada 16.32.o 64 pixeles (los cuadrados) 
                            //---Declaro al variable como let para poder reasignarle el valor que seleccione en el       //  //   desplegable
-            var pixelesviejos = [];//pixeles de la captura anterior
+            var pixelesviejos = [];//pixeles de la captura anterior para comparar
             var pixelesnuevos = [];//pixeles de la capetura del último fotograma
             var contador = 0  //contador para la comparación de los de los pixeles viejos con los nuevos
             
@@ -134,7 +136,7 @@
             
             
             
-            function videoALienzo(){
+            function videoALienzo(){ //encarda de hacer la comparación de pixeles, pintar en los canvas...
                 cuadrosx = []
                 cuadrosy = []
                 
@@ -142,12 +144,12 @@
                 contexto2.fillRect(0,0,640,480) // Creo una capa semitransrente
                 
                 
-                //----Dibujo en el lienzo3
+                //----Dibujo en el lienzo3 para pintar el foco de atencion
                 contexto3.fillStyle = "rgba(255,255,255,0.1)";
                 contexto3.fillRect(0,0,640,480);
 
                 
-                // ----- Dibuja el video en el canvas para el video limpio
+                // ----- Dibuja el video en el canvas para el video limpio de la izquierda
                 contextoVideo.drawImage(
                     video,
                     0,
@@ -156,7 +158,7 @@
                     lienzoVideo.height);
 
                 
-                contexto.drawImage( //pego el canvas en el video
+                contexto.drawImage( //pego el canvas en el video principal 
                     video,
                     0,
                     0,
@@ -296,13 +298,14 @@
                 contador ++;
                 
                 
-                requestAnimationFrame(videoALienzo);
+                requestAnimationFrame(videoALienzo); //solicitar al navegador que ejecute la función videoALienzo
+                                                     //antes del proximo repintado, esto ocurre unas 60 veces por segundo
                 
                                 
             }
                         
             
-            video.addEventListener('play',function(){
+            video.addEventListener('play',function(){  //cuando el video comienza a reproducirse se ejecutará la función                                                    //videoALienzo()
                 videoALienzo()
             })
                             
