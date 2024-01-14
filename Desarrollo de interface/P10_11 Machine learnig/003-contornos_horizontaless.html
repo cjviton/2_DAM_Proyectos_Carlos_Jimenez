@@ -4,27 +4,31 @@
 <html>
     <head>
         <script>
-            window.onload = function(){ //capturamos la imagen y la metemos dentro del canvas----------------
+            window.onload = function(){ 
+                //Cargamos el contexto del lienzo 1y2 para poder pintar y meter la imagen 
                 var contexto = document.getElementById("lienzo").getContext("2d");
                 var contexto2 = document.getElementById("lienzo2").getContext("2d");
+                
                 let imagen = new Image();
-                imagen.src = "mano.jpg";
+                imagen.src = "mano.jpg"; //Cargo la imagen que tengo guadada en la carpeta
+                
                 imagen.onload = function(){
                     // Pinto la imagen original--------------------------------------------------------------
-                    contexto.drawImage(imagen,0,0);//metemos la imagen en el contexto-----------------------
-                    contexto2.fillStyle = "white";   //Pintamos un rectángulo blanco en el contexto2---------------------
-                    contexto2.fillRect(0,0,512,512); //(punto de inicio x, p inicio y, ancho, alto del rectángulo)-------
+                    contexto.drawImage(imagen,0,0);//metemos la imagen en el lienzo-----------------------
+                
                     
-                    
-                    // Detectamos bordes en la imagen analizando pixel a pixel--------------------------------
-                    let imagenlienzo1 = contexto.getImageData(0,0,512,512); //Información de cada pixel del rectángulo original
-                    let imagenlienzo2 = contexto2.getImageData(0,0,512,512);//Aquí representamos el resultado del proceso de                                                             //detección de boordes
+                    let imagenlienzo1 = contexto.getImageData(0,0,512,512); //Cargo la iamgen1 en memoria
+                    let imagenlienzo2 = contexto2.getImageData(0,0,512,512);//Cargola imagen2 en memoria
                     
                     //Bucle for para recorrer cada pixel de la imagen y compararlo 
                     for(let i = 0;i<imagenlienzo1.data.length;i+=4){//i+=4 porque cada pixel lo componen 4 valores RGB+Alpha
-                        let diferencia = Math.abs(imagenlienzo1.data[i] - imagenlienzo1.data[i+4*512]) //busca diferencia en el
-                                                                                                    //canal rojo
-                        if(diferencia > 10){
+                        
+                        //busca diferencia en el pixel rojo en vertical--------------------
+                        let diferencia = Math.abs(imagenlienzo1.data[i] - imagenlienzo1.data[i+4]) 
+                        //busca diferencia en el pixel rojo en horizontal -----------------
+                        let diferencia2 = Math.abs(imagenlienzo1.data[i] - imagenlienzo1.data[i+512*4])
+                        
+                        if(diferencia > 10 || diferencia2 > 10){
                             imagenlienzo2.data[i] = 0;      //Si diferencia es mayor de 10 pintará un pixel negro
                             imagenlienzo2.data[i+1] = 0;  
                             imagenlienzo2.data[i+2] = 0;
