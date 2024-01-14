@@ -1,0 +1,79 @@
+<!--Con este ejercicio vamos a aprender a detectar el contorno de las imágenes. El ojo humano tiende a fijarse y ha reconocer desde el contorno más que con el relleno -->
+
+<!doctype html>
+<html>
+    <head>
+        <script>
+            window.onload = function(){ 
+                //patrones
+                var patrones = []
+                patrones[0] = new Image();
+                patrones[0].src = "vertical.png";
+                patrones[1] = new Image();
+                patrones[1].src = "horizontal.png";
+                
+                //Cargamos el contexto del lienzo 1y2 para poder pintar y meter la imagen 
+                var contexto = document.getElementById("lienzo").getContext("2d");
+                var contexto2 = document.getElementById("lienzo2").getContext("2d");
+                
+                //Contextos de las referencias
+                var contextovertical = document.getElementById("lienzovertical").getContext("2d");
+                var contextohorizontal = document.getElementById("lienzohorizontal").getContext("2d");
+                
+                let imagen = new Image();
+                imagen.src = "mano.jpg"; //Cargo la imagen que tengo guadada en la carpeta
+                
+                imagen.onload = function(){
+                    
+                    // Pinto las referencias
+                    contextovertical.drawImage(patrones[0],0,0)
+                    contextohorizontal.drawImage(patrones[1],0,0)
+                    
+                    // Pinto la imagen original--------------------------------------------------------------
+                    contexto.drawImage(imagen,0,0);//metemos la imagen en el lienzo-----------------------
+                
+                    
+                    let imagenlienzo1 = contexto.getImageData(0,0,512,512); //Cargo la iamgen1 en memoria
+                    let imagenlienzo2 = contexto2.getImageData(0,0,512,512);//Cargola imagen2 en memoria
+                    
+                    //Bucle for para recorrer cada pixel de la imagen y compararlo 
+                    for(let i = 0;i<imagenlienzo1.data.length;i+=4){//i+=4 porque cada pixel lo componen 4 valores RGB+Alpha
+                        
+                        //busca diferencia en el pixel rojo en vertical--------------------
+                        let diferencia = Math.abs(imagenlienzo1.data[i] - imagenlienzo1.data[i+4]) 
+                        //busca diferencia en el pixel rojo en horizontal -----------------
+                        let diferencia2 = Math.abs(imagenlienzo1.data[i] - imagenlienzo1.data[i+512*4])
+                        
+                        if(diferencia > 10 || diferencia2 > 10){
+                            imagenlienzo2.data[i] = 0;      //Si diferencia es mayor de 10 pintará un pixel negro
+                            imagenlienzo2.data[i+1] = 0;  
+                            imagenlienzo2.data[i+2] = 0;
+                            imagenlienzo2.data[i+3] = 255;  //Con el valor Alpha controlamos a opcidad del pixel.
+                        }else{
+                            imagenlienzo2.data[i] = 255;    //si no, pinta un pixel blanco. Todos los valores del RGB están
+                            imagenlienzo2.data[i+1] = 255;  //en su valor máximo. El resultado es el blanco
+                            imagenlienzo2.data[i+2] = 255;
+                            imagenlienzo2.data[i+3] = 255;
+                        }
+                    }
+                    contexto2.putImageData(imagenlienzo2,0,0); //Pinta el resultado en el lienzo2
+                }
+            }
+        </script>
+        <style>
+            canvas{border:1px solid black;} /*Borde para diferenciar cada uno de los canvas*/
+        </style>
+    </head>
+    <body>
+        <canvas width=512 height=512 id="lienzo"></canvas> <!--Creo un lienzo canvas de las dimensiones de la imagen para-->
+                                                           <!--poder manipularla y gestionarla-->
+        <canvas width=512 height=512 id="lienzo2"></canvas><!--Creo un lienzo2 -->
+        
+        <canvas width=8 height=8 id="lienzovertical"></canvas>
+        <canvas width=8 height=8 id="lienzohorizontal"></canvas>
+        
+    </body>
+    
+    <!-- -->
+    
+</html>
