@@ -201,8 +201,19 @@
                         fetch("guardajson2.php?archivo="+soloimagen+"&patron="+quitoextension+"&datos="+guarda)
                     }
                 }
-                procesaImagen("../../imagenes/002-procesadas/003-flor.jpg")
+                
+                fetch("../imagenes/json/imagenes.json")
+                .then(function(response){
+                        return response.json()
+                    })
+                .then(function(datos){
+                    for(let i = 0;i<datos.length;i++){
+                        procesaImagen("../../imagenes/002-procesadas/"+datos[i])
+                    }
+                })
             }
+            
+            
         </script>
         <style>
             canvas{border:1px solid black;} /*Borde para diferenciar cada uno de los canvas*/

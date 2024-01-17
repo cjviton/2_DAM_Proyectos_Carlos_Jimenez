@@ -2,6 +2,7 @@
 
     $archivo = "datos/prueba.json";
     $datos = [
+        'archivo' => $_GET['archivo'],
         'elemento' => $_GET['patron'],
         'datos' => json_decode($_GET['datos'])
     ];
