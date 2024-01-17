@@ -22,7 +22,7 @@
                     
                     //Bucle for para recorrer cada pixel de la imagen y compararlo 
                     for(let i = 0;i<imagenlienzo1.data.length;i+=4){//i+=4 porque cada pixel lo componen 4 valores RGB+Alpha
-                        let diferencia = Math.abs(imagenlienzo1.data[i] - imagenlienzo1.data[i+4*512]) //busca diferencia en el
+                        let diferencia = Math.abs(imagenlienzo1.data[i] - imagenlienzo1.data[i+4]) //busca diferencia en el
                                                                                                     //canal rojo
                         if(diferencia > 10){
                             imagenlienzo2.data[i] = 0;      //Si diferencia es mayor de 10 pintará un pixel negro
