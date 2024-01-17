@@ -37,7 +37,7 @@ for archivo in archivos:   #para cada una de las imagenes:
     escalada.save(carpetasalida+"/"+archivo) 
     imagenes.append(archivo)  #Las guardo en la carpeta de salida
 
-archivojson = open("json/imagenes.json","w")  #Voy guardar la lista de imagenes en un archivo json
-json.dump(imagenes,archivojson)
+archivojson = open("json/imagenes.json","w")  #Voy guardar la lista de imagenes en un archivo json 
+json.dump(imagenes,archivojson)               #en la  carpeta json creada en la raiz
 archivojson.close()
 
