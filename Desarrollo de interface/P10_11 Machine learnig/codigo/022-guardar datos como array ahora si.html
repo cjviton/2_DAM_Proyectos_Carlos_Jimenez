@@ -1,38 +1,46 @@
+<!--Con este ejercicio vamos a aprender a detectar el contorno de las imágenes. El ojo humano tiende a fijarse y ha reconocer desde el contorno más que con el relleno -->
+
 <!doctype html>
 <html>
     <head>
         <script>
-            var supercontador = -1;
-                var datosimagenes = []
+            var supercontador = -1;       //Variables para que el programama vaya analizando 
+                var datosimagenes = []    //analizando cada imagen
                 var temporizador = ""
                 var datos;
+            
             var imagen = new Image();
-            var contexto
-                // Cargamos el contexto del lienzo 2
+            
+            var contexto                  //Variable para representar el contexto de los lienzos
                 var contexto2
-                // Cargamos el contexto del lienzo 3
                 var contexto3 
-                // CContextos de las referencias
                 var contextovertical 
                 var contextohorizontal 
                 var contextodiagonal1 
                 var contextodiagonal2
-                var patrones = []
+                var patrones = []        //variable con la que voy a hacer las comparaciones
                 var cuentapatrones = []
+                
+                
             window.onload = function(){
-                // Cargamos el contexto del lienzo 1
+                
+                //Cargamos el contexto del lienzo 1 donde pondremos la imagen original
                 contexto = document.getElementById("lienzo").getContext("2d");
-                // Cargamos el contexto del lienzo 2
+                
+                // Cargamos el contexto del lienzo 2 donde pintremos los bordes de la imagen original
                 contexto2 = document.getElementById("lienzo2").getContext("2d");
-                // Cargamos el contexto del lienzo 3
+                
+                // Cargamos el contexto del lienzo 3 donde pintaremos a color los patrones
                 contexto3 = document.getElementById("lienzo3").getContext("2d");
-                // CContextos de las referencias
+                
+                //Los usaremos para almacenar los patrones que usaremso para comparar
                 contextovertical = document.getElementById("lienzovertical").getContext("2d");
                 contextohorizontal = document.getElementById("lienzohorizontal").getContext("2d");
                 contextodiagonal1 = document.getElementById("lienzodiagonal1").getContext("2d");
                 contextodiagonal2 = document.getElementById("lienzodiagonal2").getContext("2d");
-                // Patrones
                 
+                
+                //patrones con la lineas horizontales, verticales y diagonales
                 patrones[0] = new Image();
                 patrones[0].src = "img/vertical.png";
                 patrones[1] = new Image();
@@ -42,15 +50,16 @@
                 patrones[3] = new Image();
                 patrones[3].src = "img/diagonal2.png";
                 
+                
+                //Esta variable contará el número de coincidencias con patrones verticales y horizontales que hay 
                 cuentapatrones[0] = 0
                 cuentapatrones[1] = 0
                 cuentapatrones[2] = 0
                 cuentapatrones[3] = 0
                 
-                // Creo una nueva imagen en memoria de Javascript
-                
-                
-                
+                            
+                //Esta parte del código es la encarda de cargar los datos de la imagen en el archivo
+                //json cada 5 segundos
                 fetch("../imagenes/json/imagenes.json")
                 .then(function(response){
                         return response.json()
@@ -70,48 +79,71 @@
                     clearTimeout(temporizador)
                     temporizador = setTimeout("bucle()",5000)
                 }
+            
+            
             function procesaImagen(miimagen){
                 console.log(miimagen)
                     // Cargo una imagen que tengo en el disco duro
                     imagen.src = "img/"+miimagen;
-                    // Me espero a que a imagen cargue, y entonces ejecuto esta función
+                
+                    // Cuando la imagen está cargada, ejecuto esta función
                     imagen.onload = function(){
+                        
                         // Pinto las referencias
                         contextovertical.drawImage(patrones[0],0,0)
                         contextohorizontal.drawImage(patrones[1],0,0)
                         contextodiagonal1.drawImage(patrones[2],0,0)
                         contextodiagonal2.drawImage(patrones[3],0,0)
-                        // Primero pinto la imagen original en el lienzo original
+                        
+                        
+                        //Pinto la imagen original en el lienzo original
                         contexto.drawImage(imagen,0,0);
+                        
                         // Detectamos bordes en la imagen
                         // Primero cargamos la imagen 1 en memoria
                         let imagenlienzo1 = contexto.getImageData(0,0,512,512);
                         // Luego cargamos la imagen 2 en memoria
                         let imagenlienzo2 = contexto2.getImageData(0,0,512,512);
-                        // Para cada uno de los pixeles de la imagen
+                        
+                        
+                        //Bucle for para recorrer cada pixel de la imagen y compararlo 
                         for(let i = 0;i<imagenlienzo1.data.length;i+=4){
+                            
+                            
                             // Miro la diferencia del canal rojo con en horizontal
+                            //i+=4 porque cada pixel lo componen 4 valores RGB+Alpha
                             let diferencia = Math.abs(imagenlienzo1.data[i] - imagenlienzo1.data[i+4])
                             // Miro la diferencia del canal rojo en vertical
                             let diferencia2 = Math.abs(imagenlienzo1.data[i] - imagenlienzo1.data[i+512*4])
+                            
+                            
                             // En el caso de que la diferencia sea notable
                             if(diferencia > 10 || diferencia2 > 10){
-                                // Pinto un pixel negro
+                                
+                                //Si diferencia es mayor de 10 pintará un pixel negro
                                 imagenlienzo2.data[i] = 0;
                                 imagenlienzo2.data[i+1] = 0;
                                 imagenlienzo2.data[i+2] = 0;
-                                imagenlienzo2.data[i+3] = 255;
+                                imagenlienzo2.data[i+3] = 255;//Con el valor Alpha controlamos a opcidad del pixel.
+                                
+                                
                             }else{
-                                // Pinto un pixel blanco
+                                
+                                //si no, pinta un pixel blanco. Todos los valores del RGB están
+                                //en su valor máximo. El resultado es el blanco
                                 imagenlienzo2.data[i] = 255;
                                 imagenlienzo2.data[i+1] = 255;
                                 imagenlienzo2.data[i+2] = 255;
                                 imagenlienzo2.data[i+3] = 255;
                             }
                         }
-                        // Por ultimo, pongo la imagen
+                        
+                        
+                        //Pinta el resultado en el lienzo2
                         contexto2.putImageData(imagenlienzo2,0,0); 
-                        // Recorro esta imagen para vertical //////////////////////////////////////
+                        
+                        
+                        //Recorro esta imagen para comparar,que pixel tiene el patrón vertical y el que lo tenga se pintará en el lienzo3
                         let muestravertical = contextovertical.getImageData(0,0,8,8)
                         for(let x= 0;x<512;x++){
                             for(let y= 0;y<512;y++){
@@ -127,7 +159,9 @@
                                 }
                             }
                         }
-                        // Recorro esta imagen para horizontal //////////////////////////////////////
+                        
+                        
+                        ///Recorro esta imagen para comparar,que pixel tiene el patrón horizontal y el que lo tenga se pintará en el lienzo3
                         let muestrahorizontal = contextohorizontal.getImageData(0,0,8,8)
                         for(let x= 0;x<512;x++){
                             for(let y= 0;y<512;y++){
@@ -143,11 +177,14 @@
                                 }
                             }
                         }
-                        // Recorro esta imagen para diagonal1 //////////////////////////////////////
+                        
+                        
+                        
+                        //Recorro esta imagen para comparar,que pixel tiene el patrón diagonal1 y el que lo tenga se pintará en el //lienzo3
                         let muestradiagonal1 = contextodiagonal1.getImageData(0,0,8,8)
                         for(let x= 0;x<512;x++){
                             for(let y= 0;y<512;y++){
-                                let trozo = contexto2.getImageData(x,y,8,8)
+                                let trozo = contexto2.getImageData(x,y,8,8)//Pongo 8 porque el patrón para conparar es de 8*8 pixel
                                 let suma = 0;
                                 for(let i = 0;i<trozo.data.length;i+=4){
                                     suma += Math.abs(trozo.data[i] - muestradiagonal1.data[i])
@@ -159,7 +196,9 @@
                                 }
                             }
                         }
-                        // Recorro esta imagen para diagonal2 //////////////////////////////////////
+                        
+                        
+                        //Recorro esta imagen para comparar,que pixel tiene el patrón diagonal2 y el que lo tenga se pintará en el //lienzo3
                         let muestradiagonal2 = contextodiagonal2.getImageData(0,0,8,8)
                         for(let x= 0;x<512;x++){
                             for(let y= 0;y<512;y++){
@@ -175,7 +214,12 @@
                                 }
                             }
                         }
-                        console.log(cuentapatrones)
+                        
+                        
+                        console.log(cuentapatrones) //no muestra el número de patrones que hay verticales y horizontales
+                        
+                        
+                        //Con este bucle for va aconvertir en porcentaje el número de píxeles que hay de horizontales y verticales  sumarán 1
                         let total = 0;
                         for(i = 0;i<cuentapatrones.length;i++){
                             total += cuentapatrones[i]
@@ -183,7 +227,12 @@
                         for(i = 0;i<cuentapatrones.length;i++){
                             cuentapatrones[i] /= total
                         }
-                        console.log(cuentapatrones)
+                        
+                        
+                        console.log(cuentapatrones)//Muestra el porcentaje que hay de cada uno los patornes
+                        
+                        
+                        //Creo un archivo .php que me guardará los datos del porcentaje de la variable cuentapatrones en una que he creado en la raiz del proyecto.
                         let guarda = JSON.stringify(cuentapatrones)
                         let patron = miimagen.split("-")
                         let rutacompleta = miimagen
@@ -196,15 +245,24 @@
                 }
         </script>
         <style>
-            canvas{border:1px solid black;}
+            canvas{border:1px solid black;} /*Borde para diferenciar cada uno de los canvas*/
         </style>
     </head>
     <body>
+        <!--Creo un lienzo canvas de las dimensiones de la imagen para poder manipularla y gestionarla-->
         <canvas width=512 height=512 id="lienzo"></canvas>
+        
+        <!--Creo un lienzo2 para pintar los bordes -->
         <canvas width=512 height=512 id="lienzo2"></canvas>
+        
+        <!--Creo un lienzo3 para pintar los patrones   -->
         <canvas width=512 height=512 id="lienzo3"></canvas>
+        
+        <!--Para los patrones vertical u horizontal-->
         <canvas width=8 height=8 id="lienzovertical"></canvas>
         <canvas width=8 height=8 id="lienzohorizontal"></canvas>
+        
+        <!--Para los patrones diagonales-->
         <canvas width=8 height=8 id="lienzodiagonal1"></canvas>
         <canvas width=8 height=8 id="lienzodiagonal2"></canvas>
         
