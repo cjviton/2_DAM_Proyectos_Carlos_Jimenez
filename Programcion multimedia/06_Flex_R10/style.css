@@ -1,0 +1,128 @@
+
+/*Resteamos el stylo del navegador*/
+
+* {                 
+    padding: 0;
+    margin: 0;
+}
+
+/*Doy estilo al body*/
+body{
+    width: 80%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;/*ajusto el texto en el centro horizontal*/
+    line-height: 150px;/*ajusto el texto en el centro vertical*/
+
+
+
+}
+/*Como contenedorfluido es una clase lo llamo en css con el .*/
+.contenedorfluido{
+    min-height: 100vh; /*Le doy tamaño al contenedor */
+
+    display: flex; /*Con esta propiedad se coloca el contenedor en modo flotando o row fila
+                    y también adquiere la propiedad responsive */
+
+    flex-direction: row; /*Coloco los contenedores en fila*/
+    flex-wrap: wrap; /*Mantiene el tamaño de los contenedores*/  
+    flex-flow: row wrap; /*con flex-flow puedo agupar las dos antriores en una*/
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    background-color: azure0;
+    border: 4px solid red;
+
+}
+
+
+.contenedorfluido2{
+    min-height: 100vh; /*Le doy tamaño al contenedor */
+
+    display: flex; /*Con esta propiedad se coloca el contenedor en modo flotando o row fila
+                    y también adquiere la propiedad responsive */
+
+    flex-direction: row; /*Coloco los contenedores en fila*/
+    flex-wrap: wrap; /*Mantiene el tamaño de los contenedores*/  
+    flex-flow: row wrap; /*con flex-flow puedo agupar las dos antriores en una*/
+    justify-content: space-evenly;/*voy a poder colocar en el contenedor principal los contenedores que lo rellenan donde quiera */
+    align-items: center;/*Alineción vertical*/
+
+
+    background-color: azure0;
+    border: 4px solid red;
+
+
+}
+
+
+
+
+.caja{
+    background-color: aqua;
+    border: 2px solid blue;
+    width: 150px;
+    height: 150px;
+
+
+    
+
+}
+
+.caja1{
+    background-color: rgb(255, 0, 195);
+    border: 2px solid blue;
+    width: 150px;
+    height: 150px;
+
+    order: 5;
+
+}
+.caja2{
+    background-color: rgb(251, 255, 0);
+    border: 2px solid blue;
+    width: 150px;
+    height: 150px;
+
+    order: 4;
+
+}
+.caja3{
+    background-color: rgb(85, 0, 255);
+    border: 2px solid blue;
+    width: 150px;
+    height: 150px;
+
+    order: 3;
+
+}
+.caja4{
+    background-color: rgb(255, 0, 0);
+    border: 2px solid blue;
+    width: 150px;
+    height: 150px;
+
+    order: 2;
+
+}
+.caja5{
+    background-color: rgb(255, 0, 195);
+    border: 2px solid blue;
+    width: 150px;
+    height: 150px;
+
+    order: 1;
+
+}
+.caja6{
+    background-color: rgb(15, 15, 15);
+    color: #f2f2f2;
+    border: 2px solid blue;
+    width: 150px;
+    height: 150px;
+
+    order: 6;
+
+}
