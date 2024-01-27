@@ -1,6 +1,6 @@
 
 
-let edad = 45; //Let sólo es funcional a nivle de bloque. No saldrá de la estructura donde estemos trabajando
+let edad = 45; //Let sólo es funcional a nivel de bloque. No saldrá de la estructura donde estemos trabajando
 
 
 edad = 46;
