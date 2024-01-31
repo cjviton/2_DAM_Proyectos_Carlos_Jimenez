@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    width: 80%;
+    margin: auto;
+
+
+}
+
+
+.contenedorGrid{
+    display: grid;
+    
+    /*De esta manera distribullo la conatidas de bloques que necesito en mi rejilla*/
+    /* y luego en cada contenedor le digo como se va llamar*/
+    grid-template-areas: 'header header'
+                         'navbar navbar'
+                         'main aside'
+                         'footer footer';
+
+    background-color: blueviolet;
+    border: 2px solid pink;
+    
+}
+
+
+.caja{
+
+    background-color: aquamarine;
+    border: 2px solid green;
+
+    height: 150px;
+    /*width: 150px;*/
+}
+
+.header{
+    background-color: pink;
+
+    grid-area: header;  /*Tengo que nombrar cada area para que coja la forma que le he marcado en el 
+                           grid-template-area*/
+}
+
+.navbar{
+    background-color: gold;
+    grid-area: navbar;  /*Tengo que nombrar cada area para que coja la forma que le he marcado en el 
+                           grid-template-area*/
+}
+
+.main{
+    background-color: lawngreen;
+
+    grid-area: main;  /*Tengo que nombrar cada area para que coja la forma que le he marcado en el 
+                           grid-template-area*/
+
+
+}
+
+.aside{   
+    background-color: red;
+
+    grid-area: aside;  /*Tengo que nombrar cada area para que coja la forma que le he marcado en el 
+                           grid-template-area*/
+
+
+}
+
+.footer{
+    background-color: wheat;
+
+    grid-area: footer;  /*Tengo que nombrar cada area para que coja la forma que le he marcado en el 
+                           grid-template-area*/
+
+}
+
+
+
+
+
+
+
+
