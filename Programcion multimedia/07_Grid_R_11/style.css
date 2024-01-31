@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    width: 80%;
+    margin: auto;
+
+
+}
+
+
+.contenedorGrid{
+    display: grid;
+    /*grid-template-columns:auto auto auto; */ /*Con esta propiedad puedo dividir en columnas mis ocntenedores
+                                            tantos auto ponga, divisiones me hará*/
+
+    grid-template-columns: 70% 30%; /*O puedo tambien hacer las columnas de tamaño que quiera con porcentaje*/
+
+    grid-template-rows: auto auto auto auto; /*Puedo hacer lo mismo con las columnas*/
+
+    background-color: blueviolet;
+    border: 2px solid pink;
+    
+}
+
+
+.caja{
+
+    background-color: aquamarine;
+    border: 2px solid green;
+
+    height: 150px;
+    /*width: 150px;*/
+}
+
+.header{
+    background-color: pink;
+
+    grid-column: 1/3;  /*Con esto estoy haciendo un rowspan desde la 1 hasta la 3*/
+}
+
+.navbar{
+    background-color: gold;
+    grid-column: 1/3;
+}
+
+.main{
+    background-color: lawngreen;
+
+    grid-column: 1/2;
+
+}
+
+.aside{
+    background-color: red;
+
+    grid-column: 2/3;
+
+}
+
+.footer{
+    background-color: wheat;
+    grid-column: 1/3;  /*Con esto estoy haciendo un rowspan desde la 1 hasta la 3*/
+
+}
+
+
+
+
+
+
+
+
