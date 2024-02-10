@@ -3,9 +3,10 @@ var servidor = require('http');
 servidor.createServer(function(req,res){
     res.writeHead(200,{'Content-Type':'text/html'});
     res.write("<h1>Hola mundo desde Node.js</h1>");
+    //Con lenguaje html pueoo crea una lista que me lleve con href a las diferentes urls
     res.write(`
-              <ul>
-                    <li><a href="/">Inicio</a></li>
+              <ul>                                  
+                    <li><a href="/">Inicio</a></li>   
 <li><a href="/sobremi">Sobre Mi</a></li>
 <li><a href="/contacto">Contacto</a></li>
                 </ul>

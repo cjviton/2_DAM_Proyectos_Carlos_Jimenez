@@ -5,7 +5,7 @@ servidor.createServer(function(req,res){
     res.writeHead(200,{'Content-Type':'text/html'});
     var parametros = ruta.parse(req.url,true).query;
     res.write("Tu nombre es: "+parametros.nombre)
-    res.write("<br>")
+    res.write("<br>")   //podemos concatener diferentes valores. 
     res.write("Tus apellidos son: "+parametros.apellidos)
     res.end("")
 }).listen(8080)

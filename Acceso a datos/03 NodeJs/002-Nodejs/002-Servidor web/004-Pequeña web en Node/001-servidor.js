@@ -1,9 +1,12 @@
+//Llamo a las libreias de nodejs http y fileserver
+
 var servidor = require('http');
 var archivos = require('fs');
-servidor.createServer(function(req,res){
+
+servidor.createServer(function(req,res){  //Creo el servidor
    res.writeHead(200,{'Content-Type':'text/html'})
    
-   switch(req.url){
+   switch(req.url){  //Un errutador entre las diferentes páginas 
         case "/":
             archivos.readFile('inicio.html',function(err,data){
                 res.write(data)
