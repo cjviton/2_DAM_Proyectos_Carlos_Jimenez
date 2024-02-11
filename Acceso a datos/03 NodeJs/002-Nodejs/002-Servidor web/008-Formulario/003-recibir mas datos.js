@@ -5,7 +5,7 @@ servidor.createServer(function(req,res){
    res.writeHead(200,{'Content-Type':'text/html'})
 
    switch(req.url){
-        case "/":
+        case "/":  //Creo un formulario html y cuando pulso el botón escribirá en la url /procesa. Me pedirá nombre aunto y email.
             res.write(`
                 <form action="/procesa" method="POST" enctype="application/x-www-form-urlencoded">
                     <input type="text" name="nombre"><br>

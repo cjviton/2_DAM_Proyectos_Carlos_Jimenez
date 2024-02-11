@@ -2,6 +2,9 @@ var servidor = require('http');
 var archivos = require('fs');
 var ruta = require('url');
 var procesador = require('querystring')
+
+
+
 servidor.createServer(function(req,res){
    res.writeHead(200,{'Content-Type':'text/html'})
    var rutacompleta = ruta.parse(req.url,true)
@@ -25,7 +28,7 @@ servidor.createServer(function(req,res){
                 res.end("")
             });
             break;
-        case "/procesa":
+        case "/procesa":   //Creo la ruta procesa para que me haga el guardado
             let datos = '';
                req.on('data',parte=>{
                    datos += parte.toString();
@@ -40,6 +43,8 @@ servidor.createServer(function(req,res){
         default:
             res.end("Página no encontrada");
     } 
+
+    
     if(req.url != "/favicon.ico"){
        var fecha = new Date();
     archivos.appendFile("registro.txt",fecha.getFullYear()+","+fecha.getMonth()+","+fecha.getDate()+","+fecha.getHours()+","+fecha.getMinutes()+","+fecha.getSeconds()+","+rutacompleta.host+","+rutacompleta.pathname+","+rutacompleta.search+","+req.url+"\n",function(err){

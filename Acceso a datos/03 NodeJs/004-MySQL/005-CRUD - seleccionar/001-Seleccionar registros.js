@@ -11,8 +11,12 @@ var conexion = mysql.createConnection({
 conexion.connect(function(err){
     if(err) throw err;
     console.log("conectado")
+
+    //Para hacer un selec, misma petición a la bbdd
     conexion.query(`
         SELECT * FROM entradas
+
+        
     `,function(err,result,fields){
         if(err) throw err;
         console.log(result)

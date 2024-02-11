@@ -1,12 +1,20 @@
+
+//Modñulos que necesito para la ejecucuión de la página
+
 var servidor = require('http');
 var archivos = require('fs');
 var ruta = require('url');
 var procesador = require('querystring')
+
+
 servidor.createServer(function(req,res){
    res.writeHead(200,{'Content-Type':'text/html'})
+
    var rutacompleta = ruta.parse(req.url,true)
+
    archivos.readFile('plantillas/cabecera.html',function(err,data){
         res.write(data)
+        
        switch(req.url){
         case "/":
             archivos.readFile('inicio.html',function(err,data){

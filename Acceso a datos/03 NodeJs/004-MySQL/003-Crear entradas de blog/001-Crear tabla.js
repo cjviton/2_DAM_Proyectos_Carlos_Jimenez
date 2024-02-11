@@ -1,16 +1,19 @@
 var mysql = require('mysql')
-// npm install mysql
+
 
 var conexion = mysql.createConnection({
     host:"localhost",
     user:"nodejs",
     password:"nodejs",
-    database:"nodejs"
+    database:"nodejs"  //incluyo con que tabla de las que tengo quiero operar.
 });
 
 conexion.connect(function(err){
     if(err) throw err;
     console.log("conectado")
+
+    //Voy a crear una tabla a la que voy a llamar entrada y lo voy a hacer
+    //con lenguaje sql. del mismo modo que cree la tabla. 
     conexion.query(`
         CREATE TABLE entradas 
         ( 

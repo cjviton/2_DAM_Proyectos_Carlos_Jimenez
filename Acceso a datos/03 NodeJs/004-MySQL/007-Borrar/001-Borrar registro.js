@@ -11,9 +11,13 @@ var conexion = mysql.createConnection({
 conexion.connect(function(err){
     if(err) throw err;
     console.log("conectado")
+
+    //Elimino registro con lenguaje sql
     conexion.query(`
         DELETE FROM entradas
-        WHERE id = 4
+        WHERE id = 2
+
+
     `,function(err,result){
         if(err) throw err;
         console.log("Se ha eliminado el registro")

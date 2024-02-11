@@ -1,11 +1,12 @@
 var servidor = require('http');
 var ruta = require('url');
-var procesador = require('querystring')
+var procesador = require('querystring') //Cargo el módulo querystring que me va a servir  para
+//analizar y fomatear cadenas de url. Lo guardo en la variable procesador.
 
 servidor.createServer(function(req,res){
    res.writeHead(200,{'Content-Type':'text/html'})
 
-   switch(req.url){
+   switch(req.url){//Creo un formulario html y cuando pulso el botón escribirá en la url /procesa. Me pedirá nombre aunto y email.
         case "/":
             res.write(`
                 <form action="/procesa" method="POST" enctype="application/x-www-form-urlencoded">
@@ -23,7 +24,7 @@ servidor.createServer(function(req,res){
                datos += parte.toString();
            })
            req.on('end',()=>{
-               var cadena = datos
+               var cadena = datos   //capturo los datos en cadena y con la función parse de la clase querystring me convierte en formato json
                var procesado = procesador.parse(cadena)
                console.log(procesado)
            })

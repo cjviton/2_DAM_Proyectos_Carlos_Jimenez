@@ -1,5 +1,6 @@
+
+
 var mysql = require('mysql')
-// npm install mysql
 
 var conexion = mysql.createConnection({
     host:"localhost",
@@ -11,6 +12,8 @@ var conexion = mysql.createConnection({
 conexion.connect(function(err){
     if(err) throw err;
     console.log("conectado")
+
+    //Con el mismo método hago petición a la bbdd para que haga un insert. 
     conexion.query(`
         INSERT INTO entradas VALUES(
             NULL,
@@ -18,6 +21,8 @@ conexion.connect(function(err){
             'Texto de la entrada',
             '2023-08-14'
         )
+
+        
     `,function(err,result){
         if(err) throw err;
         console.log("Se ha insertado el registro")

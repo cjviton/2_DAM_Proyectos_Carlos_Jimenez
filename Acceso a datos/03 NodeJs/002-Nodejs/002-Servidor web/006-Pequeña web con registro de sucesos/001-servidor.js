@@ -1,3 +1,8 @@
+
+//voy a usar la estructura de web que he ido montando y voy a añadir un archivo donde
+//se van a almacenar cada vez que alguien pida algo la url que hayan visitado. 
+
+
 var servidor = require('http');
 var archivos = require('fs');
 servidor.createServer(function(req,res){
