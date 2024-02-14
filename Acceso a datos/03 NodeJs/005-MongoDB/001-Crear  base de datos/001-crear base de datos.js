@@ -1,1 +1,1 @@
-var mongo = require('mongodb');
+use contacto;
