@@ -1,0 +1,1 @@
+db.formularios.deleteMany({fecha:"2017-01-01" });

@@ -1,0 +1,1 @@
+db.formularios.updateOne({asunto:"Este es el primer correo"},{$set:{fecha:"2017-01-01"}});

@@ -1,1 +1,0 @@
-db.formularios.updateOne({asunto:"Este es el primer correo"},{$set:{fecha:"2023-08-30"}});
