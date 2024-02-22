@@ -32,7 +32,7 @@ servidor.createServer(function(req, res) {
     //estructura de switch para cambiar entre las diferentes páginas.
     switch (req.url) {
         case "/":
-            // Cuando la URL solicitada es "/", responder con el contenido de inicio.html
+            // Cuando la URL solicitada es "/", responder con el contenido de cabecera.html
             archivos.readFile('cabecera.html', function(err, data) {
                 if (err) {
                     console.error('Error al leer inicio.html:', err);
@@ -45,7 +45,7 @@ servidor.createServer(function(req, res) {
             });
             break;
         case "/menu":
-            // Cuando la URL solicitada es "/sobremi", responder con el contenido de sobremi.html
+            // Cuando la URL solicitada es "/menu", responder con el contenido de menu.html
             archivos.readFile('menu.html', function(err, data) {
                 if (err) {
                     console.error('Error al leer sobremi.html:', err);
@@ -59,7 +59,7 @@ servidor.createServer(function(req, res) {
             break;
         
             case "/reserva":
-                // Cuando la URL solicitada es "/sobremi", responder con el contenido de sobremi.html
+                // Cuando la URL solicitada es "/reserva", responder con el contenido de reserva.html
                 archivos.readFile('reserva.html', function(err, data) {
                     if (err) {
                         console.error('Error al leer sobremi.html:', err);
