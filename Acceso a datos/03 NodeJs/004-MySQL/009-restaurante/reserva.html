@@ -33,7 +33,7 @@
 
 
 
-<form action="./HTML/MensajeDeEnvioDeFormulario.html" method="post">
+<form action="#" method="post">
 
 <br><br>
 
@@ -197,7 +197,15 @@
 <br><br><br>
 
 
-<input type="submit" value= "Enviar" formaction="/procesa">
+<input type="submit" value= "Enviar" formaction="/procesa" onclick="reloadPage()">
+
+
+
+<script>
+    function reloadPage(){
+        location.reload();
+    }
+</script>
 
 
 <br><br><br>
