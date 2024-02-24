@@ -35,7 +35,7 @@ servidor.createServer(function(req, res) {
             // Cuando la URL solicitada es "/", responder con el contenido de cabecera.html
             archivos.readFile('cabecera.html', function(err, data) {
                 if (err) {
-                    console.error('Error al leer inicio.html:', err);
+                    console.error('Error al leer cabecera.html:', err);
                     res.writeHead(500, { 'Content-Type': 'text/plain' });
                     res.end('Error interno del servidor');
                     return;
@@ -48,7 +48,7 @@ servidor.createServer(function(req, res) {
             // Cuando la URL solicitada es "/menu", responder con el contenido de menu.html
             archivos.readFile('menu.html', function(err, data) {
                 if (err) {
-                    console.error('Error al leer sobremi.html:', err);
+                    console.error('Error al leer menu.html:', err);
                     res.writeHead(500, { 'Content-Type': 'text/plain' });
                     res.end('Error interno del servidor');
                     return;
@@ -62,7 +62,7 @@ servidor.createServer(function(req, res) {
                 // Cuando la URL solicitada es "/reserva", responder con el contenido de reserva.html
                 archivos.readFile('reserva.html', function(err, data) {
                     if (err) {
-                        console.error('Error al leer sobremi.html:', err);
+                        console.error('Error al leer reserva.html:', err);
                         res.writeHead(500, { 'Content-Type': 'text/plain' });
                         res.end('Error interno del servidor');
                         return;
