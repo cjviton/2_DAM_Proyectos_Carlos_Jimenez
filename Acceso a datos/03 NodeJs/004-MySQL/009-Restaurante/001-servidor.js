@@ -1,25 +1,55 @@
 //Cargo los módulos necesarios. Para que funcione mi web con la base de datos
-//tengo que cargar a parte de los que tenía, el módulo mysql
+//tengo que cargar a parte de los que tenía.
 
 var servidor = require('http');
 var archivos = require('fs');
 var ruta = require('url');
 var procesador = require('querystring');
-var mysql = require('mysql')
+var mongoose = require('mongoose');
 
 //Hago la conexión con la base de datos.
-var conexion = mysql.createConnection({
-    host: "localhost",
-    user: "nodejs",
-    password: "nodejs",
-    database: "nodejs"
-});
+const conexion = 'mongodb://127.0.0.1/restaurante'
 
 //le pido confirmación de conexión por si hubiera algún error.
-conexion.connect(function(err) {
-    if (err) throw err;
-    console.log("conectado")
+mongoose.connect(conexion,{useNewUrlParser:true,useUnifiedTopology:true}).then(function(){
+    console.log("conectado a mongo")
 })
+
+//CReo un objeto de la clase mongoose con la estructura que tengo en mi base de datos.
+const reservaSchema = new mongoose.Schema({
+    nombre:String,
+    dia:String,
+    mes:String,
+    hora:String,
+    gastronimico:String,
+	cochinillo:String,
+	infantil:String,
+})
+
+//Creo la variable Reserva donde voy a capturar el json de mi base de datos
+const Reserva = mongoose.model("Reserva",reservaSchema)
+
+//Creo un objeto NuevaReserva de la clase Reserva donde creo la sentencia de inserción para hacer una prueba de inserción en la base de datos.
+
+const NuevaReserva = new Reserva({
+    nombre:"Diana Rodriguez",
+    dia:"1",
+    mes:"enero",
+    hora:"14:00",
+	gastronimico:"2",
+	cochinillo:"2",
+	infantil:"4",
+});
+
+mongoose.connect(conexion,{useNewUrlParser:true,useUnifiedTopology:true}).then(function(){
+    console.log("conectado a mongo")
+    NuevaReserva.save()
+        .then(function(){
+            console.log("Insertado")
+        })
+})
+
+
 
 //Creo el servidor que escuchará por el puerto 8090
 servidor.createServer(function(req, res) {
