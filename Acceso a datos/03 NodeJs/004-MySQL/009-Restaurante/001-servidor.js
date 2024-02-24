@@ -30,7 +30,7 @@ const reservaSchema = new mongoose.Schema({
 const Reserva = mongoose.model("Reserva",reservaSchema)
 
 //Creo un objeto NuevaReserva de la clase Reserva donde creo la sentencia de inserción para hacer una prueba de inserción en la base de datos.
-
+/*
 const NuevaReserva = new Reserva({
     nombre:"Diana Rodriguez",
     dia:"1",
@@ -49,7 +49,7 @@ mongoose.connect(conexion,{useNewUrlParser:true,useUnifiedTopology:true}).then(f
         })
 })
 
-
+*/
 
 //Creo el servidor que escuchará por el puerto 8090
 servidor.createServer(function(req, res) {
@@ -97,11 +97,47 @@ servidor.createServer(function(req, res) {
                         res.end('Error interno del servidor');
                         return;
                     }
+
+
                     res.write(data);
                     res.end();
                 });
                 break;
-        
+            
+            case "/procesa":
+                let datos = '';
+               req.on('data',parte=>{
+                   datos += parte.toString();
+               })
+               req.on('end',()=>{
+                var cadena = datos
+                var procesado = procesador.parse(cadena)
+                console.log(procesado)
+                var nnombre = procesado.nombre
+                var ndia = procesado.dia
+                var nmes = procesado.mes
+                var nhora = procesado.hora
+                var ngastronomico = procesado.gastronimico
+                var ncochinillo = procesado.cochinillo
+                var ninfantil = procesado.infantil
+                
+                var NuevaReserva = new Reserva({
+                     nombre:nnombre,
+                     dia:ndia,
+                     mes:nmes,
+                     hora:nhora,
+                     gastronomico:ngastronomico,
+                     cochinillo:ncochinillo,
+                     infantil:ninfantil
+                 })
+                
+                NuevaReserva.save()
+                 .then(function(){
+                     console.log("Insertado")
+                 })
+                
+            })
+
     }
 
     //Estructur para guardar los datos en el registro.
