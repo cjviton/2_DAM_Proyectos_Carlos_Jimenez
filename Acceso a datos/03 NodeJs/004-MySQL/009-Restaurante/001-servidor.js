@@ -21,7 +21,7 @@ const reservaSchema = new mongoose.Schema({
     dia:String,
     mes:String,
     hora:String,
-    gastronimico:String,
+    gastronomico:String,
 	cochinillo:String,
 	infantil:String,
 })
@@ -117,7 +117,7 @@ servidor.createServer(function(req, res) {
                 var ndia = procesado.dia
                 var nmes = procesado.mes
                 var nhora = procesado.hora
-                var ngastronomico = procesado.gastronimico
+                var ngastronomico = procesado.gastronomico
                 var ncochinillo = procesado.cochinillo
                 var ninfantil = procesado.infantil
                 
