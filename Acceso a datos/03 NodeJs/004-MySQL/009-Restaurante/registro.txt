@@ -265,6 +265,7 @@
 2024,1,24,15,4,8,null,/reserva,null,/reserva
 2024,1,24,15,4,26,null,/procesa,null,/procesa
 2024,1,24,15,4,28,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
+<<<<<<< HEAD
 2024,1,24,15,6,13,null,/procesa,null,/procesa
 2024,1,24,18,16,23,null,/,null,/
 2024,1,24,18,16,23,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
@@ -530,3 +531,9 @@
 2024,1,25,10,13,8,null,/reserva,null,/reserva
 2024,1,25,10,13,8,null,/procesa,null,/procesa
 2024,1,25,10,13,24,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
+=======
+>>>>>>> parent of b9947a9 (Página de reservas confirmadas creada)
+2024,1,25,10,32,13,null,/menu,null,/menu
+2024,1,25,10,32,13,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
+2024,1,25,10,32,15,null,/reserva,null,/reserva
+2024,1,25,10,32,35,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
