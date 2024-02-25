@@ -519,3 +519,14 @@
 2024,1,25,10,7,41,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
 2024,1,25,10,7,44,null,/procesa,null,/procesa
 2024,1,25,10,8,4,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
+2024,1,25,10,12,5,null,/menu,null,/menu
+2024,1,25,10,12,5,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
+2024,1,25,10,12,6,null,/reserva,null,/reserva
+2024,1,25,10,12,26,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
+2024,1,25,10,13,3,null,/,null,/
+2024,1,25,10,13,3,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
+2024,1,25,10,13,3,null,/IMG/restaurante.jpg,null,/IMG/restaurante.jpg
+2024,1,25,10,13,4,null,/reserva,null,/reserva
+2024,1,25,10,13,8,null,/reserva,null,/reserva
+2024,1,25,10,13,8,null,/procesa,null,/procesa
+2024,1,25,10,13,24,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
