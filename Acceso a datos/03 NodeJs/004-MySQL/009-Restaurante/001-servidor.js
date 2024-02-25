@@ -156,6 +156,7 @@ servidor.createServer(function(req, res) {
                     res.end('Error interno del servidor');
                     return;
                 }
+                
                 res.write(data);
                 res.end();
             });
