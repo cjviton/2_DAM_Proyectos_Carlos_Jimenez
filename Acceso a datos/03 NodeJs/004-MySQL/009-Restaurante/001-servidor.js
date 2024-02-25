@@ -153,7 +153,7 @@ servidor.createServer(function(req, res) {
             });
             break;
     }
-
+/*
     //Estructur para guardar los datos en el registro.
     if (req.url != "/favicon.ico") {
         var fecha = new Date();
@@ -161,5 +161,5 @@ servidor.createServer(function(req, res) {
             if (err) throw err;
         });
     }
-
+*/
 }).listen(8090)

@@ -522,6 +522,7 @@
 2024,1,25,10,8,4,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 2024,1,25,10,12,5,null,/menu,null,/menu
 2024,1,25,10,12,5,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
 2024,1,25,10,12,6,null,/reserva,null,/reserva
@@ -539,6 +540,8 @@
 2024,1,25,10,32,13,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
 2024,1,25,10,32,15,null,/reserva,null,/reserva
 2024,1,25,10,32,35,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
+=======
+>>>>>>> parent of 4e34892 (solo cambios en el archivo de registro)
 =======
 >>>>>>> parent of 4e34892 (solo cambios en el archivo de registro)
 =======
