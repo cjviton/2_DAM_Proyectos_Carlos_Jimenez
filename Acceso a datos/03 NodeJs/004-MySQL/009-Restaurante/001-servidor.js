@@ -149,43 +149,50 @@ servidor.createServer(function(req, res) {
             break;
 
             
-            case "/95147":
-            // Cuando la URL solicitada es "/95147", responder con el contenido de reservasConfirmadas.html
-            archivos.readFile('reservasConfirmadas.html', function(err, data) {
-                if (err) {
-                    console.error('Error al leer menu.html:', err);
-                    res.writeHead(500, { 'Content-Type': 'text/plain' });
-                    res.end('Error interno del servidor');
-                    return;
-                }
-                Reserva.find({}).exec()
-                    .then(function(reservas) {
-                        console.log(reservas); // Imprimir en consola los resultados
-
-                        // Escribir los resultados en la respuesta HTML
-                        res.write('<h1>RESERVAS CONFIRMADAS PARA HOY</h1>');
-                        reservas.forEach(function(reserva) {
-                            res.write('<h2>Nombre:  ' + reserva.nombre + '</h2>');
-                            res.write('<p>Dia:  ' + reserva.dia + '</p>');
-                            res.write('<p>Mes:  ' + reserva.mes + '</p>');
-                            res.write('<p>Hora:  ' + reserva.hora + '</p>');
-                            res.write('<p>Menu gastonomico:  ' + reserva.gastronomico + '</p>');
-                            res.write('<p>Cochinillo:  ' + reserva.cochinillo + '</p>');
-                            res.write('<p>Menu infantil:  ' + reserva.infantil + '</p>');
-                        });
-                        res.write('</reservas_para_ho>');
-
-                        res.end(); // Finalizar la respuesta después de escribir los datos
-                    })
-                    .catch(function(err) {
-                        console.error('Error al leer reservas de la base de datos:', err);
+            case "/95147":   /// PARA HACER LAS CONSULTAS DESDE LA URL         95147?dia=1&mes=Enero
+                // Cuando la URL solicitada es "/95147", responder con el contenido de reservasConfirmadas.html
+                archivos.readFile('reservasConfirmadas.html', function(err, data) {
+                    if (err) {
+                        console.error('Error al leer menu.html:', err);
                         res.writeHead(500, { 'Content-Type': 'text/plain' });
-                        res.end('Error al leer reservas de la base de datos');
-                    });
-            
-            });
-            break;
-    }
+                        res.end('Error interno del servidor');
+                        return;
+                    }
+
+                    //var dia = rutacompleta.query.dia;
+                    //var mes = rutacompleta.query.mes;
+                    
+                   // Reserva.find({dia: dia, mes: mes}).exec()
+                   Reserva.find({}).exec()
+                        .then(function(reservas) {
+                            console.log(reservas); // Imprimir en consola los resultados
+                            //console.log(dia);
+                            //console.log(mes);
+
+                            // Escribir los resultados en la respuesta HTML
+                           //res.write('<h1>RESERVAS CONFIRMADAS PARA ' + dia + '/' + mes + '</h1>');
+                            res.write('<h1>RESERVAS CONFIRMADAS PARA HOY</h1>');
+                            reservas.forEach(function(reserva) {
+                                res.write('<h2>Nombre:  ' + reserva.nombre + '</h2>');
+                                res.write('<p>Dia:  ' + reserva.dia + '</p>');
+                                res.write('<p>Mes:  ' + reserva.mes + '</p>');
+                                res.write('<p>Hora:  ' + reserva.hora + '</p>');
+                                res.write('<p>Menu gastonomico:  ' + reserva.gastronomico + '</p>');
+                                res.write('<p>Cochinillo:  ' + reserva.cochinillo + '</p>');
+                                res.write('<p>Menu infantil:  ' + reserva.infantil + '</p>');
+                            });
+                            res.write('</reservas_para_hoy>');
+
+                            res.end(); // Finalizar la respuesta después de escribir los datos
+                        })
+                        .catch(function(err) {
+                            console.error('Error al leer reservas de la base de datos:', err);
+                            res.writeHead(500, { 'Content-Type': 'text/plain' });
+                            res.end('Error al leer reservas de la base de datos');
+                        });
+                });
+                break;
+     }
 
     //Estructur para guardar los datos en el registro.
     if (req.url != "/favicon.ico") {
