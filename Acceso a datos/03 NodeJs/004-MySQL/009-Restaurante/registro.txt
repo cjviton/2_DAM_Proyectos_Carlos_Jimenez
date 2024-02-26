@@ -603,3 +603,15 @@
 2024,1,25,20,34,30,null,/IMG/restaurante.jpg,null,/IMG/restaurante.jpg
 2024,1,25,20,34,34,null,/95147,null,/95147
 2024,1,25,20,37,37,null,/95147,null,/95147
+2024,1,25,20,47,14,null,/menu,null,/menu
+2024,1,25,20,47,14,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
+2024,1,25,20,47,17,null,/reserva,null,/reserva
+2024,1,25,20,47,22,null,/,null,/
+2024,1,25,20,47,22,null,/IMG/restaurante.jpg,null,/IMG/restaurante.jpg
+2024,1,25,20,47,37,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
+2024,1,25,20,47,42,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
+2024,1,26,19,3,56,null,/menu,null,/menu
+2024,1,26,19,3,56,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
+2024,1,26,19,3,59,null,/reserva,null,/reserva
+2024,1,26,19,4,19,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
+2024,1,26,19,5,41,null,/95147,?dia=1&mes=Enero,/95147?dia=1&mes=Enero
