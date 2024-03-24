@@ -2,9 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const mongoose = require('mongoose');
-const querystring = require('querystring'); 
-
-
+const querystring = require('querystring');
 
 // Conexión a MongoDB
 const connectionString = 'mongodb://localhost:27017/restaurante'; 
@@ -25,24 +23,17 @@ const reservaSchema = new mongoose.Schema({
 
 const Reserva = mongoose.model('Reserva', reservaSchema, 'reservas');
 
-
-
-
 const server = http.createServer((req, res) => {
     let filePath = '.' + req.url;
+
     // Furzo el root a cabecera.htm, y el resto las cargo directas
     if (filePath === './') {
         filePath = './public/cabecera.html';
-
-    }else if(filePath === './menu'){
-        //DDentro de este bloque de aqui tu puedes poner lo que hagga falta con mongoose o con lo que quieras ///////////////////////////////
+    } else if (filePath === './menu') {
         filePath = './public/menu.html';
-        
-    }else if(filePath === './reserva'){
-        //DDentro de este bloque de aqui tu puedes poner lo que hagga falta con mongoose o con lo que quieras ///////////////////////////////
+    } else if (filePath === './reserva') {
         filePath = './public/reserva.html';
-        
-    }else if(filePath === './procesa'){
+    } else if (filePath === './procesa') {
         let datos = '';
         req.on('data', parte => {
             datos += parte.toString();
@@ -59,52 +50,47 @@ const server = http.createServer((req, res) => {
                 infantil: procesado.infantil
             });
 
-            nuevaReserva.save()               
+            nuevaReserva.save()
                 .then(() => {
                     console.log('Reserva guardada en MongoDB');
-                    
-            })
-            .catch(error => {
-            console.error('Error al guardar reserva en MongoDB:', error);
-            res.writeHead(500);
-            res.end('Internal Server Error');
-                             // Responder al cliente con un mensaje de error apropiado
-             });
+                    // Redirigir al cliente a la página de reserva
+                    res.writeHead(302, { 'Location': '/reserva' });
+                    res.end();
+                })
+                .catch(error => {
+                    console.error('Error al guardar reserva en MongoDB:', error);
+                    res.writeHead(500);
+                    res.end('Internal Server Error');
+                });
         });
-        
-    }
-    else if(filePath === './12345'){
-        //DDentro de este bloque de aqui tu puedes poner lo que hagga falta con mongoose o con lo que quieras ///////////////////////////////
+    } else if (filePath === './12345') {
         filePath = './public/admin.html';
-        
-
-        //DDentro de este bloque de aqui tu puedes poner lo que hagga falta con mongoose o con lo que quieras ///////////////////////////////
-    }else {
+    } else {
         filePath = './public' + req.url;
     }
-    // Paso los nombres de archivo todos a minusculas
+
+    // Paso los nombres de archivo todos a minúsculas
     const extname = String(path.extname(filePath)).toLowerCase();
+
     // Tipos de archivo soportados
     const contentType = {
         '.html': 'text/html',
         '.jpg': 'image/jpeg',
         '.png': 'image/png'
-        // Add more MIME types as needed
+        // Agrega más tipos MIME según sea necesario
     }[extname] || 'application/octet-stream';
-    // Carga en el servidor el ardhivo que yo haya solicitado en la url como si esto fuera apache
+
+    // Carga en el servidor el archivo solicitado como si esto fuera Apache
     fs.readFile(filePath, (err, content) => {
         if (err) {
-            // En el caso de que lo que pida no exista, sacame un 404
             if (err.code === 'ENOENT') {
                 res.writeHead(404);
-                res.end('La pagina que has pedido no existe');
+                res.end('La página que has pedido no existe');
             } else {
-                // En caso de error de servidor, dame el error
                 res.writeHead(500);
-                res.end('Internal Server Error: ' + err.code);
+                res.end('Internal Server Error');
             }
         } else {
-            // En el caso de que exista, dame su contenido
             res.writeHead(200, { 'Content-Type': contentType });
             res.end(content, 'utf-8');
         }
