@@ -7,7 +7,17 @@ const server = http.createServer((req, res) => {
     // Furzo el root a cabecera.htm, y el resto las cargo directas
     if (filePath === './') {
         filePath = './public/cabecera.html';
-    } 
+    }
+    else if(filePath === './menu'){
+        //DDentro de este bloque de aqui tu puedes poner lo que hagga falta con mongoose o con lo que quieras ///////////////////////////////
+        filePath = './public/menu.html';
+        
+    }
+    else if(filePath === './reserva'){
+        //DDentro de este bloque de aqui tu puedes poner lo que hagga falta con mongoose o con lo que quieras ///////////////////////////////
+        filePath = './public/reserva.html';
+        
+    }
     else if(filePath === './12345'){
         //DDentro de este bloque de aqui tu puedes poner lo que hagga falta con mongoose o con lo que quieras ///////////////////////////////
         filePath = './public/admin.html';

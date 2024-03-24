@@ -625,3 +625,6 @@
 2024,1,29,11,24,39,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
 2024,1,29,11,24,43,null,/95147,null,/95147
 2024,1,29,11,24,47,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
+2024,2,24,10,45,48,null,/,null,/
+2024,2,24,10,45,48,null,/IMG/logoRestaurante.jpg,null,/IMG/logoRestaurante.jpg
+2024,2,24,10,45,48,null,/IMG/restaurante.jpg,null,/IMG/restaurante.jpg
