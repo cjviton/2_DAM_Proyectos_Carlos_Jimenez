@@ -28,14 +28,44 @@ const server = http.createServer((req, res) => {
     // Furzo el root a cabecera.htm, y el resto las cargo directas
     if (filePath === './') {
         filePath = './public/cabecera.html';
+
     } else if(filePath === './menu'){
         filePath = './public/menu.html';
+
     } else if(filePath === './reserva'){
         filePath = './public/reserva.html';
+
     } else if(filePath === './procesa'){
-        // No hagas nada aquí, deja que la lógica de procesamiento se maneje fuera del bloque fs.readFile()
+
     } else if(filePath === './12345'){
-        filePath = './public/admin.html';
+        // Realizar consulta a la base de datos
+        Reserva.find({}).exec()
+            .then(function(reservas) {
+                console.log(reservas); // Imprimir en consola los resultados
+
+                // Preparar la respuesta HTML
+                let response = '<h1>Reservas en la Base de Datos</h1>';
+                reservas.forEach(function(reserva) {
+                    response += `<p>Nombre: ${reserva.nombre}</p>`;
+                    response += `<p>Día: ${reserva.dia}</p>`;
+                    response += `<p>Mes: ${reserva.mes}</p>`;
+                    response += `<p>Hora: ${reserva.hora}</p>`;
+                    response += `<p>Menú Gastronómico: ${reserva.gastronomico}</p>`;
+                    response += `<p>Cochinillo: ${reserva.cochinillo}</p>`;
+                    response += `<p>Menú Infantil: ${reserva.infantil}</p>`;
+                    response += '<hr>'; // Separador entre reservas
+                });
+
+                // Enviar la respuesta al cliente
+                res.writeHead(200, {'Content-Type': 'text/html'});
+                res.end(response);
+            })
+            .catch(function(err) {
+                console.error('Error al leer reservas de la base de datos:', err);
+                res.writeHead(500, { 'Content-Type': 'text/plain' });
+                res.end('Error al leer reservas de la base de datos');
+            });
+        return; // Salir del manejador de solicitud después de enviar la respuesta
     } else {
         filePath = './public' + req.url;
     }
