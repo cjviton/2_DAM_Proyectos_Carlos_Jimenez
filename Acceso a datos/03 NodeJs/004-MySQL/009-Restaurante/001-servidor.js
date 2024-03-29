@@ -38,13 +38,21 @@ const server = http.createServer((req, res) => {
     } else if(filePath === './procesa'){
 
     } else if(filePath === './12345'){
+        // Obtener la fecha actual
+        const currentDate = new Date();
+        const diaActual = String(currentDate.getDate()).padStart(2, '0');
+        const mesActual = String(currentDate.getMonth() + 1).padStart(2, '0');
+        
+        console.log(diaActual);
+        console.log(mesActual);
+
         // Realizar consulta a la base de datos
-        Reserva.find({}).exec()
+        Reserva.find({ dia: diaActual, mes: mesActual }).exec()
             .then(function(reservas) {
                 console.log(reservas); // Imprimir en consola los resultados
 
                 // Preparar la respuesta HTML
-                let response = '<h1>Reservas en la Base de Datos</h1>';
+                let response = '<h1>Reservas para hoy</h1>';
                 reservas.forEach(function(reserva) {
                     response += `<p>Nombre: ${reserva.nombre}</p>`;
                     response += `<p>Día: ${reserva.dia}</p>`;
@@ -65,7 +73,7 @@ const server = http.createServer((req, res) => {
                 res.writeHead(500, { 'Content-Type': 'text/plain' });
                 res.end('Error al leer reservas de la base de datos');
             });
-        return; // Salir del manejador de solicitud después de enviar la respuesta
+        return;
     } else {
         filePath = './public' + req.url;
     }

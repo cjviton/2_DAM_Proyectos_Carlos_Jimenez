@@ -23,6 +23,21 @@ const reservaSchema = new mongoose.Schema({
 
 const Reserva = mongoose.model('Reserva', reservaSchema, 'reservas');
 
+const meses = {
+    'Enero': '01',
+    'Febrero': '02',
+    'Marzo': '03',
+    'Abril': '04',
+    'Mayo': '05',
+    'Junio': '06',
+    'Julio': '07',
+    'Agosto': '08',
+    'Septiembre': '09',
+    'Octubre': '10',
+    'Noviembre': '11',
+    'Diciembre': '12'
+};
+
 const server = http.createServer((req, res) => {
     let filePath = '.' + req.url;
     // Furzo el root a cabecera.htm, y el resto las cargo directas
@@ -38,13 +53,21 @@ const server = http.createServer((req, res) => {
     } else if(filePath === './procesa'){
 
     } else if(filePath === './12345'){
+        // Obtener la fecha actual
+        const currentDate = new Date();
+        const diaActual = String(currentDate.getDate()).padStart(2, '0');
+        const mesActual = Object.keys(meses).find(key => meses[key] === String(currentDate.getMonth() + 1).padStart(2, '0'));
+
+        console.log(diaActual);
+        console.log(mesActual);
+
         // Realizar consulta a la base de datos
-        Reserva.find({}).exec()
+        Reserva.find({ dia: diaActual, mes: mesActual }).exec()
             .then(function(reservas) {
                 console.log(reservas); // Imprimir en consola los resultados
 
                 // Preparar la respuesta HTML
-                let response = '<h1>Reservas en la Base de Datos</h1>';
+                let response = '<h1>Reservas para hoy</h1>';
                 reservas.forEach(function(reserva) {
                     response += `<p>Nombre: ${reserva.nombre}</p>`;
                     response += `<p>Día: ${reserva.dia}</p>`;
@@ -56,8 +79,8 @@ const server = http.createServer((req, res) => {
                     response += '<hr>'; // Separador entre reservas
                 });
 
-                // Enviar la respuesta al cliente
-                res.writeHead(200, {'Content-Type': 'text/html'});
+                // Enviar la respuesta al cliente con la codificación UTF-8
+                res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
                 res.end(response);
             })
             .catch(function(err) {
