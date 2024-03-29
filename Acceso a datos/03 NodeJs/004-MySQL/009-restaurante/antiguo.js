@@ -126,7 +126,7 @@ const server = http.createServer((req, res) => {
 
         });
     } else {
-        // Paso los nombres de archivo todos a minúsculas
+        // Paso los nombres de archivos todos a minúsculas
         const extname = String(path.extname(filePath)).toLowerCase();
         // Tipos de archivo soportados
         const contentType = {
