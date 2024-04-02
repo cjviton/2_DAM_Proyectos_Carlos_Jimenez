@@ -23,6 +23,21 @@ const reservaSchema = new mongoose.Schema({
 
 const Reserva = mongoose.model('Reserva', reservaSchema, 'reservas');
 
+const meses = {
+    'Enero': '01',
+    'Febrero': '02',
+    'Marzo': '03',
+    'Abril': '04',
+    'Mayo': '05',
+    'Junio': '06',
+    'Julio': '07',
+    'Agosto': '08',
+    'Septiembre': '09',
+    'Octubre': '10',
+    'Noviembre': '11',
+    'Diciembre': '12'
+};
+
 const server = http.createServer((req, res) => {
     let filePath = '.' + req.url;
     // Furzo el root a cabecera.htm, y el resto las cargo directas
@@ -41,8 +56,8 @@ const server = http.createServer((req, res) => {
         // Obtener la fecha actual
         const currentDate = new Date();
         const diaActual = String(currentDate.getDate()).padStart(2, '0');
-        const mesActual = String(currentDate.getMonth() + 1).padStart(2, '0');
-        
+        const mesActual = Object.keys(meses).find(key => meses[key] === String(currentDate.getMonth() + 1).padStart(2, '0'));
+
         console.log(diaActual);
         console.log(mesActual);
 
@@ -64,8 +79,8 @@ const server = http.createServer((req, res) => {
                     response += '<hr>'; // Separador entre reservas
                 });
 
-                // Enviar la respuesta al cliente
-                res.writeHead(200, {'Content-Type': 'text/html'});
+                // Enviar la respuesta al cliente con la codificación UTF-8
+                res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
                 res.end(response);
             })
             .catch(function(err) {
@@ -73,7 +88,7 @@ const server = http.createServer((req, res) => {
                 res.writeHead(500, { 'Content-Type': 'text/plain' });
                 res.end('Error al leer reservas de la base de datos');
             });
-        return;
+        return; // Salir del manejador de solicitud después de enviar la respuesta
     } else {
         filePath = './public' + req.url;
     }
@@ -111,7 +126,7 @@ const server = http.createServer((req, res) => {
 
         });
     } else {
-        // Paso los nombres de archivo todos a minúsculas
+        // Paso los nombres de archivos todos a minúsculas
         const extname = String(path.extname(filePath)).toLowerCase();
         // Tipos de archivo soportados
         const contentType = {
